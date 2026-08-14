@@ -1,0 +1,106 @@
+## PROJECT_GUIDE_1.txt
+NOVAGRACE（ガーデニング用品ECサイト）実装ガイド
+DESIGN.txtの仕様に基づき、Next.js（App Router）+ Tailwind CSSでサイトを実装するための作業手順書です。
+
+---
+
+## STEP 0：前提確認
+- DESIGN.txtを必ず読み込んだ状態で本ガイドを実行すること
+- 前提となるプロジェクト状態：まだ実装は開始していない（新規プロジェクト）。
+  generate-placeholders.mjsによるダミー画像生成のみ先に済ませておくこと
+- 単一ブランド（NOVAGRACE自社セレクト）のため、ブランド一覧・ブランド詳細ページは実装しない
+- MVPのため以下は実装しない（余計な実装をしないこと）：
+  - 庭のレイアウトシミュレーター等の大掛かりな機能
+  - 高度なレコメンドロジック（「育てやすさ・条件から探す」は簡易タグ絞り込みのみ）
+  - レビュー投稿の高度な機能（画像アップロード付き投稿等）。表示のみのダミーレビューでよい
+- 迷ったらDESIGN.txtの該当セクション（ページ構成／各ページ要素／デザイン希望値）を参照すること
+
+---
+
+## STEP 1：現状確認・作業計画提示
+1. 未実装・404のリンク先の洗い出し
+2. DESIGN.txtのページ構成との対応表作成
+3. 実装優先度順の作業計画提示（下記STEP3の優先度1〜4に従う）
+
+---
+
+## STEP 2：ルーティング設計
+DESIGN.txtのページ構成をNext.js App Routerのディレクトリ構成にマッピングする。
+
+```
+app/
+  page.tsx                        … TOP
+  category/[slug]/page.tsx        … カテゴリ一覧（人工芝・タイル・砂利／ガーデンファニチャー／園芸用品／雑草対策用品）
+  products/[id]/page.tsx          … 商品詳細
+  search/page.tsx                 … 検索結果
+  cart/page.tsx                   … カート
+  checkout/page.tsx, checkout/complete/page.tsx
+  login/page.tsx, register/page.tsx
+  mypage/page.tsx, mypage/orders/page.tsx, mypage/favorite/page.tsx
+  ranking/page.tsx
+  newarrival/page.tsx
+  feature/page.tsx, feature/[slug]/page.tsx      … 特集記事一覧・詳細
+  condition/page.tsx, condition/[tag]/page.tsx   … 育てやすさ・条件から探す
+  news/page.tsx, news/[id]/page.tsx
+  guide/page.tsx, guide/faq/page.tsx
+  contact/page.tsx
+  company/page.tsx
+  privacy/page.tsx, terms/page.tsx, legal/page.tsx
+  （ブランド一覧・詳細ページは単一ブランドのため実装しない）
+```
+
+TOPページのリンクが上記パスと一致するか確認・修正する。
+
+---
+
+## STEP 3：Partファイル生成（ページ実装）
+1ページずつ実装し、実装ごとにDESIGN.txtとの整合性を確認してから次に進む。
+まとめて複数ページを一気に生成しない。
+
+### 優先度1（購入導線の根幹）
+category → products → cart → checkout/checkout complete
+※ この優先度グループの実装時はSECURITY_CHECKLIST.txtの「2. 決済まわり」を必ず参照すること
+
+### 優先度2（回遊導線）
+condition（育てやすさ・条件から探す） → ranking → newarrival → search
+
+### 優先度3（コンテンツ・会員機能）
+feature → news → login/register → mypage（ダミーデータ・ダミー認証で先に表示だけ作ってよい）
+※ この優先度グループの実装時はSECURITY_CHECKLIST.txtの「3. 認証・会員機能」を必ず参照すること
+
+### 優先度4（静的・規約ページ）
+guide/faq → contact → company → privacy/terms/legal
+
+各ページ実装時の共通ルール：
+- モックデータはlib/data/配下にまとめ、ハードコードしない
+  （products.ts, categories.ts, features.ts, conditions.ts 等に分割推奨）
+- 画像パスは生成済みプレースホルダー（generate-placeholders.mjs実行結果）をそのまま使う。
+  追加が必要な場合はIMAGES配列に追記して再実行する
+- コンポーネントはcomponents/配下に切り出し、重複させない
+  （ProductCard, CategoryCard, ConditionTag, FeatureCard等を想定）
+- DESIGN.txtで指定した画像アスペクト比（商品4:3、カテゴリ・特集16:9、ヒーロー21:9）・
+  角丸（2px）・配色（#2F4B3C, #C6A45C, #F5F1E8, #333333）を厳守する
+
+---
+
+## STEP 4：動作確認
+1. リンク遷移が404にならないか
+2. デザイン仕様（角丸2px・配色・フォント Zen Kaku Gothic New / Noto Sans JP）が反映されているか
+3. レスポンシブ（375px / 640px / 1024px / 1280px）で崩れがないか
+4. コンソールエラーがないか
+
+問題なければ実装済みページ一覧を報告し、次の優先度グループに進む。
+本STEPはSECURITY_CHECKLIST.txtの確認項目と合わせて実施すること（備考参照）。
+
+---
+
+## 備考：共通画像リスト生成ルールについて
+DESIGN.txt内の「共通画像リスト生成ルール」（CSV/Flow/Genspark生成等）は
+本番撮影・外部発注用のワークフローであり、実装フェーズでは使用しない。
+generate-placeholders.mjsによるダミー画像で進行し、
+本番画像納品後に該当パスへ上書きする。
+
+## 備考：SECURITY_CHECKLIST.txtとの連携について
+本ガイドのSTEP4（動作確認）は、SECURITY_CHECKLIST.txtの該当章と合わせて実施すること。
+特にSTEP3の優先度1（購入導線）実装時は「2. 決済（KOMOJU）まわり」、
+優先度3（会員機能）実装時は「3. 認証・会員機能」を必ず参照しながら進めること。

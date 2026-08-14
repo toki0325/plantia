@@ -1,0 +1,202 @@
+## このファイルを受け取った後に実施すること
+
+1. 以下の【Claude用設定】と、このファイル以降の出力テキスト（詳細設計書）を合わせてDESIGN.txtとして読み込む
+2. 出力テキストにデザイン仕様の詳細が含まれる場合はそちらを優先する
+3. 追加ページのファイル名を決定・一覧化する
+4. 確認が取れ次第、PROJECT_GUIDE_1.txtの指示に従って作業を開始する
+
+---
+
+## 【Claude用設定】プロジェクト基本情報
+- サイト種別：ガーデニング用品販売ECサイト（単一ブランド／NOVAGRACE自社セレクト）
+- ショップ名：NOVAGRACE（ノヴァグレース）
+  ※ "Nova"（新しい）＋ "Grace"（上品さ・優雅さ）の造語。「頑張りすぎない、上質な庭時間」を提案するブランドイメージから命名
+- URL：[TBD]
+- キャッチコピー：「庭に、いちばんの居場所を。」
+- 参考サイト：https://www.cainz.com/contents/garden-tool/garden_diy.html（カインズ ガーデニング用品特集ページ）
+- 差別化ポイント：
+  カインズ等の総合ホームセンター系ECは品揃えの広さが強みだが、雑多になりやすい。
+  NOVAGRACEは単一ブランドのセレクトショップとして商品数をあえて絞り込み、
+  「統一感のあるおしゃれな庭・ベランダづくり」に特化した見せ方（世界観の統一、コーディネート提案）で差別化する。
+  MVPでは無理に高度な機能は追わず、まずシンプルに作る。
+- 価格帯：300円〜60,000円（平均目安：4,000円前後）※参考サイトの価格帯レンジを踏襲
+
+## 商品カテゴリ構成
+### 大カテゴリ（サブカテゴリはAIが自動提案・生成）
+1. 人工芝・タイル・砂利（人工芝／ジョイントタイル／敷石・砂利）
+2. ガーデンファニチャー（収納ベンチ／ガーデンファニチャー／フェンス／ガーデンライト）
+3. 園芸用品（花壇材／プランター・ハンギング／培養土／その他用品）
+4. 雑草対策用品（除草剤／防草シート／防草砂）
+
+参考サイト（カインズ）の4大カテゴリ構成をそのまま踏襲する。
+
+### 育てやすさ・条件から探す（業態特有の探索軸）
+- 日当たり条件（日向向き／半日陰向き／日陰でも育つ）
+- 手入れの手軽さ（水やり少なめ／初心者向け／上級者向け）
+- 季節（春夏／秋冬／通年）
+※ MVPでは簡易的なタグ絞り込みとして実装し、複雑なレコメンドロジックは非搭載とする
+
+## ターゲット・コンセプト
+- 年齢層：30代〜50代
+- 性別：女性を中心に、ファミリー層も含む
+- ライフスタイル：戸建て・マンションのベランダ／庭付き住宅に住み、暮らしの質にこだわる層。DIYにも関心がある
+- コンセプト：「頑張りすぎない、上質な庭時間」。ナチュラルな素材感と上品な配色で、ホームセンターの雑多さとは一線を画す世界観を作る
+
+## デザイン希望値（詳細は詳細設計書を優先）
+- フォント：見出し=Zen Kaku Gothic New（または Noto Sans JP Bold）、本文=Noto Sans JP
+- メインカラー：#2F4B3C（深いグリーン）
+- アクセント1：#C6A45C（真鍮・ゴールド系）
+- アクセント2：#F5F1E8（アイボリー）
+- テキストカラー：#333333
+- 角丸：2px（ナチュラルさを残しつつ、上質感を損なわないシャープさとのバランス。家具・大型商品系の落ち着いた印象に合わせる）
+- 余白：セクション間 80px（PC）／48px（SP）、カード内 16px
+- レスポンシブ：モバイルファースト（375px基準）、ブレイクポイント 640px / 1024px / 1280px
+- アニメーション：控えめなフェードイン・ホバー時のわずかな拡大（scale 1.02程度）のみ。過度な演出はしない
+
+## ページ構成
+### 既存ページ（G2-1以前）
+TOP, Company overview, Usage guide, FAQ, Contact, Privacy policy, Terms,
+Specified Commercial Transactions Act, Cart, Checkout/Payment, Thank you page,
+Category page, Product detail page, New member registration, My page, Login,
+Search results page
+（表示名は日本語で併記する：TOP＝トップ、Company overview＝会社概要、Usage guide＝ご利用ガイド、
+FAQ＝よくある質問、Contact＝お問い合わせ、Privacy policy＝プライバシーポリシー、Terms＝利用規約、
+Specified Commercial Transactions Act＝特定商取引法に基づく表記、Cart＝カート、
+Checkout/Payment＝ご購入手続き、Thank you page＝ご注文完了、Category page＝カテゴリ一覧、
+Product detail page＝商品詳細、New member registration＝新規会員登録、My page＝マイページ、
+Login＝ログイン、Search results page＝検索結果）
+
+### 追加ページ（G2-2）
+- ランキング（rankingページ）
+- 新着（newarrivalページ）
+- 特集記事一覧・詳細（featureページ）：参考サイトの「もっと見る」導線を踏襲し、
+  カテゴリごとの読み物コンテンツ（例：「初心者でも失敗しない人工芝の貼り方」等）を展開
+- お知らせ一覧・詳細（newsページ）
+- 育てやすさ・条件から探す（conditionページ）：業態特有の探索軸
+※ 単一ブランドのためブランド一覧ページ（brand）は非搭載
+
+## 各ページ要素
+### TOPページ
+- ヒーロービジュアル（キャッチコピー＋メインビジュアル）
+- 4大カテゴリへの導線（アイコン＋画像付きカードで一覧表示）
+- 「育てやすさ・条件から探す」導線（タグ形式のショートカット）
+- 人気のおすすめ商品（横スクロールカルーセル）
+- カテゴリ別ピックアップ商品（各カテゴリ2〜3商品ずつ）
+- 特集記事ピックアップ（読み物コンテンツへの導線、2〜3件）
+- 新着・お知らせ一覧
+- ニュースレター登録（メールマガジン、任意項目）
+- SNSリンク（Instagram / X）
+
+### 商品詳細ページ
+- 画像ギャラリー（メイン画像＋サムネイル、4:3比率）
+- 商品名・価格・税込表示
+- サイズ・カラー等の選択オプション（プルダウン）
+- 数量選択・カート追加ボタン
+- 商品説明（特徴・使用シーン・サイズ表）
+- 「育てやすさ」タグ表示（該当カテゴリのみ）
+- 関連商品・同カテゴリのおすすめ商品
+- レビュー欄（MVPでは表示のみ、投稿機能は簡易実装でよい）
+
+## 機能・技術設定
+- 会員機能／カート／検索／お問い合わせ：あり
+- SNS表示：あり（Instagram / X）
+- 決済：KOMOJU
+- 対応決済種別：クレジットカード、コンビニ決済、銀行振込（KOMOJU経由）
+- 大掛かりなシミュレーター機能（庭のレイアウトシミュレーター等）：MVPのため非搭載。将来拡張の余地として設計のみ考慮
+- フロントエンドフレームワーク：Next.js（App Router）
+- スタイリング：Tailwind CSS
+- レンダリング方式：layout.tsxによる共通ヘッダー・フッター管理
+- ディレクトリ構成方針：app/, components/, public/images/, lib/ or data/
+- 画像パス・命名規則：public/images/<category>/<slug>_<連番>.jpg（例：public/images/artificial-grass/main_01.jpg）
+- ロゴファイル名：icon.png
+
+## 会社情報（PLACEHOLDER）
+- 会社名：株式会社ノヴァグレース（PLACEHOLDER）
+- 代表者：代表取締役 ◯◯ ◯◯（PLACEHOLDER）
+- 所在地：〒000-0000 東京都◯◯区◯◯ 0-0-0（PLACEHOLDER）
+- 電話番号：00-0000-0000（PLACEHOLDER）
+- メールアドレス：support@novagrace.example（PLACEHOLDER）
+- 営業時間：平日10:00〜17:00（土日祝休）（PLACEHOLDER）
+
+## 特定商取引法
+- 販売価格：各商品ページに税込価格を表示
+- 送料：全国一律660円（税込）、11,000円（税込）以上購入で送料無料（業界標準を参考に仮設定）
+- 返品：商品到着後8日以内、未開封・未使用品のみ返品可（送料はお客様負担、初期不良は当社負担）
+- 引き渡し：ご注文確定後、通常3〜7営業日以内に発送（大型商品は別途日数を記載）
+
+---
+
+## 共通画像リスト生成ルール
+※前回同様、本ワークフロー（CSV/Flow/Genspark生成）は実装フェーズでは使用しない。
+scripts/generate-placeholders.mjs を流用してダミー画像を生成し、
+本番画像が納品され次第、同一パスに差し替える運用とする。
+
+---
+
+# ウェブサイト詳細設計書
+
+## 1. デザインサマリー
+- メインカラー：#2F4B3C（深いグリーン。自然・信頼感を表現）
+- アクセント1：#C6A45C（真鍮・ゴールド。上質感・アクセント使い）
+- アクセント2：#F5F1E8（アイボリー。背景・余白に使用し、圧迫感を軽減）
+- テキストカラー：#333333（本文）、#666666（補足・キャプション）
+- フォント：見出し＝Zen Kaku Gothic New（Bold）、本文＝Noto Sans JP（Regular/Medium）
+- 角丸：2px（ボタン・カード共通。シャープさと柔らかさのバランス）
+- 余白：セクション間 80px（PC）／48px（SP）、カード内padding 16px、グリッドgap 24px
+- アニメーション：フェードイン（0.3s ease-out）、カードホバー時 scale(1.02) + shadow強調のみ。過度な演出は避ける
+
+## 2. 詳細仕様
+
+### ボタン
+- プライマリボタン：背景#2F4B3C、文字色#FFFFFF、角丸2px、padding 12px 32px、ホバー時背景#263D30
+- セカンダリボタン：背景transparent、border 1px #2F4B3C、文字色#2F4B3C、ホバー時背景#F5F1E8
+- カートに追加ボタン：背景#C6A45C、文字色#FFFFFF、角丸2px
+
+### プロダクトカード
+- 画像アスペクト比：4:3（家具・大型商品・敷材が中心のため。プランター等の小物は1:1でも可とし、カテゴリごとに統一）
+- カード背景：#FFFFFF、border 1px #EAE6DD、角丸2px
+- ホバー時：shadow（0 4px 12px rgba(0,0,0,0.08)）+ 画像scale(1.03)
+- カード内：画像／商品名（2行まで、超過は…）／価格（税込表記）／「育てやすさ」タグ（該当時）
+
+### ヘッダー
+- 高さ：80px（PC）／56px（SP）
+- 構成：ロゴ（左）／カテゴリナビ（中央、PCのみ）／検索・会員・カートアイコン（右）
+- 背景：#FFFFFF、下線 1px #EAE6DD
+- SPはハンバーガーメニューでカテゴリ・会員導線を格納
+
+### フッター
+- 背景：#2F4B3C、文字色：#F5F1E8
+- 構成：ショップ紹介文／カテゴリリンク一覧／会社情報関連リンク／SNSアイコン／特定商取引法・プライバシーポリシーリンク／コピーライト
+
+### 画像・メディアの扱い
+- 商品画像：4:3比率を基本、public/images/products/配下
+- カテゴリ・特集用ビジュアル：16:9比率、public/images/features/配下
+- ヒーロービジュアル：21:9比率（PC）、public/images/hero/配下
+- すべてWebP形式を推奨（scripts/generate-placeholders.mjsでも同形式のダミーを生成）
+
+## 画像配置リスト
+
+| Overview | File Location | Page | Placement | Type | Overview |
+|---|---|---|---|---|---|
+| ロゴ | public/images/icon.png | 共通 | ヘッダー・フッター | Logo | NOVAGRACEロゴ |
+| ヒーロービジュアル | public/images/hero/hero_main.jpg | TOP | ヒーローセクション | Hero | 庭空間のメインビジュアル |
+| 人工芝・タイル・砂利カテゴリ画像 | public/images/categories/grass_tile_stone.jpg | TOP, カテゴリ一覧 | カテゴリカード | Category | 人工芝・タイルの敷かれた庭 |
+| ガーデンファニチャーカテゴリ画像 | public/images/categories/furniture.jpg | TOP, カテゴリ一覧 | カテゴリカード | Category | ベンチ・フェンス・ライトの設置例 |
+| 園芸用品カテゴリ画像 | public/images/categories/gardening.jpg | TOP, カテゴリ一覧 | カテゴリカード | Category | 花壇・プランターのある庭 |
+| 雑草対策用品カテゴリ画像 | public/images/categories/weeding.jpg | TOP, カテゴリ一覧 | カテゴリカード | Category | 防草シート施工例 |
+| 人工芝 商品画像 | public/images/products/artificial-grass/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | 人工芝ロール商品 |
+| ジョイントタイル 商品画像 | public/images/products/joint-tile/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | ジョイントタイル商品 |
+| 敷石・砂利 商品画像 | public/images/products/stones/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | 敷石・砂利商品 |
+| 収納ベンチ 商品画像 | public/images/products/storage-bench/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | 屋外収納ベンチ商品 |
+| ガーデンファニチャー 商品画像 | public/images/products/garden-furniture/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | テーブル・チェアセット |
+| フェンス 商品画像 | public/images/products/fence/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | ガーデンフェンス商品 |
+| ガーデンライト 商品画像 | public/images/products/garden-light/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | ソーラーガーデンライト |
+| 花壇材 商品画像 | public/images/products/flower-bed/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | 花壇ブロック・フレーム |
+| プランター・ハンギング 商品画像 | public/images/products/planter/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | プランター・ハンギングバスケット |
+| 培養土 商品画像 | public/images/products/soil/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | 培養土パッケージ |
+| その他園芸用品 商品画像 | public/images/products/gardening-misc/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | 肥料・殺虫剤等 |
+| 除草剤 商品画像 | public/images/products/herbicide/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | 除草剤商品 |
+| 防草シート 商品画像 | public/images/products/weed-sheet/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | 防草シート商品 |
+| 防草砂 商品画像 | public/images/products/weed-sand/main_01.jpg 他 | 商品一覧・詳細 | プロダクトカード | Product | 防草用の砂商品 |
+| 特集記事サムネイル | public/images/features/feature_01.jpg 他 | 特集一覧・詳細 | 特集カード | Feature | 読み物コンテンツ用サムネイル |
+| 育てやすさ条件アイコン | public/images/icons/condition_sun.svg 他 | TOP, 条件検索 | 条件タグ | Icon | 日当たり・手入れ条件のアイコン |

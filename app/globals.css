@@ -1,26 +1,241 @@
 @import "tailwindcss";
 
 :root {
+  --color-primary: #2f4b3c;
+  --color-accent: #c6a45c;
+  --color-ivory: #f5f1e8;
+  --color-text: #333333;
+  --color-text-muted: #666666;
+  --color-border: #eae6dd;
+  --primary-color: #2f4b3c;
+  --max-content-width: 1240px;
+  --spacing-inline: 16px;
+  --spacing-pc: 20px;
+  --spacing-sp: 16px;
+  --header-height: 6.5rem;
+  --section-y: 3rem;
+  --object-primary-light: #daffe6;
+  --text-primary: #006438;
+  --text-description: #5e5e5e;
+  --border-default: #c6c6c6;
+  --text-default: #222222;
+  --cainz-orange: #e86e0c;
+  --header-bg: #000000;
+  --footer-bg: #000000;
+  --footer-light-bg: #f5f5f5;
+  --product-section-bg: #000000;
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #222222;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --spacing-inline: 20px;
+    --section-y: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-height: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --section-y: 5rem;
+  }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--primary-color);
+  --color-cainz-orange: var(--cainz-orange);
+  --color-text-description: var(--text-description);
+  --color-border-default: var(--border-default);
+  --font-sans: var(--font-noto-sans);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-noto-sans), "Hiragino Kaku Gothic ProN", Meiryo,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.content-width {
+  width: min(var(--max-content-width), calc(100% - 2 * var(--spacing-inline)));
+  max-width: var(--max-content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-y {
+  padding-top: var(--section-y);
+  padding-bottom: var(--section-y);
+}
+
+/* 商品セクション（黒背景エリア） */
+.product-section-dark {
+  background-color: var(--product-section-bg);
+  color: #ffffff;
+}
+
+.product-section-dark .product-name {
+  color: #aaaaaa;
+}
+
+.product-section-dark .product-price {
+  color: #ffffff;
+}
+
+/* ヒーローコラージュ */
+.hero-collage {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+  aspect-ratio: 1220 / 500;
+  max-height: 420px;
+}
+
+.hero-collage__item--a {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.hero-collage__item--b {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.hero-collage__item--c {
+  grid-area: 1 / 2 / 3 / 3;
+}
+
+.hero-collage__item--d {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.hero-collage__item--e {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+@media (max-width: 640px) {
+  .hero-collage {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    aspect-ratio: auto;
+    max-height: none;
+    gap: 3px;
+  }
+
+  .hero-collage__item--a,
+  .hero-collage__item--b,
+  .hero-collage__item--d,
+  .hero-collage__item--e {
+    grid-area: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .hero-collage__item--c {
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* 商品カルーセル */
+.product-carousel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.product-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.product-carousel > * {
+  flex: 0 0 calc(50% - 6px);
+  scroll-snap-align: start;
+}
+
+@media (min-width: 640px) {
+  .product-carousel > * {
+    flex: 0 0 calc(33.333% - 8px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-carousel > * {
+    flex: 0 0 calc(16.666% - 10px);
+  }
+}
+
+/* 画像カルーセル（3枚） */
+.image-carousel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .image-carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-carousel {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* カテゴリスティッキーナビ */
+.sticky-category-nav {
+  position: sticky;
+  top: var(--header-height);
+  z-index: 40;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.sticky-category-nav__scroll {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sticky-category-nav__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.sticky-category-nav__item {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--text-default);
+  border-right: 1px solid var(--border-default);
+  transition: background-color 0.2s;
+}
+
+@media (min-width: 768px) {
+  .sticky-category-nav__item {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+.sticky-category-nav__item:hover,
+.sticky-category-nav__item.is-active {
+  background-color: var(--object-primary-light);
+  color: var(--text-primary);
 }
