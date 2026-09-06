@@ -4,10 +4,7 @@ import {
   PageSection,
   SectionTitle,
 } from "@/components/layout/PageHeader";
-import {
-  ProductDetailView,
-  ProductReviews,
-} from "@/components/product/ProductDetailView";
+import { ProductDetailView } from "@/components/product/ProductDetailView";
 import { ShopProductGrid } from "@/components/product/ShopProductCard";
 import {
   getAllProducts,
@@ -51,7 +48,6 @@ export default async function ProductPage({ params }: Props) {
       />
       <PageSection>
         <ProductDetailView product={product} />
-        <ProductReviews product={product} />
       </PageSection>
       {related.length > 0 && (
         <PageSection className="bg-[var(--color-ivory,#F5F1E8)]">

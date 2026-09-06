@@ -138,33 +138,3 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
     </div>
   );
 }
-
-export function ProductReviews({ product }: { product: ProductDetail }) {
-  return (
-    <div className="mt-12">
-      <h2 className="text-lg font-bold text-[var(--color-primary,#2F4B3C)] mb-4">
-        レビュー
-      </h2>
-      <div className="space-y-4">
-        {product.reviews.map((review) => (
-          <div
-            key={review.id}
-            className="border border-[var(--color-border,#EAE6DD)] rounded-[2px] p-4"
-          >
-            <div className="flex items-center justify-between mb-2 text-sm">
-              <span className="font-medium">{review.author}</span>
-              <span className="text-[var(--color-text-muted,#666666)]">{review.date}</span>
-            </div>
-            <p className="text-[var(--color-accent,#C6A45C)] text-sm mb-2">
-              {"★".repeat(review.rating)}{"☆".repeat(5 - review.rating)}
-            </p>
-            <p className="text-sm text-[var(--color-text-muted,#666666)]">{review.comment}</p>
-          </div>
-        ))}
-      </div>
-      <p className="text-xs text-[var(--color-text-muted,#666666)] mt-4">
-        ※ MVPではレビュー表示のみ。投稿機能は今後追加予定です。
-      </p>
-    </div>
-  );
-}

@@ -5,6 +5,7 @@ export type FeatureArticle = {
   image: string;
   body: string[];
   publishedAt: string;
+  relatedCategorySlug?: string;
 };
 
 export const features: FeatureArticle[] = [
@@ -27,6 +28,7 @@ export const features: FeatureArticle[] = [
     description: "敷くだけ・置くだけで、理想のDIYが簡単に実現できます。",
     image: "/images/features/feature_02_v1.jpg",
     publishedAt: "2026-05-15",
+    relatedCategorySlug: "joint-tile",
     body: [
       "ジョイントタイルは、工具不要で手軽に施工できるのが特徴です。",
       "樹脂・アカシア・人工芝など、素材とカラーの組み合わせで自分好みの空間に。",
@@ -60,6 +62,7 @@ export const features: FeatureArticle[] = [
     description: "ソーラーライトやLEDライトで、ナイトガーデンを演出。",
     image: "/images/features/feature_05_v1.jpg",
     publishedAt: "2026-02-28",
+    relatedCategorySlug: "garden-light",
     body: [
       "ガーデンライトは、夜の安全性確保と、空間の演出を同時に叶えます。",
       "電気代を抑えたい方には、ソーラータイプがおすすめです。",
@@ -102,8 +105,9 @@ export const features: FeatureArticle[] = [
     slug: "garden-furniture",
     title: "お庭でくつろぐガーデンファニチャー",
     description: "カフェのような空間を、私のお庭に。",
-    image: "/images/features/feature_09_v1.jpg",
+    image: "/images/features/feature_04_v1.jpg",
     publishedAt: "2025-10-05",
+    relatedCategorySlug: "garden-furniture",
     body: [
       "ガーデンファニチャーは、くつろぎの時間を演出する主役です。",
       "ラタン調や木目調など、お庭のテイストに合わせてセレクトしましょう。",
@@ -115,9 +119,34 @@ export const features: FeatureArticle[] = [
     description: "使いやすさとデザイン性を両立したホースリール特集。",
     image: "/images/features/feature_10_v1.jpg",
     publishedAt: "2025-09-01",
+    relatedCategorySlug: "hose-reel",
     body: [
       "散水作業のストレスを減らすには、ホースリール選びが重要です。",
       "ねじれにくいホース、コンパクトに収納できるリールなど、ライフスタイルに合わせて。",
+    ],
+  },
+  {
+    slug: "outdoor-storage",
+    title: "屋外収納庫・物置でお庭をすっきり整理",
+    description: "ガーデニング道具も余裕で収まる、屋外収納庫・物置特集。",
+    image: "/images/features/feature_03_v1.jpg",
+    publishedAt: "2026-06-20",
+    relatedCategorySlug: "outdoor-storage",
+    body: [
+      "屋外収納庫は、散らかりがちなガーデニング用品をまとめて収納できます。",
+      "薄型やベンチ兼用など、置き場所に合わせて選ぶのがおすすめです。",
+    ],
+  },
+  {
+    slug: "planter",
+    title: "プランター・植木鉢で始めるベランダガーデン",
+    description: "育てる楽しみが広がる、プランター・鉢カバー特集。",
+    image: "/images/features/feature_07_v1.jpg",
+    publishedAt: "2026-06-10",
+    relatedCategorySlug: "planter",
+    body: [
+      "プランターは、限られたスペースでも植物を楽しめる園芸の基本アイテムです。",
+      "菜園用の深型から、飾りやすい鉢カバーまで、用途に合わせてお選びください。",
     ],
   },
 ];
@@ -126,12 +155,24 @@ export function getFeatureBySlug(slug: string): FeatureArticle | undefined {
   return features.find((f) => f.slug === slug);
 }
 
+/** トップ「関連特集」に出す 6件。新商品カテゴリに紐づくものを優先。 */
+const HOME_FEATURE_SLUGS = [
+  "garden-furniture",
+  "garden-light",
+  "hose-reel",
+  "joint-tile",
+  "outdoor-storage",
+  "planter",
+];
+
 export function getRelatedFeaturesForHome() {
-  return features.slice(0, 5).map((f) => ({
-    id: f.slug,
-    title: f.title,
-    description: f.description,
-    image: f.image,
-    href: `/feature/${f.slug}`,
-  }));
+  return HOME_FEATURE_SLUGS.map((slug) => features.find((f) => f.slug === slug))
+    .filter((f): f is FeatureArticle => Boolean(f))
+    .map((f) => ({
+      id: f.slug,
+      title: f.title,
+      description: f.description,
+      image: f.image,
+      href: `/feature/${f.slug}`,
+    }));
 }
