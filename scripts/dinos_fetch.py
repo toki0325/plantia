@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Dinos カテゴリ一覧から商品画像を取得し outdoor-storage handoff を更新する。
+Dinos カテゴリ一覧から商品画像を取得し {slug} handoff を更新する。
 
 例:
-  python scripts/dinos_fetch.py
-  python scripts/dinos_fetch.py --limit 20 --url https://www.dinos.co.jp/c3/002005014/1a2/
+  python scripts/dinos_fetch.py --slug outdoor-storage --url https://www.dinos.co.jp/c3/002005014/1a2/
+  python scripts/dinos_fetch.py --slug garden-furniture --url https://www.dinos.co.jp/c4/002005015003/1a2/ --limit 20 --max-images 6
 """
 
 from __future__ import annotations
@@ -22,8 +22,15 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
-IMAGES_DIR = PROJECT_ROOT / "public" / "images" / "products" / "outdoor-storage"
-HANDOFF_PATH = PROJECT_ROOT / "data" / "handoff" / "outdoor-storage.json"
+
+
+def images_dir_for(slug: str) -> Path:
+    return PROJECT_ROOT / "public" / "images" / "products" / slug
+
+
+def handoff_path_for(slug: str) -> Path:
+    return PROJECT_ROOT / "data" / "handoff" / f"{slug}.json"
+
 
 BASE = "https://www.dinos.co.jp"
 IMG_BASE = "https://img.dinos.co.jp"
@@ -48,10 +55,24 @@ def log(msg: str) -> None:
     print(msg, flush=True)
 
 
+SJIS_ALIASES = {"windows-31j", "shift_jis", "shift-jis", "sjis", "x-sjis", "ms932", "cp932"}
+
+
+def resolve_encoding(response: requests.Response) -> str:
+    """HTTP ヘッダの charset を優先する。Dinos は Windows-31J(=cp932) を宣言しているため、
+    chardet(apparent_encoding) の誤判定（例: GB18030）で文字化けするのを防ぐ。"""
+    ctype = response.headers.get("content-type", "")
+    m = re.search(r"charset=([\w\-]+)", ctype, re.I)
+    if m:
+        enc = m.group(1).lower()
+        return "cp932" if enc in SJIS_ALIASES else enc
+    return response.apparent_encoding or "utf-8"
+
+
 def fetch(url: str) -> str:
     r = requests.get(url, headers=HEADERS, timeout=30)
     r.raise_for_status()
-    r.encoding = r.apparent_encoding or "utf-8"
+    r.encoding = resolve_encoding(r)
     return r.text
 
 
@@ -118,10 +139,10 @@ def parse_price(ld: dict | None) -> int:
     return int(float(str(price).replace(",", "")))
 
 
-def clean_name(name: str) -> str:
+def clean_name(name: str, fallback: str = "商品") -> str:
     name = re.sub(r"【[^】]*】", "", name).strip()
     name = re.sub(r"\s+", " ", name)
-    return name[:100] or "屋外収納"
+    return name[:100] or fallback
 
 
 def download_image(url: str, dest: Path, skip_existing: bool = True) -> None:
@@ -148,7 +169,12 @@ def get_product_ids_from_listing(html: str, limit: int) -> list[str]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Fetch Dinos outdoor-storage products")
+    parser = argparse.ArgumentParser(description="Fetch Dinos category products by slug")
+    parser.add_argument(
+        "--slug",
+        default="outdoor-storage",
+        help="PLANTIA category slug (決定: 出力先ディレクトリ・handoff・商品ID)",
+    )
     parser.add_argument(
         "--url",
         default="https://www.dinos.co.jp/c3/002005014/1a2/",
@@ -165,6 +191,11 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    slug = args.slug
+    images_dir = images_dir_for(slug)
+    handoff_path = handoff_path_for(slug)
+
+    log(f"Slug: {slug}")
     log(f"Listing: {args.url}")
     listing_html = fetch(args.url)
     product_ids = get_product_ids_from_listing(listing_html, args.limit)
@@ -172,13 +203,14 @@ def main() -> int:
 
     products = []
     for i, pid in enumerate(product_ids, 1):
-        product_id = f"outdoor-storage-{i:02d}"
+        product_id = f"{slug}-{i:02d}"
         detail_url = f"{BASE}/p/{pid}/"
         log(f"[{i}/{len(product_ids)}] {detail_url}")
 
         html = fetch(detail_url)
         ld = parse_ld_json(html)
-        name = clean_name(ld.get("name", f"屋外収納 {i}")) if ld else f"屋外収納 {i}"
+        fallback_name = f"{slug} {i}"
+        name = clean_name(ld.get("name", fallback_name), fallback_name) if ld else fallback_name
         price = parse_price(ld)
         image_urls = extract_image_urls(html, ld, max_images=args.max_images)
 
@@ -189,7 +221,7 @@ def main() -> int:
                 log(f"  would download {fname} <- {img_url}")
                 image_files.append(fname)
                 continue
-            dest = IMAGES_DIR / fname
+            dest = images_dir / fname
             if args.skip_images and dest.exists():
                 log(f"  reuse {fname}")
                 image_files.append(fname)
@@ -217,7 +249,7 @@ def main() -> int:
         time.sleep(args.interval)
 
     handoff = {
-        "categorySlug": "outdoor-storage",
+        "categorySlug": slug,
         "pattern": "per-product",
         "source": args.url,
         "imageSlots": [
@@ -236,11 +268,16 @@ def main() -> int:
         log(json.dumps(handoff, ensure_ascii=False, indent=2))
         return 0
 
-    HANDOFF_PATH.write_text(
+    if not products:
+        log(f"WARN: no products fetched for {slug}; handoff not written")
+        return 1
+
+    handoff_path.parent.mkdir(parents=True, exist_ok=True)
+    handoff_path.write_text(
         json.dumps(handoff, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    log(f"Updated {HANDOFF_PATH}")
+    log(f"Updated {handoff_path}")
     log(f"Downloaded {sum(len(p['images']) for p in products)} images for {len(products)} products")
     return 0
 

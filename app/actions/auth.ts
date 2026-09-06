@@ -4,8 +4,8 @@ import { createHash } from "crypto";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
-const SESSION_COOKIE = "novagrace-session";
-const TEMP_ACCOUNT_COOKIE = "novagrace-temp-account";
+const SESSION_COOKIE = "plantia-session";
+const TEMP_ACCOUNT_COOKIE = "plantia-temp-account";
 
 type TempAccount = {
   name: string;

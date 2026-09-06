@@ -40,7 +40,7 @@ export async function submitCheckout(
   const orderId = `NG-${Date.now()}`;
 
   const cookieStore = await cookies();
-  cookieStore.set("novagrace-last-order", orderId, {
+  cookieStore.set("plantia-last-order", orderId, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",

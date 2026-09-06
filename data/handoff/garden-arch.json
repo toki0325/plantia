@@ -1,0 +1,221 @@
+{
+  "categorySlug": "garden-arch",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005025/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "garden-arch-01",
+      "name": "工具不要 組立簡単ビッグアーチ 幅120cm",
+      "price": 6980,
+      "images": [
+        "garden-arch-01_01.jpg",
+        "garden-arch-01_02.jpg",
+        "garden-arch-01_03.jpg",
+        "garden-arch-01_04.jpg",
+        "garden-arch-01_05.jpg",
+        "garden-arch-01_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-02",
+      "name": "花だん用アーチ大小2個組",
+      "price": 4980,
+      "images": [
+        "garden-arch-02_01.jpg",
+        "garden-arch-02_02.jpg",
+        "garden-arch-02_03.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-03",
+      "name": "奥行16cmの花だんアーチ 高さ120cm",
+      "price": 13000,
+      "images": [
+        "garden-arch-03_01.jpg",
+        "garden-arch-03_02.jpg",
+        "garden-arch-03_03.jpg",
+        "garden-arch-03_04.jpg",
+        "garden-arch-03_05.jpg",
+        "garden-arch-03_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-04",
+      "name": "奥行16cmの花だんアーチ 高さ200cm",
+      "price": 15000,
+      "images": [
+        "garden-arch-04_01.jpg",
+        "garden-arch-04_02.jpg",
+        "garden-arch-04_03.jpg",
+        "garden-arch-04_04.jpg",
+        "garden-arch-04_05.jpg",
+        "garden-arch-04_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-05",
+      "name": "幅と高さの調節ができるアーチ",
+      "price": 12800,
+      "images": [
+        "garden-arch-05_01.jpg",
+        "garden-arch-05_02.jpg",
+        "garden-arch-05_03.jpg",
+        "garden-arch-05_04.jpg",
+        "garden-arch-05_05.jpg",
+        "garden-arch-05_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-06",
+      "name": "アイアングリーンカーテン〈奥行広々ハイタイプ〉 お得な2枚セット",
+      "price": 39000,
+      "images": [
+        "garden-arch-06_01.jpg",
+        "garden-arch-06_02.jpg",
+        "garden-arch-06_03.jpg",
+        "garden-arch-06_04.jpg",
+        "garden-arch-06_05.jpg",
+        "garden-arch-06_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-07",
+      "name": "組立工具不要！くだもの棚 大",
+      "price": 12300,
+      "images": [
+        "garden-arch-07_01.jpg",
+        "garden-arch-07_02.jpg",
+        "garden-arch-07_03.jpg",
+        "garden-arch-07_04.jpg",
+        "garden-arch-07_05.jpg",
+        "garden-arch-07_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-08",
+      "name": "ウォールフラワートンネル お得な2枚組",
+      "price": 49900,
+      "images": [
+        "garden-arch-08_01.jpg",
+        "garden-arch-08_02.jpg",
+        "garden-arch-08_03.jpg",
+        "garden-arch-08_04.jpg",
+        "garden-arch-08_05.jpg",
+        "garden-arch-08_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-09",
+      "name": "アンティーク調アイアンアーチ",
+      "price": 35500,
+      "images": [
+        "garden-arch-09_01.jpg",
+        "garden-arch-09_02.jpg",
+        "garden-arch-09_03.jpg",
+        "garden-arch-09_04.jpg",
+        "garden-arch-09_05.jpg",
+        "garden-arch-09_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-10",
+      "name": "組立工具不要！くだもの棚 小",
+      "price": 8900,
+      "images": [
+        "garden-arch-10_01.jpg",
+        "garden-arch-10_02.jpg",
+        "garden-arch-10_03.jpg",
+        "garden-arch-10_04.jpg",
+        "garden-arch-10_05.jpg",
+        "garden-arch-10_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-11",
+      "name": "アイアングリーンカーテン〈奥行広々ハイタイプ〉",
+      "price": 19800,
+      "images": [
+        "garden-arch-11_01.jpg",
+        "garden-arch-11_02.jpg",
+        "garden-arch-11_03.jpg",
+        "garden-arch-11_04.jpg",
+        "garden-arch-11_05.jpg",
+        "garden-arch-11_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-12",
+      "name": "アイアングリーンカーテン〈奥行広々ハイタイプ〉 プランター台付き",
+      "price": 23100,
+      "images": [
+        "garden-arch-12_01.jpg",
+        "garden-arch-12_02.jpg",
+        "garden-arch-12_03.jpg",
+        "garden-arch-12_04.jpg",
+        "garden-arch-12_05.jpg",
+        "garden-arch-12_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-13",
+      "name": "ウォールフラワートンネル 1枚",
+      "price": 25400,
+      "images": [
+        "garden-arch-13_01.jpg",
+        "garden-arch-13_02.jpg",
+        "garden-arch-13_03.jpg",
+        "garden-arch-13_04.jpg",
+        "garden-arch-13_05.jpg",
+        "garden-arch-13_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-arch-14",
+      "name": "ルーフ付き頑丈トレリス プランター台付き",
+      "price": 19000,
+      "images": [
+        "garden-arch-14_01.jpg",
+        "garden-arch-14_02.jpg",
+        "garden-arch-14_03.jpg"
+      ]
+    }
+  ]
+}

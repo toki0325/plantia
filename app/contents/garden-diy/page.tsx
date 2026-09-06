@@ -8,7 +8,7 @@ import { homeSections } from "@/lib/data/home";
 export const metadata: Metadata = {
   title: "【おしゃれな庭づくり】おすすめガーデニング用品特集",
   description:
-    "ガーデニングには欠かせないNOVAGRACEのおすすめアイテムを取り揃えました。人工芝やジョイントタイルにファニチャー用品。あなただけのおしゃれな庭づくりを。",
+    "ガーデニングには欠かせないPLANTIAのおすすめアイテムを取り揃えました。人工芝やジョイントタイルにファニチャー用品。あなただけのおしゃれな庭づくりを。",
 };
 
 const breadcrumbItems = [
@@ -36,7 +36,7 @@ export default function GardenDiyPage() {
 
         <div className="content-width mb-8 md:mb-10">
           <p className="text-sm md:text-base text-[var(--text-description)] leading-relaxed">
-            ガーデニングには欠かせないNOVAGRACEのおすすめアイテムを取り揃えました。人工芝やジョイントタイルにファニチャー用品。庭をさらに彩ってくれる花壇や照明、フェンスなど、豊富なラインナップであなただけのおしゃれな庭づくりをしませんか？
+            ガーデニングには欠かせないPLANTIAのおすすめアイテムを取り揃えました。人工芝やジョイントタイルにファニチャー用品。庭をさらに彩ってくれる花壇や照明、フェンスなど、豊富なラインナップであなただけのおしゃれな庭づくりをしませんか？
           </p>
         </div>
 

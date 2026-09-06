@@ -1,0 +1,304 @@
+{
+  "categorySlug": "garden-furniture",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c4/002005015003/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "garden-furniture-01",
+      "name": "折りたたみ作業台シリーズ ラタン調4点セット（テーブル＋チェア2脚＋ベンチ）",
+      "price": 38500,
+      "images": [
+        "garden-furniture-01_01.jpg",
+        "garden-furniture-01_02.jpg",
+        "garden-furniture-01_03.jpg",
+        "garden-furniture-01_04.jpg",
+        "garden-furniture-01_05.jpg",
+        "garden-furniture-01_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-02",
+      "name": "グランラタン調3点セット",
+      "price": 29800,
+      "images": [
+        "garden-furniture-02_01.jpg",
+        "garden-furniture-02_02.jpg",
+        "garden-furniture-02_03.jpg",
+        "garden-furniture-02_04.jpg",
+        "garden-furniture-02_05.jpg",
+        "garden-furniture-02_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-03",
+      "name": "ヨーロピアンモザイクファニチャー 3点セット（テーブル＋チェア2脚）",
+      "price": 58800,
+      "images": [
+        "garden-furniture-03_01.jpg",
+        "garden-furniture-03_02.jpg",
+        "garden-furniture-03_03.jpg",
+        "garden-furniture-03_04.jpg",
+        "garden-furniture-03_05.jpg",
+        "garden-furniture-03_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-04",
+      "name": "アンソレイユ テーブル＆デンマーク企画 ラタン調チェア 3点セット（テーブル＋チェア2脚）",
+      "price": 42900,
+      "images": [
+        "garden-furniture-04_01.jpg",
+        "garden-furniture-04_02.jpg",
+        "garden-furniture-04_03.jpg",
+        "garden-furniture-04_04.jpg",
+        "garden-furniture-04_05.jpg",
+        "garden-furniture-04_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-05",
+      "name": "ラタン調コンパクトテーブル3点セット",
+      "price": 39800,
+      "images": [
+        "garden-furniture-05_01.jpg",
+        "garden-furniture-05_02.jpg",
+        "garden-furniture-05_03.jpg",
+        "garden-furniture-05_04.jpg",
+        "garden-furniture-05_05.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-06",
+      "name": "グリーンモザイクテーブル＆チェア 5点セット（テーブル径90＋チェア2脚組×2）",
+      "price": 120700,
+      "images": [
+        "garden-furniture-06_01.jpg",
+        "garden-furniture-06_02.jpg",
+        "garden-furniture-06_03.jpg",
+        "garden-furniture-06_04.jpg",
+        "garden-furniture-06_05.jpg",
+        "garden-furniture-06_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-07",
+      "name": "グリーンモザイクテーブル＆チェア 3点セット（テーブル径75＋チェア2脚組）",
+      "price": 69800,
+      "images": [
+        "garden-furniture-07_01.jpg",
+        "garden-furniture-07_02.jpg",
+        "garden-furniture-07_03.jpg",
+        "garden-furniture-07_04.jpg",
+        "garden-furniture-07_05.jpg",
+        "garden-furniture-07_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-08",
+      "name": "ホワイトクラシカル5点セット（テーブル×1、チェア4脚）",
+      "price": 133700,
+      "images": [
+        "garden-furniture-08_01.jpg",
+        "garden-furniture-08_02.jpg",
+        "garden-furniture-08_03.jpg",
+        "garden-furniture-08_04.jpg",
+        "garden-furniture-08_05.jpg",
+        "garden-furniture-08_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-09",
+      "name": "ホワイトクラシカル3点セット（テーブル×1、チェア2脚）",
+      "price": 91800,
+      "images": [
+        "garden-furniture-09_01.jpg",
+        "garden-furniture-09_02.jpg",
+        "garden-furniture-09_03.jpg",
+        "garden-furniture-09_04.jpg",
+        "garden-furniture-09_05.jpg",
+        "garden-furniture-09_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-10",
+      "name": "グレースシリーズ ラウンド3点セット",
+      "price": 100000,
+      "images": [
+        "garden-furniture-10_01.jpg",
+        "garden-furniture-10_02.jpg",
+        "garden-furniture-10_03.jpg",
+        "garden-furniture-10_04.jpg",
+        "garden-furniture-10_05.jpg",
+        "garden-furniture-10_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-11",
+      "name": "グレースシリーズ レクタングル5点セット",
+      "price": 158000,
+      "images": [
+        "garden-furniture-11_01.jpg",
+        "garden-furniture-11_02.jpg",
+        "garden-furniture-11_03.jpg",
+        "garden-furniture-11_04.jpg",
+        "garden-furniture-11_05.jpg",
+        "garden-furniture-11_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-12",
+      "name": "ヨーロピアンラタンテーブル＆チェア 3点セット",
+      "price": 92000,
+      "images": [
+        "garden-furniture-12_01.jpg",
+        "garden-furniture-12_02.jpg",
+        "garden-furniture-12_03.jpg",
+        "garden-furniture-12_04.jpg",
+        "garden-furniture-12_05.jpg",
+        "garden-furniture-12_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-13",
+      "name": "ヨーロピアンラタンテーブル＆チェア 5点セット",
+      "price": 154000,
+      "images": [
+        "garden-furniture-13_01.jpg",
+        "garden-furniture-13_02.jpg",
+        "garden-furniture-13_03.jpg",
+        "garden-furniture-13_04.jpg",
+        "garden-furniture-13_05.jpg",
+        "garden-furniture-13_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-14",
+      "name": "ヨーロピアンラタンテーブル＆チェア テーブル",
+      "price": 32000,
+      "images": [
+        "garden-furniture-14_01.jpg",
+        "garden-furniture-14_02.jpg",
+        "garden-furniture-14_03.jpg",
+        "garden-furniture-14_04.jpg",
+        "garden-furniture-14_05.jpg",
+        "garden-furniture-14_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-15",
+      "name": "アンソレイユファニチャー ラウンド小 3点セット",
+      "price": 57800,
+      "images": [
+        "garden-furniture-15_01.jpg",
+        "garden-furniture-15_02.jpg",
+        "garden-furniture-15_03.jpg",
+        "garden-furniture-15_04.jpg",
+        "garden-furniture-15_05.jpg",
+        "garden-furniture-15_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-16",
+      "name": "アンソレイユファニチャー ラウンド大 3点セット",
+      "price": 67900,
+      "images": [
+        "garden-furniture-16_01.jpg",
+        "garden-furniture-16_02.jpg",
+        "garden-furniture-16_03.jpg",
+        "garden-furniture-16_04.jpg",
+        "garden-furniture-16_05.jpg",
+        "garden-furniture-16_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-17",
+      "name": "アンソレイユファニチャー ラウンド大 5点セット",
+      "price": 106800,
+      "images": [
+        "garden-furniture-17_01.jpg",
+        "garden-furniture-17_02.jpg",
+        "garden-furniture-17_03.jpg",
+        "garden-furniture-17_04.jpg",
+        "garden-furniture-17_05.jpg",
+        "garden-furniture-17_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-18",
+      "name": "アンソレイユファニチャー オーバル5点セット",
+      "price": 118800,
+      "images": [
+        "garden-furniture-18_01.jpg",
+        "garden-furniture-18_02.jpg",
+        "garden-furniture-18_03.jpg",
+        "garden-furniture-18_04.jpg",
+        "garden-furniture-18_05.jpg",
+        "garden-furniture-18_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-19",
+      "name": "g－STYLE テーブル＆チェア 4点セット（テーブル＋チェア2脚＋ベンチ）",
+      "price": 189900,
+      "images": [
+        "garden-furniture-19_01.jpg",
+        "garden-furniture-19_02.jpg",
+        "garden-furniture-19_03.jpg",
+        "garden-furniture-19_04.jpg",
+        "garden-furniture-19_05.jpg",
+        "garden-furniture-19_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-furniture-20",
+      "name": "TILIAテーブル＆チェア 3点セット",
+      "price": 56000,
+      "images": [
+        "garden-furniture-20_01.jpg",
+        "garden-furniture-20_02.jpg",
+        "garden-furniture-20_03.jpg",
+        "garden-furniture-20_04.jpg",
+        "garden-furniture-20_05.jpg",
+        "garden-furniture-20_06.jpg"
+      ]
+    }
+  ]
+}

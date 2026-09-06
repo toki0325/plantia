@@ -11,7 +11,7 @@ import {
 import { getProductById } from "@/lib/data/products";
 import type { CartItem, ProductSummary } from "@/lib/types";
 
-const STORAGE_KEY = "novagrace-cart";
+const STORAGE_KEY = "plantia-cart";
 
 export type CartLine = CartItem & {
   product: ProductSummary;

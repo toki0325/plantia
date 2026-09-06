@@ -14,7 +14,7 @@ export default function NewArrivalPage() {
     <>
       <PageHeader
         title="新着商品"
-        description="NOVAGRACEに新しく入荷した商品をご紹介します。"
+        description="PLANTIAに新しく入荷した商品をご紹介します。"
         breadcrumbs={[
           { label: "トップ", href: "/" },
           { label: "新着商品" },

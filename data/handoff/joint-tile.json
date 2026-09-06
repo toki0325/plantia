@@ -1,0 +1,289 @@
+{
+  "categorySlug": "joint-tile",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005026/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "joint-tile-01",
+      "name": "カナダ製ストーン風小径ステップ 4枚",
+      "price": 4980,
+      "images": [
+        "joint-tile-01_01.jpg",
+        "joint-tile-01_02.jpg",
+        "joint-tile-01_03.jpg",
+        "joint-tile-01_04.jpg",
+        "joint-tile-01_05.jpg",
+        "joint-tile-01_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-02",
+      "name": "段差解消！手すり付き踏み台 手すり両側",
+      "price": 25000,
+      "images": [
+        "joint-tile-02_01.jpg",
+        "joint-tile-02_02.jpg",
+        "joint-tile-02_03.jpg",
+        "joint-tile-02_04.jpg",
+        "joint-tile-02_05.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-03",
+      "name": "段差解消！手すり付き踏み台 手すり片側",
+      "price": 23800,
+      "images": [
+        "joint-tile-03_01.jpg",
+        "joint-tile-03_02.jpg",
+        "joint-tile-03_03.jpg",
+        "joint-tile-03_04.jpg",
+        "joint-tile-03_05.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-04",
+      "name": "遮熱タイルマット大理石調1畳分",
+      "price": 15120,
+      "images": [
+        "joint-tile-04_01.jpg",
+        "joint-tile-04_02.jpg",
+        "joint-tile-04_03.jpg",
+        "joint-tile-04_04.jpg",
+        "joint-tile-04_05.jpg",
+        "joint-tile-04_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-05",
+      "name": "ジョイント式マット 人工芝 10枚組",
+      "price": 7590,
+      "images": [
+        "joint-tile-05_01.jpg",
+        "joint-tile-05_02.jpg",
+        "joint-tile-05_03.jpg",
+        "joint-tile-05_04.jpg",
+        "joint-tile-05_05.jpg",
+        "joint-tile-05_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-06",
+      "name": "人工木＋床下2.2cm！ベースアップデッキ 人工木 9枚＋金具",
+      "price": 13590,
+      "images": [
+        "joint-tile-06_01.jpg",
+        "joint-tile-06_02.jpg",
+        "joint-tile-06_03.jpg",
+        "joint-tile-06_04.jpg",
+        "joint-tile-06_05.jpg",
+        "joint-tile-06_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-07",
+      "name": "タイル＋床下2.2cm！ベースアップデッキ 18枚 追加セット",
+      "price": 16990,
+      "images": [
+        "joint-tile-07_01.jpg",
+        "joint-tile-07_02.jpg",
+        "joint-tile-07_03.jpg",
+        "joint-tile-07_04.jpg",
+        "joint-tile-07_05.jpg",
+        "joint-tile-07_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-08",
+      "name": "カナダ企画 石風ラバーステップ お得な8枚組",
+      "price": 26400,
+      "images": [
+        "joint-tile-08_01.jpg",
+        "joint-tile-08_02.jpg",
+        "joint-tile-08_03.jpg",
+        "joint-tile-08_04.jpg",
+        "joint-tile-08_05.jpg",
+        "joint-tile-08_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-09",
+      "name": "カナダ企画 枕木風ラバーステップ 4枚組",
+      "price": 13900,
+      "images": [
+        "joint-tile-09_01.jpg",
+        "joint-tile-09_02.jpg",
+        "joint-tile-09_03.jpg",
+        "joint-tile-09_04.jpg",
+        "joint-tile-09_05.jpg",
+        "joint-tile-09_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-10",
+      "name": "カナダ企画 枕木風ラバーステップ お得な8枚組",
+      "price": 26400,
+      "images": [
+        "joint-tile-10_01.jpg",
+        "joint-tile-10_02.jpg",
+        "joint-tile-10_03.jpg",
+        "joint-tile-10_04.jpg",
+        "joint-tile-10_05.jpg",
+        "joint-tile-10_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-11",
+      "name": "カナダ企画丸太ステップ 4枚",
+      "price": 13900,
+      "images": [
+        "joint-tile-11_01.jpg",
+        "joint-tile-11_02.jpg",
+        "joint-tile-11_03.jpg",
+        "joint-tile-11_04.jpg",
+        "joint-tile-11_05.jpg",
+        "joint-tile-11_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-12",
+      "name": "奥行120が便利！ 人工木デッキ 180×120セット",
+      "price": 88720,
+      "images": [
+        "joint-tile-12_01.jpg",
+        "joint-tile-12_02.jpg",
+        "joint-tile-12_03.jpg",
+        "joint-tile-12_04.jpg",
+        "joint-tile-12_05.jpg",
+        "joint-tile-12_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-13",
+      "name": "奥行120が便利！ 人工木デッキ 270×120セット",
+      "price": 129820,
+      "images": [
+        "joint-tile-13_01.jpg",
+        "joint-tile-13_02.jpg",
+        "joint-tile-13_03.jpg",
+        "joint-tile-13_04.jpg",
+        "joint-tile-13_05.jpg",
+        "joint-tile-13_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-14",
+      "name": "奥行120が便利！ 人工木デッキ 360×120セット",
+      "price": 168420,
+      "images": [
+        "joint-tile-14_01.jpg",
+        "joint-tile-14_02.jpg",
+        "joint-tile-14_03.jpg",
+        "joint-tile-14_04.jpg",
+        "joint-tile-14_05.jpg",
+        "joint-tile-14_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-15",
+      "name": "奥行120が便利！ 人工木デッキ 90×120単品",
+      "price": 41200,
+      "images": [
+        "joint-tile-15_01.jpg",
+        "joint-tile-15_02.jpg",
+        "joint-tile-15_03.jpg",
+        "joint-tile-15_04.jpg",
+        "joint-tile-15_05.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-16",
+      "name": "人工木デッキ ステップ",
+      "price": 9120,
+      "images": [
+        "joint-tile-16_01.jpg",
+        "joint-tile-16_02.jpg",
+        "joint-tile-16_03.jpg",
+        "joint-tile-16_04.jpg",
+        "joint-tile-16_05.jpg",
+        "joint-tile-16_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-17",
+      "name": "カナダ企画 石風ラバーステップ 4枚組",
+      "price": 13900,
+      "images": [
+        "joint-tile-17_01.jpg",
+        "joint-tile-17_02.jpg",
+        "joint-tile-17_03.jpg",
+        "joint-tile-17_04.jpg",
+        "joint-tile-17_05.jpg",
+        "joint-tile-17_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-18",
+      "name": "タイル＋床下2.2cm！ベースアップデッキ 基本セット",
+      "price": 9590,
+      "images": [
+        "joint-tile-18_01.jpg",
+        "joint-tile-18_02.jpg",
+        "joint-tile-18_03.jpg",
+        "joint-tile-18_04.jpg",
+        "joint-tile-18_05.jpg",
+        "joint-tile-18_06.jpg"
+      ]
+    },
+    {
+      "id": "joint-tile-19",
+      "name": "人工芝＋床下2.2cm！ベースアップデッキ 人工芝 9枚＋金具",
+      "price": 9590,
+      "images": [
+        "joint-tile-19_01.jpg",
+        "joint-tile-19_02.jpg",
+        "joint-tile-19_03.jpg",
+        "joint-tile-19_04.jpg",
+        "joint-tile-19_05.jpg",
+        "joint-tile-19_06.jpg"
+      ]
+    }
+  ]
+}

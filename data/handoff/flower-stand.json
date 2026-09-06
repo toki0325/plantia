@@ -1,0 +1,286 @@
+{
+  "categorySlug": "flower-stand",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005020/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "flower-stand-01",
+      "name": "無垢材のキャスター付き プランターベース ホワイトオーク 径24cm",
+      "price": 8500,
+      "images": [
+        "flower-stand-01_01.jpg",
+        "flower-stand-01_02.jpg",
+        "flower-stand-01_03.jpg",
+        "flower-stand-01_04.jpg",
+        "flower-stand-01_05.jpg",
+        "flower-stand-01_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-02",
+      "name": "エレガント鋳物花台 大小セット",
+      "price": 8600,
+      "images": [
+        "flower-stand-02_01.jpg",
+        "flower-stand-02_02.jpg",
+        "flower-stand-02_03.jpg",
+        "flower-stand-02_04.jpg",
+        "flower-stand-02_05.jpg",
+        "flower-stand-02_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-03",
+      "name": "花台ラック 2点セット（小・中）",
+      "price": 4980,
+      "images": [
+        "flower-stand-03_01.jpg",
+        "flower-stand-03_02.jpg",
+        "flower-stand-03_03.jpg",
+        "flower-stand-03_04.jpg",
+        "flower-stand-03_05.jpg",
+        "flower-stand-03_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-04",
+      "name": "長方形花台ラック 2点セット",
+      "price": 4990,
+      "images": [
+        "flower-stand-04_01.jpg",
+        "flower-stand-04_02.jpg",
+        "flower-stand-04_03.jpg",
+        "flower-stand-04_04.jpg",
+        "flower-stand-04_05.jpg",
+        "flower-stand-04_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-05",
+      "name": "扇形花台2個組",
+      "price": 3980,
+      "images": [
+        "flower-stand-05_01.jpg",
+        "flower-stand-05_02.jpg",
+        "flower-stand-05_03.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-06",
+      "name": "アンティークゴールドのリース立て",
+      "price": 3400,
+      "images": [
+        "flower-stand-06_01.jpg",
+        "flower-stand-06_02.jpg",
+        "flower-stand-06_03.jpg",
+        "flower-stand-06_04.jpg",
+        "flower-stand-06_05.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-07",
+      "name": "栗の木花台",
+      "price": 4980,
+      "images": [
+        "flower-stand-07_01.jpg",
+        "flower-stand-07_02.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-08",
+      "name": "キャスター付き花台 四角1点",
+      "price": 4980,
+      "images": [
+        "flower-stand-08_01.jpg",
+        "flower-stand-08_02.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-09",
+      "name": "植物に優しいバルコニーラック カバー付き 3段 折りたたみ式",
+      "price": 10880,
+      "images": [
+        "flower-stand-09_01.jpg",
+        "flower-stand-09_02.jpg",
+        "flower-stand-09_03.jpg",
+        "flower-stand-09_04.jpg",
+        "flower-stand-09_05.jpg",
+        "flower-stand-09_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-10",
+      "name": "無垢材のキャスター付き プランターベース ホワイトオーク ダブル",
+      "price": 13500,
+      "images": [
+        "flower-stand-10_01.jpg",
+        "flower-stand-10_02.jpg",
+        "flower-stand-10_03.jpg",
+        "flower-stand-10_04.jpg",
+        "flower-stand-10_05.jpg",
+        "flower-stand-10_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-11",
+      "name": "キャスター付きプランターベース ホワイトオーク 角40cm",
+      "price": 13999,
+      "images": [
+        "flower-stand-11_01.jpg",
+        "flower-stand-11_02.jpg",
+        "flower-stand-11_03.jpg",
+        "flower-stand-11_04.jpg",
+        "flower-stand-11_05.jpg",
+        "flower-stand-11_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-12",
+      "name": "頑丈アイアンキャスター付き鉢台 径30cm 1個",
+      "price": 11990,
+      "images": [
+        "flower-stand-12_01.jpg",
+        "flower-stand-12_02.jpg",
+        "flower-stand-12_03.jpg",
+        "flower-stand-12_04.jpg",
+        "flower-stand-12_05.jpg",
+        "flower-stand-12_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-13",
+      "name": "無垢材のキャスター付き プランターベース ウォルナット 径29cm",
+      "price": 11000,
+      "images": [
+        "flower-stand-13_01.jpg",
+        "flower-stand-13_02.jpg",
+        "flower-stand-13_03.jpg",
+        "flower-stand-13_04.jpg",
+        "flower-stand-13_05.jpg",
+        "flower-stand-13_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-14",
+      "name": "座れる天然木花台",
+      "price": 4980,
+      "images": [
+        "flower-stand-14_01.jpg",
+        "flower-stand-14_02.jpg",
+        "flower-stand-14_03.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-15",
+      "name": "トレリス付きフラワースタンド 2段",
+      "price": 9700,
+      "images": [
+        "flower-stand-15_01.jpg",
+        "flower-stand-15_02.jpg",
+        "flower-stand-15_03.jpg",
+        "flower-stand-15_04.jpg",
+        "flower-stand-15_05.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-16",
+      "name": "KUROSHIRO サイドテーブル丸",
+      "price": 9405,
+      "images": [
+        "flower-stand-16_01.jpg",
+        "flower-stand-16_02.jpg",
+        "flower-stand-16_03.jpg",
+        "flower-stand-16_04.jpg",
+        "flower-stand-16_05.jpg",
+        "flower-stand-16_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-17",
+      "name": "無垢材のキャスター付き プランターベース ホワイトオーク 径29cm",
+      "price": 9000,
+      "images": [
+        "flower-stand-17_01.jpg",
+        "flower-stand-17_02.jpg",
+        "flower-stand-17_03.jpg",
+        "flower-stand-17_04.jpg",
+        "flower-stand-17_05.jpg",
+        "flower-stand-17_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-18",
+      "name": "ハンギングスティック付き鉢台",
+      "price": 6980,
+      "images": [
+        "flower-stand-18_01.jpg",
+        "flower-stand-18_02.jpg",
+        "flower-stand-18_03.jpg",
+        "flower-stand-18_04.jpg",
+        "flower-stand-18_05.jpg",
+        "flower-stand-18_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-19",
+      "name": "人工木キャスター付き鉢台 同色2個組",
+      "price": 4980,
+      "images": [
+        "flower-stand-19_01.jpg",
+        "flower-stand-19_02.jpg",
+        "flower-stand-19_03.jpg",
+        "flower-stand-19_04.jpg",
+        "flower-stand-19_05.jpg",
+        "flower-stand-19_06.jpg"
+      ]
+    },
+    {
+      "id": "flower-stand-20",
+      "name": "花台ラック 大1点",
+      "price": 4980,
+      "images": [
+        "flower-stand-20_01.jpg",
+        "flower-stand-20_02.jpg",
+        "flower-stand-20_03.jpg"
+      ]
+    }
+  ]
+}

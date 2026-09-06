@@ -53,7 +53,7 @@ export function SiteHeader() {
       <div className="content-width">
         <div className="flex items-center gap-3 md:gap-4 min-h-[var(--header-height)] py-2 md:py-0">
           <Link href="/" className="shrink-0 text-base sm:text-lg md:text-xl font-bold tracking-tight">
-            NOVAGRACE
+            PLANTIA
           </Link>
 
           <SearchForm className="hidden md:flex flex-1 max-w-xl mx-auto" />

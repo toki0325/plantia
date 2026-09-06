@@ -1,0 +1,108 @@
+{
+  "categorySlug": "greenhouse",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005024/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "greenhouse-01",
+      "name": "植物に優しいバルコニーラック カバー付き 4段 折りたたみ式",
+      "price": 11880,
+      "images": [
+        "greenhouse-01_01.jpg",
+        "greenhouse-01_02.jpg",
+        "greenhouse-01_03.jpg",
+        "greenhouse-01_04.jpg",
+        "greenhouse-01_05.jpg",
+        "greenhouse-01_06.jpg"
+      ]
+    },
+    {
+      "id": "greenhouse-02",
+      "name": "植物に優しいバルコニーラック カバー付き 3段 折りたたみ式",
+      "price": 10880,
+      "images": [
+        "greenhouse-02_01.jpg",
+        "greenhouse-02_02.jpg",
+        "greenhouse-02_03.jpg",
+        "greenhouse-02_04.jpg",
+        "greenhouse-02_05.jpg",
+        "greenhouse-02_06.jpg"
+      ]
+    },
+    {
+      "id": "greenhouse-03",
+      "name": "お花のためのビニール温室",
+      "price": 4600,
+      "images": [
+        "greenhouse-03_01.jpg",
+        "greenhouse-03_02.jpg",
+        "greenhouse-03_03.jpg",
+        "greenhouse-03_04.jpg",
+        "greenhouse-03_05.jpg",
+        "greenhouse-03_06.jpg"
+      ]
+    },
+    {
+      "id": "greenhouse-04",
+      "name": "野菜のためのビニール温室",
+      "price": 3000,
+      "images": [
+        "greenhouse-04_01.jpg",
+        "greenhouse-04_02.jpg",
+        "greenhouse-04_03.jpg",
+        "greenhouse-04_04.jpg",
+        "greenhouse-04_05.jpg"
+      ]
+    },
+    {
+      "id": "greenhouse-05",
+      "name": "観葉・果樹のためのビニール温室",
+      "price": 4500,
+      "images": [
+        "greenhouse-05_01.jpg",
+        "greenhouse-05_02.jpg",
+        "greenhouse-05_03.jpg",
+        "greenhouse-05_04.jpg",
+        "greenhouse-05_05.jpg"
+      ]
+    }
+  ]
+}

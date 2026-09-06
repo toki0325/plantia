@@ -1,6 +1,6 @@
 # novagrace-ec
 
-NOVAGRACE ガーデニング用品 EC サイト（Next.js 16 + Tailwind CSS）
+PLANTIA ガーデニング用品 EC サイト（Next.js 16 + Tailwind CSS）
 
 ## 開発
 

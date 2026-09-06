@@ -14,8 +14,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c4/002005015003/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending",
-    "note": "Dinos上は「ガーデンファニチャーセット」。ユーザー指定URL"
+    "status": "done",
+    "note": "2026-09-06 取得済み (20商品/119枚)"
   },
   {
     "slug": "shade-parasol",
@@ -23,7 +23,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005016/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending"
+    "status": "done",
+    "note": "2026-09-06 取得済み (20商品/118枚)"
   },
   {
     "slug": "garden-ornament",
@@ -31,7 +32,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005017/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending"
+    "status": "done",
+    "note": "2026-09-06 取得済み (20商品/98枚)"
   },
   {
     "slug": "grass-tile-stone",
@@ -39,8 +41,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005018/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending",
-    "note": "Dinos全12件。limitは在庫数に合わせて調整可"
+    "status": "done",
+    "note": "2026-09-06 取得済み (14商品/71枚)"
   },
   {
     "slug": "planter",
@@ -48,7 +50,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005019/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending"
+    "status": "done",
+    "note": "2026-09-06 取得済み (20商品/107枚)"
   },
   {
     "slug": "flower-stand",
@@ -56,7 +59,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005020/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending"
+    "status": "done",
+    "note": "2026-09-06 取得済み (20商品/101枚)"
   },
   {
     "slug": "fence",
@@ -64,7 +68,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005021/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending"
+    "status": "done",
+    "note": "2026-09-06 取得済み (20商品/111枚)"
   },
   {
     "slug": "ac-cover",
@@ -72,7 +77,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005022/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending"
+    "status": "done",
+    "note": "2026-09-06 取得済み (20商品/116枚)"
   },
   {
     "slug": "outdoor-trash",
@@ -80,7 +86,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005023/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending"
+    "status": "done",
+    "note": "2026-09-06 取得済み (20商品/115枚)"
   },
   {
     "slug": "greenhouse",
@@ -88,8 +95,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005024/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending",
-    "note": "Dinos全2件のみ"
+    "status": "done",
+    "note": "2026-09-06 取得済み (5商品/28枚)"
   },
   {
     "slug": "garden-arch",
@@ -97,8 +104,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005025/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending",
-    "note": "Dinos全12件"
+    "status": "done",
+    "note": "2026-09-06 取得済み (14商品/78枚)"
   },
   {
     "slug": "joint-tile",
@@ -106,8 +113,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005026/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending",
-    "note": "Dinos全16件"
+    "status": "done",
+    "note": "2026-09-06 取得済み (19商品/111枚)"
   },
   {
     "slug": "garden-light",
@@ -115,7 +122,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005027/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending"
+    "status": "done",
+    "note": "2026-09-06 取得済み (20商品/111枚)"
   },
   {
     "slug": "soil",
@@ -123,7 +131,8 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005028/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending"
+    "status": "done",
+    "note": "2026-09-06 取得済み (20商品/86枚)"
   },
   {
     "slug": "hose-reel",
@@ -131,7 +140,7 @@
     "dinosUrl": "https://www.dinos.co.jp/c3/002005029/1a2/",
     "limit": 20,
     "maxImages": 6,
-    "status": "pending",
-    "note": "Dinos全10件"
+    "status": "done",
+    "note": "2026-09-06 取得済み (10商品/42枚)"
   }
 ]

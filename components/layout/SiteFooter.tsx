@@ -28,7 +28,7 @@ export function SiteFooter() {
       <div className="bg-[var(--color-primary,#2F4B3C)] text-white/80 py-10">
         <div className="content-width grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
           <div>
-            <h3 className="text-white font-bold mb-4">NOVAGRACE</h3>
+            <h3 className="text-white font-bold mb-4">PLANTIA</h3>
             <ul className="space-y-2">
               {categoryLinks.map((link) => (
                 <li key={link.label}>
@@ -61,8 +61,8 @@ export function SiteFooter() {
       </div>
       <div className="bg-[var(--color-ivory,#F5F1E8)] py-6">
         <div className="content-width flex flex-col md:flex-row items-center justify-between gap-4">
-          <Image src="/images/icon_v1.png" alt="NOVAGRACE" width={32} height={32} />
-          <p className="text-xs text-[var(--color-text-muted,#666666)]">©2026 NOVAGRACE</p>
+          <Image src="/images/icon_v1.png" alt="PLANTIA" width={32} height={32} />
+          <p className="text-xs text-[var(--color-text-muted,#666666)]">©2026 PLANTIA</p>
         </div>
       </div>
     </footer>

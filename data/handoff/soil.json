@@ -1,0 +1,271 @@
+{
+  "categorySlug": "soil",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005028/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "soil-01",
+      "name": "バイオゴールド セレクション 薔薇 バラ用追肥料 3.8kg",
+      "price": 6160,
+      "images": [
+        "soil-01_01.jpg",
+        "soil-01_02.jpg",
+        "soil-01_03.jpg",
+        "soil-01_04.jpg",
+        "soil-01_05.jpg",
+        "soil-01_06.jpg"
+      ]
+    },
+    {
+      "id": "soil-02",
+      "name": "バイオゴールド バイタル活性液 2L",
+      "price": 6380,
+      "images": [
+        "soil-02_01.jpg",
+        "soil-02_02.jpg",
+        "soil-02_03.jpg",
+        "soil-02_04.jpg"
+      ]
+    },
+    {
+      "id": "soil-03",
+      "name": "バイオゴールドの土 ストレスゼロ 15L（1袋）",
+      "price": 4180,
+      "images": [
+        "soil-03_01.jpg",
+        "soil-03_02.jpg",
+        "soil-03_03.jpg"
+      ]
+    },
+    {
+      "id": "soil-04",
+      "name": "バイオゴールド きままにミスト 500ccスプレー",
+      "price": 1980,
+      "images": [
+        "soil-04_01.jpg",
+        "soil-04_02.jpg",
+        "soil-04_03.jpg",
+        "soil-04_04.jpg",
+        "soil-04_05.jpg",
+        "soil-04_06.jpg"
+      ]
+    },
+    {
+      "id": "soil-05",
+      "name": "バイオゴールド きままにミスト 5Lレフィル",
+      "price": 10450,
+      "images": [
+        "soil-05_01.jpg",
+        "soil-05_02.jpg",
+        "soil-05_03.jpg",
+        "soil-05_04.jpg",
+        "soil-05_05.jpg",
+        "soil-05_06.jpg"
+      ]
+    },
+    {
+      "id": "soil-06",
+      "name": "有機JAS規格別表1適合資材バイオゴールド ミスト 1本",
+      "price": 3850,
+      "images": [
+        "soil-06_01.jpg",
+        "soil-06_02.jpg",
+        "soil-06_03.jpg",
+        "soil-06_04.jpg",
+        "soil-06_05.jpg"
+      ]
+    },
+    {
+      "id": "soil-07",
+      "name": "バイオゴールド観葉植物の土 10L",
+      "price": 4290,
+      "images": [
+        "soil-07_01.jpg",
+        "soil-07_02.jpg"
+      ]
+    },
+    {
+      "id": "soil-08",
+      "name": "バイオゴールド クラシック元肥 5kg",
+      "price": 7370,
+      "images": [
+        "soil-08_01.jpg",
+        "soil-08_02.jpg",
+        "soil-08_03.jpg"
+      ]
+    },
+    {
+      "id": "soil-09",
+      "name": "バイオゴールドヴィコント564ネオ（400ml）",
+      "price": 6820,
+      "images": [
+        "soil-09_01.jpg",
+        "soil-09_02.jpg",
+        "soil-09_03.jpg"
+      ]
+    },
+    {
+      "id": "soil-10",
+      "name": "バイオゴールドの土 ストレスゼロ 15リットル×3袋組",
+      "price": 12540,
+      "images": [
+        "soil-10_01.jpg",
+        "soil-10_02.jpg",
+        "soil-10_03.jpg"
+      ]
+    },
+    {
+      "id": "soil-11",
+      "name": "万田酵素から生まれた肥料 万田アミノアルファ 500ml",
+      "price": 3300,
+      "images": [
+        "soil-11_01.jpg",
+        "soil-11_02.jpg",
+        "soil-11_03.jpg",
+        "soil-11_04.jpg",
+        "soil-11_05.jpg",
+        "soil-11_06.jpg"
+      ]
+    },
+    {
+      "id": "soil-12",
+      "name": "バイオゴールド オリジナル追肥 5kg",
+      "price": 6600,
+      "images": [
+        "soil-12_01.jpg",
+        "soil-12_02.jpg",
+        "soil-12_03.jpg",
+        "soil-12_04.jpg",
+        "soil-12_05.jpg"
+      ]
+    },
+    {
+      "id": "soil-13",
+      "name": "プロトリーフ 京成バラ園の土 12L",
+      "price": 1683,
+      "images": [
+        "soil-13_01.jpg",
+        "soil-13_02.jpg"
+      ]
+    },
+    {
+      "id": "soil-14",
+      "name": "花ごころ 古い土のリサイクル材 10L 5.6kg",
+      "price": 1400,
+      "images": [
+        "soil-14_01.jpg",
+        "soil-14_02.jpg",
+        "soil-14_03.jpg"
+      ]
+    },
+    {
+      "id": "soil-15",
+      "name": "バイオゴールドの土15L（1袋）",
+      "price": 4180,
+      "images": [
+        "soil-15_01.jpg",
+        "soil-15_02.jpg",
+        "soil-15_03.jpg",
+        "soil-15_04.jpg"
+      ]
+    },
+    {
+      "id": "soil-16",
+      "name": "花ごころ 特選有機バラの土 15L1袋",
+      "price": 2200,
+      "images": [
+        "soil-16_01.jpg",
+        "soil-16_02.jpg",
+        "soil-16_03.jpg",
+        "soil-16_04.jpg",
+        "soil-16_05.jpg",
+        "soil-16_06.jpg"
+      ]
+    },
+    {
+      "id": "soil-17",
+      "name": "花ごころ 特選有機濃いバラの肥料 1kg",
+      "price": 1650,
+      "images": [
+        "soil-17_01.jpg",
+        "soil-17_02.jpg",
+        "soil-17_03.jpg",
+        "soil-17_04.jpg",
+        "soil-17_05.jpg",
+        "soil-17_06.jpg"
+      ]
+    },
+    {
+      "id": "soil-18",
+      "name": "花ごころ 特選有機濃いバラの肥料 2.5kg",
+      "price": 2999,
+      "images": [
+        "soil-18_01.jpg",
+        "soil-18_02.jpg",
+        "soil-18_03.jpg",
+        "soil-18_04.jpg",
+        "soil-18_05.jpg",
+        "soil-18_06.jpg"
+      ]
+    },
+    {
+      "id": "soil-19",
+      "name": "花ごころ 特選有機バラのたい肥 10L",
+      "price": 1450,
+      "images": [
+        "soil-19_01.jpg",
+        "soil-19_02.jpg",
+        "soil-19_03.jpg",
+        "soil-19_04.jpg",
+        "soil-19_05.jpg"
+      ]
+    },
+    {
+      "id": "soil-20",
+      "name": "プロトリーフ ローズフード3袋セット",
+      "price": 5005,
+      "images": [
+        "soil-20_01.jpg",
+        "soil-20_02.jpg"
+      ]
+    }
+  ]
+}

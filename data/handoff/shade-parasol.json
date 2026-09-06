@@ -1,0 +1,303 @@
+{
+  "categorySlug": "shade-parasol",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005016/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "shade-parasol-01",
+      "name": "雨よけシェード 幅180高さ400cm",
+      "price": 7290,
+      "images": [
+        "shade-parasol-01_01.jpg",
+        "shade-parasol-01_02.jpg",
+        "shade-parasol-01_03.jpg",
+        "shade-parasol-01_04.jpg",
+        "shade-parasol-01_05.jpg",
+        "shade-parasol-01_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-02",
+      "name": "アジアン風天然素材調フェンス210cm 2枚セット",
+      "price": 36900,
+      "images": [
+        "shade-parasol-02_01.jpg",
+        "shade-parasol-02_02.jpg",
+        "shade-parasol-02_03.jpg",
+        "shade-parasol-02_04.jpg",
+        "shade-parasol-02_05.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-03",
+      "name": "サマーオーニング つっぱり式 幅311cm",
+      "price": 42900,
+      "images": [
+        "shade-parasol-03_01.jpg",
+        "shade-parasol-03_02.jpg",
+        "shade-parasol-03_03.jpg",
+        "shade-parasol-03_04.jpg",
+        "shade-parasol-03_05.jpg",
+        "shade-parasol-03_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-04",
+      "name": "物干し竿＆目隠し前幕付き 突っ張りオーニング 本体幅203cm",
+      "price": 19000,
+      "images": [
+        "shade-parasol-04_01.jpg",
+        "shade-parasol-04_02.jpg",
+        "shade-parasol-04_03.jpg",
+        "shade-parasol-04_04.jpg",
+        "shade-parasol-04_05.jpg",
+        "shade-parasol-04_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-05",
+      "name": "目隠し高さが調節できるたてす 小 幅200cm",
+      "price": 19800,
+      "images": [
+        "shade-parasol-05_01.jpg",
+        "shade-parasol-05_02.jpg",
+        "shade-parasol-05_03.jpg",
+        "shade-parasol-05_04.jpg",
+        "shade-parasol-05_05.jpg",
+        "shade-parasol-05_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-06",
+      "name": "サマーオーニング優しく遮るタープ 幅180×400cm",
+      "price": 8990,
+      "images": [
+        "shade-parasol-06_01.jpg",
+        "shade-parasol-06_02.jpg",
+        "shade-parasol-06_03.jpg",
+        "shade-parasol-06_04.jpg",
+        "shade-parasol-06_05.jpg",
+        "shade-parasol-06_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-07",
+      "name": "新バルコニータープ 90×300cm",
+      "price": 3600,
+      "images": [
+        "shade-parasol-07_01.jpg",
+        "shade-parasol-07_02.jpg",
+        "shade-parasol-07_03.jpg",
+        "shade-parasol-07_04.jpg",
+        "shade-parasol-07_05.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-08",
+      "name": "サマーオーニング優しく遮るタープ 幅90×200cm",
+      "price": 3990,
+      "images": [
+        "shade-parasol-08_01.jpg",
+        "shade-parasol-08_02.jpg",
+        "shade-parasol-08_03.jpg",
+        "shade-parasol-08_04.jpg",
+        "shade-parasol-08_05.jpg",
+        "shade-parasol-08_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-09",
+      "name": "吉谷さんデザイン 花の森サンシェード",
+      "price": 18800,
+      "images": [
+        "shade-parasol-09_01.jpg",
+        "shade-parasol-09_02.jpg",
+        "shade-parasol-09_03.jpg",
+        "shade-parasol-09_04.jpg",
+        "shade-parasol-09_05.jpg",
+        "shade-parasol-09_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-10",
+      "name": "長く使えるモダンすだれ 幅88cm（1枚）",
+      "price": 7900,
+      "images": [
+        "shade-parasol-10_01.jpg",
+        "shade-parasol-10_02.jpg",
+        "shade-parasol-10_03.jpg",
+        "shade-parasol-10_04.jpg",
+        "shade-parasol-10_05.jpg",
+        "shade-parasol-10_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-11",
+      "name": "モダンガーデンパラソル",
+      "price": 15400,
+      "images": [
+        "shade-parasol-11_01.jpg",
+        "shade-parasol-11_02.jpg",
+        "shade-parasol-11_03.jpg",
+        "shade-parasol-11_04.jpg",
+        "shade-parasol-11_05.jpg",
+        "shade-parasol-11_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-12",
+      "name": "遮熱クールアップ 2枚組",
+      "price": 8980,
+      "images": [
+        "shade-parasol-12_01.jpg",
+        "shade-parasol-12_02.jpg",
+        "shade-parasol-12_03.jpg",
+        "shade-parasol-12_04.jpg",
+        "shade-parasol-12_05.jpg",
+        "shade-parasol-12_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-13",
+      "name": "植物の日よけ＆雨よけシェード",
+      "price": 2200,
+      "images": [
+        "shade-parasol-13_01.jpg",
+        "shade-parasol-13_02.jpg",
+        "shade-parasol-13_03.jpg",
+        "shade-parasol-13_04.jpg",
+        "shade-parasol-13_05.jpg",
+        "shade-parasol-13_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-14",
+      "name": "物干し竿＆目隠し前幕付き 突っ張りオーニング 本体幅303cm",
+      "price": 22000,
+      "images": [
+        "shade-parasol-14_01.jpg",
+        "shade-parasol-14_02.jpg",
+        "shade-parasol-14_03.jpg",
+        "shade-parasol-14_04.jpg",
+        "shade-parasol-14_05.jpg",
+        "shade-parasol-14_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-15",
+      "name": "日よけ名人プレミアム",
+      "price": 7018,
+      "images": [
+        "shade-parasol-15_01.jpg",
+        "shade-parasol-15_02.jpg",
+        "shade-parasol-15_03.jpg",
+        "shade-parasol-15_04.jpg",
+        "shade-parasol-15_05.jpg",
+        "shade-parasol-15_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-16",
+      "name": "突っ張り式パラソル パラシェード 長方形",
+      "price": 26950,
+      "images": [
+        "shade-parasol-16_01.jpg",
+        "shade-parasol-16_02.jpg",
+        "shade-parasol-16_03.jpg",
+        "shade-parasol-16_04.jpg",
+        "shade-parasol-16_05.jpg",
+        "shade-parasol-16_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-17",
+      "name": "突っ張り式パラソル・パラシェード ハーフ半円",
+      "price": 29700,
+      "images": [
+        "shade-parasol-17_01.jpg",
+        "shade-parasol-17_02.jpg",
+        "shade-parasol-17_03.jpg",
+        "shade-parasol-17_04.jpg",
+        "shade-parasol-17_05.jpg",
+        "shade-parasol-17_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-18",
+      "name": "吉谷さんデザイン 花の森 木漏れ日レースカーテン2枚組",
+      "price": 7480,
+      "images": [
+        "shade-parasol-18_01.jpg",
+        "shade-parasol-18_02.jpg",
+        "shade-parasol-18_03.jpg",
+        "shade-parasol-18_04.jpg",
+        "shade-parasol-18_05.jpg",
+        "shade-parasol-18_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-19",
+      "name": "吉谷さんデザイン 花の森 木漏れ日レースカーテン 1枚（イージーオーダー）",
+      "price": 5480,
+      "images": [
+        "shade-parasol-19_01.jpg",
+        "shade-parasol-19_02.jpg",
+        "shade-parasol-19_03.jpg",
+        "shade-parasol-19_04.jpg",
+        "shade-parasol-19_05.jpg",
+        "shade-parasol-19_06.jpg"
+      ]
+    },
+    {
+      "id": "shade-parasol-20",
+      "name": "吉谷さんデザイン 花の森サンシェード",
+      "price": 13800,
+      "images": [
+        "shade-parasol-20_01.jpg",
+        "shade-parasol-20_02.jpg",
+        "shade-parasol-20_03.jpg",
+        "shade-parasol-20_04.jpg",
+        "shade-parasol-20_05.jpg",
+        "shade-parasol-20_06.jpg"
+      ]
+    }
+  ]
+}

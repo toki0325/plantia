@@ -1,0 +1,301 @@
+{
+  "categorySlug": "ac-cover",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005022/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "ac-cover-01",
+      "name": "日陰を作る室外機カバー",
+      "price": 2000,
+      "images": [
+        "ac-cover-01_01.jpg",
+        "ac-cover-01_02.jpg",
+        "ac-cover-01_03.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-02",
+      "name": "逆ルーバー室外機カバー 大型サイドパネル2枚組",
+      "price": 7900,
+      "images": [
+        "ac-cover-02_01.jpg",
+        "ac-cover-02_02.jpg",
+        "ac-cover-02_03.jpg",
+        "ac-cover-02_04.jpg",
+        "ac-cover-02_05.jpg",
+        "ac-cover-02_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-03",
+      "name": "大型ガルバ製逆ルーバー室外機カバー カバーのみ",
+      "price": 17900,
+      "images": [
+        "ac-cover-03_01.jpg",
+        "ac-cover-03_02.jpg",
+        "ac-cover-03_03.jpg",
+        "ac-cover-03_04.jpg",
+        "ac-cover-03_05.jpg",
+        "ac-cover-03_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-04",
+      "name": "エアコン室外機用遮熱シートDX（大理石調） おトクな2台分",
+      "price": 5990,
+      "images": [
+        "ac-cover-04_01.jpg",
+        "ac-cover-04_02.jpg",
+        "ac-cover-04_03.jpg",
+        "ac-cover-04_04.jpg",
+        "ac-cover-04_05.jpg",
+        "ac-cover-04_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-05",
+      "name": "プレミアム室外機カバー カバーのみ",
+      "price": 19900,
+      "images": [
+        "ac-cover-05_01.jpg",
+        "ac-cover-05_02.jpg",
+        "ac-cover-05_03.jpg",
+        "ac-cover-05_04.jpg",
+        "ac-cover-05_05.jpg",
+        "ac-cover-05_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-06",
+      "name": "エアコン室外機カバー レギュラー",
+      "price": 19800,
+      "images": [
+        "ac-cover-06_01.jpg",
+        "ac-cover-06_02.jpg",
+        "ac-cover-06_03.jpg",
+        "ac-cover-06_04.jpg",
+        "ac-cover-06_05.jpg",
+        "ac-cover-06_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-07",
+      "name": "プレミアム室外機カバー 大型対応カバーのみ",
+      "price": 22900,
+      "images": [
+        "ac-cover-07_01.jpg",
+        "ac-cover-07_02.jpg",
+        "ac-cover-07_03.jpg",
+        "ac-cover-07_04.jpg",
+        "ac-cover-07_05.jpg",
+        "ac-cover-07_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-08",
+      "name": "逆ルーバー室外機カバー サイドパネル2枚組",
+      "price": 6900,
+      "images": [
+        "ac-cover-08_01.jpg",
+        "ac-cover-08_02.jpg",
+        "ac-cover-08_03.jpg",
+        "ac-cover-08_04.jpg",
+        "ac-cover-08_05.jpg",
+        "ac-cover-08_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-09",
+      "name": "エアコン室外機用遮熱シートDX（大理石調）",
+      "price": 3995,
+      "images": [
+        "ac-cover-09_01.jpg",
+        "ac-cover-09_02.jpg",
+        "ac-cover-09_03.jpg",
+        "ac-cover-09_04.jpg",
+        "ac-cover-09_05.jpg",
+        "ac-cover-09_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-10",
+      "name": "逆ルーバー室外機カバー カバーのみ",
+      "price": 12900,
+      "images": [
+        "ac-cover-10_01.jpg",
+        "ac-cover-10_02.jpg",
+        "ac-cover-10_03.jpg",
+        "ac-cover-10_04.jpg",
+        "ac-cover-10_05.jpg",
+        "ac-cover-10_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-11",
+      "name": "スタイリッシュエアコン室外機カバー",
+      "price": 13800,
+      "images": [
+        "ac-cover-11_01.jpg",
+        "ac-cover-11_02.jpg",
+        "ac-cover-11_03.jpg",
+        "ac-cover-11_04.jpg",
+        "ac-cover-11_05.jpg",
+        "ac-cover-11_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-12",
+      "name": "アンティーク調エレガント室外機カバー",
+      "price": 23900,
+      "images": [
+        "ac-cover-12_01.jpg",
+        "ac-cover-12_02.jpg",
+        "ac-cover-12_03.jpg",
+        "ac-cover-12_04.jpg",
+        "ac-cover-12_05.jpg",
+        "ac-cover-12_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-13",
+      "name": "アンティーク調エレガント室外機カバー スーパービッグ",
+      "price": 27900,
+      "images": [
+        "ac-cover-13_01.jpg",
+        "ac-cover-13_02.jpg",
+        "ac-cover-13_03.jpg",
+        "ac-cover-13_04.jpg",
+        "ac-cover-13_05.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-14",
+      "name": "エアコン室外機カバー 大型",
+      "price": 29700,
+      "images": [
+        "ac-cover-14_01.jpg",
+        "ac-cover-14_02.jpg",
+        "ac-cover-14_03.jpg",
+        "ac-cover-14_04.jpg",
+        "ac-cover-14_05.jpg",
+        "ac-cover-14_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-15",
+      "name": "プレミアム室外機カバー 棚付き",
+      "price": 26900,
+      "images": [
+        "ac-cover-15_01.jpg",
+        "ac-cover-15_02.jpg",
+        "ac-cover-15_03.jpg",
+        "ac-cover-15_04.jpg",
+        "ac-cover-15_05.jpg",
+        "ac-cover-15_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-16",
+      "name": "欧風室外機カバー",
+      "price": 16000,
+      "images": [
+        "ac-cover-16_01.jpg",
+        "ac-cover-16_02.jpg",
+        "ac-cover-16_03.jpg",
+        "ac-cover-16_04.jpg",
+        "ac-cover-16_05.jpg",
+        "ac-cover-16_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-17",
+      "name": "欧風室外機カバー 収納庫付き",
+      "price": 48900,
+      "images": [
+        "ac-cover-17_01.jpg",
+        "ac-cover-17_02.jpg",
+        "ac-cover-17_03.jpg",
+        "ac-cover-17_04.jpg",
+        "ac-cover-17_05.jpg",
+        "ac-cover-17_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-18",
+      "name": "ガルバ製逆ルーバー室外機カバー 収納庫付き ミドル",
+      "price": 37000,
+      "images": [
+        "ac-cover-18_01.jpg",
+        "ac-cover-18_02.jpg",
+        "ac-cover-18_03.jpg",
+        "ac-cover-18_04.jpg",
+        "ac-cover-18_05.jpg",
+        "ac-cover-18_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-19",
+      "name": "ガルバ製逆ルーバー室外機カバー 収納庫付き ハイ",
+      "price": 42000,
+      "images": [
+        "ac-cover-19_01.jpg",
+        "ac-cover-19_02.jpg",
+        "ac-cover-19_03.jpg",
+        "ac-cover-19_04.jpg",
+        "ac-cover-19_05.jpg",
+        "ac-cover-19_06.jpg"
+      ]
+    },
+    {
+      "id": "ac-cover-20",
+      "name": "大型ガルバ製逆ルーバー室外機カバー 収納庫付き",
+      "price": 44000,
+      "images": [
+        "ac-cover-20_01.jpg",
+        "ac-cover-20_02.jpg",
+        "ac-cover-20_03.jpg",
+        "ac-cover-20_04.jpg",
+        "ac-cover-20_05.jpg",
+        "ac-cover-20_06.jpg"
+      ]
+    }
+  ]
+}

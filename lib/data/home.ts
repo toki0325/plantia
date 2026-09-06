@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getPopularProducts } from "@/lib/data/products";
+import { getAllProducts, getPopularProducts } from "@/lib/data/products";
 import { getRelatedFeaturesForHome } from "@/lib/data/features";
 import { getProductsByCategorySlug, toSummary } from "@/lib/data/products";
 import type { ProductSummary } from "@/lib/types";
@@ -51,8 +51,13 @@ export type BrowseCategory = {
   image?: string;
 };
 
-/** トップ「カテゴリから探す」用。画像は後から差し替え。 */
-export const browseCategories: BrowseCategory[] = [
+/** 指定カテゴリの先頭商品のサムネイル画像パスを返す（トップのカテゴリサムネ用）。 */
+function firstCategoryImage(slug: string): string | undefined {
+  return getAllProducts().find((p) => p.categorySlug === slug)?.image;
+}
+
+/** トップ「カテゴリから探す」用。サムネは各カテゴリの先頭商品画像を使用。 */
+const browseCategoryDefs: Omit<BrowseCategory, "image">[] = [
   { id: "outdoor-storage", name: "屋外収納庫・物置", href: "/category/outdoor-storage" },
   { id: "garden-furniture", name: "ガーデンファニチャー", href: "/category/garden-furniture" },
   { id: "shade-parasol", name: "日除けシェード・ガーデンパラソル", href: "/category/shade-parasol" },
@@ -70,6 +75,11 @@ export const browseCategories: BrowseCategory[] = [
   { id: "soil", name: "園芸土/肥料", href: "/category/soil" },
   { id: "hose-reel", name: "ホース・ホースリール", href: "/category/hose-reel" },
 ];
+
+export const browseCategories: BrowseCategory[] = browseCategoryDefs.map((c) => ({
+  ...c,
+  image: firstCategoryImage(c.id),
+}));
 
 export const mainCategories = [
   {
