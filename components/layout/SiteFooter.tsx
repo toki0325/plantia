@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { browseCategories } from "@/lib/data/home";
 
 const shopLinks = [
   { label: "ご利用ガイド", href: "/guide" },
@@ -15,24 +16,17 @@ const supportLinks = [
   { label: "特集記事", href: "/feature" },
 ];
 
-const categoryLinks = [
-  { label: "人工芝・タイル・砂利", href: "/category/grass-tile-stone" },
-  { label: "ガーデンファニチャー", href: "/category/furniture" },
-  { label: "園芸用品", href: "/category/gardening" },
-  { label: "雑草対策", href: "/category/weeding" },
-];
-
 export function SiteFooter() {
   return (
     <footer>
       <div className="bg-[var(--color-primary,#2F4B3C)] text-white/80 py-10">
-        <div className="content-width grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-          <div>
+        <div className="content-width grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+          <div className="md:col-span-2">
             <h3 className="text-white font-bold mb-4">PLANTIA</h3>
-            <ul className="space-y-2">
-              {categoryLinks.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="hover:text-white">{link.label}</Link>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1.5 text-xs">
+              {browseCategories.map((category) => (
+                <li key={category.id}>
+                  <Link href={category.href} className="hover:text-white">{category.name}</Link>
                 </li>
               ))}
             </ul>

@@ -3,8 +3,11 @@ import { notFound } from "next/navigation";
 import {
   PageHeader,
   PageSection,
+  SectionTitle,
 } from "@/components/layout/PageHeader";
+import { ShopProductGrid } from "@/components/product/ShopProductCard";
 import { features, getFeatureBySlug } from "@/lib/data/features";
+import { getProductsByCategorySlug, toSummary } from "@/lib/data/products";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -23,6 +26,10 @@ export default async function FeatureDetailPage({ params }: Props) {
   const { slug } = await params;
   const feature = getFeatureBySlug(slug);
   if (!feature) notFound();
+
+  const relatedProducts = feature.relatedCategorySlug
+    ? getProductsByCategorySlug(feature.relatedCategorySlug).slice(0, 8).map(toSummary)
+    : [];
 
   return (
     <>
@@ -59,6 +66,12 @@ export default async function FeatureDetailPage({ params }: Props) {
           </div>
         </article>
       </PageSection>
+      {relatedProducts.length > 0 && (
+        <PageSection className="bg-[var(--color-ivory,#F5F1E8)]">
+          <SectionTitle>この特集の商品</SectionTitle>
+          <ShopProductGrid products={relatedProducts} />
+        </PageSection>
+      )}
     </>
   );
 }
