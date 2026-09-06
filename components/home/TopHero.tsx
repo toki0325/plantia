@@ -13,7 +13,7 @@ export function TopHero() {
       />
       <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-center px-4">
         <p className="text-white/90 text-sm md:text-base mb-2 tracking-wide">
-          NOVAGRACE
+          PLANTIA
         </p>
         <h1 className="text-white text-xl sm:text-2xl md:text-4xl font-bold drop-shadow-lg leading-snug">
           庭に、いちばんの居場所を。

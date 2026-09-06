@@ -1,5 +1,5 @@
 ## SECURITY_CHECKLIST.txt
-NOVAGRACE（ガーデニング用品ECサイト）実装時セキュリティチェックリスト
+PLANTIA（ガーデニング用品ECサイト）実装時セキュリティチェックリスト
 
 DESIGN.txt / PROJECT_GUIDE_1.txt に基づく実装と並行して、Cursor/Claude Codeが
 各STEPで満たすべきセキュリティ要件をまとめたもの。特にPROJECT_GUIDE_1.txt STEP3の

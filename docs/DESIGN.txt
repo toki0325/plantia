@@ -8,15 +8,15 @@
 ---
 
 ## 【Claude用設定】プロジェクト基本情報
-- サイト種別：ガーデニング用品販売ECサイト（単一ブランド／NOVAGRACE自社セレクト）
-- ショップ名：NOVAGRACE（ノヴァグレース）
+- サイト種別：ガーデニング用品販売ECサイト（単一ブランド／PLANTIA自社セレクト）
+- ショップ名：PLANTIA（プランティア）
   ※ "Nova"（新しい）＋ "Grace"（上品さ・優雅さ）の造語。「頑張りすぎない、上質な庭時間」を提案するブランドイメージから命名
 - URL：[TBD]
 - キャッチコピー：「庭に、いちばんの居場所を。」
 - 参考サイト：https://www.cainz.com/contents/garden-tool/garden_diy.html（カインズ ガーデニング用品特集ページ）
 - 差別化ポイント：
   カインズ等の総合ホームセンター系ECは品揃えの広さが強みだが、雑多になりやすい。
-  NOVAGRACEは単一ブランドのセレクトショップとして商品数をあえて絞り込み、
+  PLANTIAは単一ブランドのセレクトショップとして商品数をあえて絞り込み、
   「統一感のあるおしゃれな庭・ベランダづくり」に特化した見せ方（世界観の統一、コーディネート提案）で差別化する。
   MVPでは無理に高度な機能は追わず、まずシンプルに作る。
 - 価格帯：300円〜60,000円（平均目安：4,000円前後）※参考サイトの価格帯レンジを踏襲
@@ -111,11 +111,11 @@ Login＝ログイン、Search results page＝検索結果）
 - ロゴファイル名：icon.png
 
 ## 会社情報（PLACEHOLDER）
-- 会社名：株式会社ノヴァグレース（PLACEHOLDER）
+- 会社名：株式会社プランティア（PLACEHOLDER）
 - 代表者：代表取締役 ◯◯ ◯◯（PLACEHOLDER）
 - 所在地：〒000-0000 東京都◯◯区◯◯ 0-0-0（PLACEHOLDER）
 - 電話番号：00-0000-0000（PLACEHOLDER）
-- メールアドレス：support@novagrace.example（PLACEHOLDER）
+- メールアドレス：support@plantia.example（PLACEHOLDER）
 - 営業時間：平日10:00〜17:00（土日祝休）（PLACEHOLDER）
 
 ## 特定商取引法
@@ -178,7 +178,7 @@ scripts/generate-placeholders.mjs を流用してダミー画像を生成し、
 
 | Overview | File Location | Page | Placement | Type | Overview |
 |---|---|---|---|---|---|
-| ロゴ | public/images/icon.png | 共通 | ヘッダー・フッター | Logo | NOVAGRACEロゴ |
+| ロゴ | public/images/icon.png | 共通 | ヘッダー・フッター | Logo | PLANTIAロゴ |
 | ヒーロービジュアル | public/images/hero/hero_main.jpg | TOP | ヒーローセクション | Hero | 庭空間のメインビジュアル |
 | 人工芝・タイル・砂利カテゴリ画像 | public/images/categories/grass_tile_stone.jpg | TOP, カテゴリ一覧 | カテゴリカード | Category | 人工芝・タイルの敷かれた庭 |
 | ガーデンファニチャーカテゴリ画像 | public/images/categories/furniture.jpg | TOP, カテゴリ一覧 | カテゴリカード | Category | ベンチ・フェンス・ライトの設置例 |

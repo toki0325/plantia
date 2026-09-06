@@ -13,8 +13,8 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: {
-    default: "NOVAGRACE｜庭に、いちばんの居場所を。",
-    template: "%s｜NOVAGRACE",
+    default: "PLANTIA｜庭に、いちばんの居場所を。",
+    template: "%s｜PLANTIA",
   },
   description:
     "頑張りすぎない、上質な庭時間。人工芝・ジョイントタイル・ガーデンファニチャー・園芸用品・雑草対策まで、統一感のあるおしゃれな庭・ベランダづくりを提案します。",

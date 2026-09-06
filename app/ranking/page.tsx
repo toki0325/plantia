@@ -15,7 +15,7 @@ export default function RankingPage() {
     <>
       <PageHeader
         title="人気ランキング"
-        description="NOVAGRACEで人気のガーデニング用品ランキング。"
+        description="PLANTIAで人気のガーデニング用品ランキング。"
         breadcrumbs={[
           { label: "トップ", href: "/" },
           { label: "ランキング" },

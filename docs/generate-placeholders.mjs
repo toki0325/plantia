@@ -1,5 +1,5 @@
 /**
- * generate-placeholders.mjs (NOVAGRACE ガーデニングEC用)
+ * generate-placeholders.mjs (PLANTIA ガーデニングEC用)
  *
  * DESIGN.txtの画像配置リストに基づき、本番と同じファイルパス・ファイル名・
  * アスペクト比のダミー画像を一括生成する。
