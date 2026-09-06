@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    .page {
+      width: 794px; height: 1123px; position: relative;
+      background: #ffffff;
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+      color: #333333;
+      padding: 44px 56px 36px 56px;
+    }
+    .topbar { display:flex; justify-content:space-between; align-items:baseline; font-size:11px; color:#8A8A8A; letter-spacing:.04em; padding-bottom:10px; border-bottom:1px solid #EAE6DD; }
+    .sec-head { display:flex; align-items:center; gap:10px; background:#2F4B3C; color:#ffffff; padding:9px 16px; font-size:14px; font-weight:700; margin-top:18px; }
+    .sec-head .num { display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px; background:#C6A45C; color:#2F4B3C; font-size:11.5px; font-weight:900; }
+    .card { border:1px solid #EAE6DD; background:#ffffff; padding:13px 16px; }
+    .card-label { display:inline-block; font-size:11px; font-weight:700; color:#ffffff; background:#8A6D2F; padding:3px 9px; margin-bottom:8px; letter-spacing:.02em; }
+    .card ul { margin:0; padding:0; list-style:none; }
+    .card li { font-size:11.5px; line-height:1.65; color:#333333; padding-left:13px; position:relative; margin-bottom:4px; }
+    .card li::before { content:""; position:absolute; left:0; top:7px; width:5px; height:5px; background:#C6A45C; }
+    .tbl { width:100%; border-collapse:collapse; margin-top:10px; font-size:11.5px; }
+    .tbl th { background:#F5F1E8; color:#2F4B3C; text-align:left; padding:7px 10px; font-weight:700; border-bottom:1px solid #EAE6DD; }
+    .tbl td { padding:7px 10px; border-bottom:1px solid #EAE6DD; color:#333333; line-height:1.55; vertical-align:top; }
+    .tbl td.num-cell { color:#2F4B3C; font-weight:700; }
+  </style>
+</helmet>
+
+<div class="page">
+
+  <div class="topbar">
+    <span>PLANTIA　事業計画書</span>
+    <span>04 / 04</span>
+  </div>
+
+  <div class="sec-head"><span class="num">5</span>販売・集客戦略</div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;">
+    <div class="card">
+      <span class="card-label">チャネル</span>
+      <ul>
+        <li>自社EC（PLANTIA）ーメイン。SEO・DIY施工ガイド特集</li>
+        <li>Instagram / Pinterest ー施工事例・ビフォーアフター</li>
+        <li>口コミ・レビューー季節特集ページからの流入</li>
+        <li>造園会社・工務店・外構担当への提携提案</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="card-label" style="background:#2F4B3C;">KPI（初年度目標）</span>
+      <ul>
+        <li>月間セッション：5,000（6か月目）</li>
+        <li>転換率（CVR）：1.0〜1.5%</li>
+        <li>月間受注件数：25〜40件</li>
+        <li>リピート率（180日）：12%→20%</li>
+        <li>平均レビュー獲得：購入者の8%（将来）</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sec-head"><span class="num">6</span>収支計画（概要）</div>
+  <table class="tbl">
+    <tr><th style="width:90px;">項目</th><th style="width:110px;">1年目</th><th style="width:110px;">2年目</th><th>備考</th></tr>
+    <tr><td>売上高</td><td class="num-cell">3,200万円</td><td class="num-cell">5,400万円</td><td>客数×客単価で積み上げ。2年目はSKU・広告拡大</td></tr>
+    <tr><td>売上原価</td><td>1,760万円（55%）</td><td>2,862万円（53%）</td><td>仕入・梱包・配送資材。量増で率改善想定</td></tr>
+    <tr><td>粗利益</td><td>1,440万円</td><td>2,538万円</td><td>—</td></tr>
+    <tr><td>販管費</td><td>1,300万円</td><td>1,900万円</td><td>人件費・広告・システム・配送差額等</td></tr>
+    <tr><td>営業利益</td><td class="num-cell">140万円</td><td class="num-cell">638万円</td><td>初年度は黒字化ライン想定</td></tr>
+  </table>
+
+  <div class="sec-head"><span class="num">7</span>組織・運営体制</div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;">
+    <div class="card">
+      <span class="card-label">体制（創業期）</span>
+      <ul>
+        <li>代表：商品選定・仕入・全体統括</li>
+        <li>EC運営：サイト更新・受注・問い合わせ（兼任可）</li>
+        <li>外注：撮影・広告運用・経理（必要に応じ）</li>
+        <li>配送：倉庫なし小規模開始→受注後ピッキング発送</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="card-label" style="background:#8A6D2F;">リスクと対策</span>
+      <ul>
+        <li><b style="color:#2F4B3C;">在庫リスク：</b>セレクト型・受注発注のハイブリッド</li>
+        <li><b style="color:#2F4B3C;">競合：</b>ステージ導線・DIY特集の差別化でリピート獲得</li>
+        <li><b style="color:#2F4B3C;">品質：</b>仕入先複数化・初期不良時は当社負担返品</li>
+        <li><b style="color:#2F4B3C;">キャッシュ：</b>広告費上限・送料無料ラインの管理</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sec-head"><span class="num">8</span>今後3年のロードマップ</div>
+  <table class="tbl">
+    <tr><th style="width:120px;">Phase 1（0〜6M）</th><td>全15カテゴリーの安定運用。ステージ・用途別導線の改善。DIYガイド特集の認知</td></tr>
+    <tr><th>Phase 2（6〜18M）</th><td>家庭菜園・屋外照明などのSKU拡張。Instagram/LINE連携。レビュー機能本格化</td></tr>
+    <tr><th>Phase 3（18〜36M）</th><td>造園会社・工務店との法人提携。会員ランク・定期便（消耗品の定期便）の提供</td></tr>
+  </table>
+
+</div>
+</x-dc>
+</body>
+</html>

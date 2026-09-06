@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    .page {
+      width: 794px; height: 1123px; position: relative;
+      background: #ffffff;
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+      color: #333333;
+      padding: 44px 56px 40px 56px;
+    }
+    .topbar { display:flex; justify-content:space-between; align-items:baseline; font-size:11px; color:#8A8A8A; letter-spacing:.04em; padding-bottom:12px; border-bottom:1px solid #EAE6DD; }
+    .sec-head { display:flex; align-items:center; gap:10px; background:#2F4B3C; color:#ffffff; padding:11px 16px; font-size:15px; font-weight:700; margin-top:26px; }
+    .sec-head .num { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; background:#C6A45C; color:#2F4B3C; font-size:12px; font-weight:900; }
+    .card { border:1px solid #EAE6DD; background:#ffffff; padding:16px 18px; }
+    .card-label { display:inline-block; font-size:11.5px; font-weight:700; color:#ffffff; background:#8A6D2F; padding:3px 10px; margin-bottom:10px; letter-spacing:.02em; }
+    .card p { font-size:12px; line-height:1.8; color:#333333; margin:0; }
+    .card ul { margin:0; padding:0; list-style:none; }
+    .card li { font-size:12px; line-height:1.75; color:#333333; padding-left:14px; position:relative; margin-bottom:6px; }
+    .card li::before { content:""; position:absolute; left:0; top:8px; width:5px; height:5px; background:#C6A45C; }
+    .card li b { color:#2F4B3C; }
+    .tbl { width:100%; border-collapse:collapse; margin-top:14px; font-size:12px; }
+    .tbl th { background:#F5F1E8; color:#2F4B3C; text-align:left; padding:9px 10px; font-weight:700; border-bottom:1px solid #EAE6DD; }
+    .tbl td { padding:9px 10px; border-bottom:1px solid #EAE6DD; color:#333333; line-height:1.6; vertical-align:top; }
+    .note { font-size:11px; color:#666666; margin-top:8px; line-height:1.7; border-left:2px solid #C6A45C; padding-left:10px; }
+    .highlight { margin-top:16px; background:#2F4B3C; color:#ffffff; text-align:center; padding:13px; font-size:13px; font-weight:700; letter-spacing:.02em; }
+  </style>
+</helmet>
+
+<div class="page">
+
+  <div class="topbar">
+    <span>PLANTIA　事業計画書</span>
+    <span>03 / 04</span>
+  </div>
+
+  <div class="sec-head"><span class="num">3</span>市場環境・ターゲット顧客</div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px;">
+    <div class="card">
+      <span class="card-label">市場背景</span>
+      <p>
+        庭・エクステリア市場は巣ごもり需要以降、オンラインでの情報収集・購買が定着。一方、商品点数の多さと専門用語の多さから
+        「比較疲れ」が起きやすく、施工ガイド付きのセレクトにニーズが集中している。DIYリフォーム需要は安定しており、
+        人工芝・ジョイントタイルなど「敷くだけ・置くだけ」で完結する商品が選ばれやすい。
+      </p>
+    </div>
+    <div class="card">
+      <span class="card-label" style="background:#2F4B3C;">主要ターゲット</span>
+      <ul>
+        <li><b>プライマリ：</b>戸建てを持つ30〜50代のファミリー層。庭・外構のDIYリフォーム検討層</li>
+        <li><b>セカンダリ：</b>賃貸・マンションのベランダガーデニング層（20〜30代）</li>
+        <li><b>ターシャリ：</b>季節替え・買い足しを効率よく済ませたい既存顧客</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sec-head"><span class="num">4</span>商品・サービス構成</div>
+  <table class="tbl">
+    <tr><th style="width:150px;">ステージ</th><th style="width:290px;">内容</th><th>現状</th></tr>
+    <tr><td>① はじめの一歩<br><span style="color:#666666;">（プランター・ベランダ）</span></td><td>プランター、鉢カバー、フラワースタンド</td><td>ベランダ導線の起点・初回購入層に人気</td></tr>
+    <tr><td>② 地面を整える<br><span style="color:#666666;">（グラウンド）</span></td><td>人工芝、ジョイントタイル、土・培養土</td><td>主力・DIY施工ガイドと連動</td></tr>
+    <tr><td>③ 庭を区切る・彩る<br><span style="color:#666666;">（エクステリア）</span></td><td>フェンス、ガーデンアーチ、オーナメント、日除け・パラソル、温室</td><td>外構リフォーム層向けに拡張中</td></tr>
+    <tr><td>④ くつろぐ・楽しむ<br><span style="color:#666666;">（リビングガーデン）</span></td><td>ガーデンファニチャー、ガーデンライト、屋外収納、ホースリール等</td><td>客単価向上・季節特集の軸</td></tr>
+    <tr><td>特集コンテンツ</td><td>人工芝DIYガイド／雑草対策ガイド／ジョイントタイル特集</td><td>EC内マーケティング軸</td></tr>
+  </table>
+  <div class="note">
+    ※ 価格帯：おおむね¥880〜¥89,800（税込）。平均客単価想定 ¥8,000〜¥15,000。送料無料ライン（¥11,000）を活用したまとめ買いを促進。
+  </div>
+
+  <div class="highlight">¥11,000以上のご購入で送料無料　全国一律660円（税込）</div>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1122, "h": 794, "title": "表面（外側）" },
+    { "file": "Back.dc.html", "x": 0, "y": 894, "w": 1122, "h": 794, "title": "裏面（内側）" }
+  ],
+  "launch": { "view": "canvas" }
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    .page {
+      width: 794px; height: 1123px; position: relative;
+      background: #ffffff;
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+      color: #333333;
+      padding: 44px 56px 40px 56px;
+    }
+    .topbar { display:flex; justify-content:space-between; align-items:baseline; font-size:11px; color:#8A8A8A; letter-spacing:.04em; padding-bottom:12px; border-bottom:1px solid #EAE6DD; }
+    .sec-head { display:flex; align-items:center; gap:10px; background:#2F4B3C; color:#ffffff; padding:11px 16px; font-size:15px; font-weight:700; margin-top:30px; }
+    .sec-head .num { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; background:#C6A45C; color:#2F4B3C; font-size:12px; font-weight:900; }
+    .lead { font-size:12.8px; line-height:1.85; color:#444444; margin-top:16px; }
+    .card { border:1px solid #EAE6DD; background:#ffffff; padding:16px 18px; }
+    .card-label { display:inline-block; font-size:11.5px; font-weight:700; color:#ffffff; background:#8A6D2F; padding:3px 10px; margin-bottom:10px; letter-spacing:.02em; }
+    .card ul { margin:0; padding:0; list-style:none; }
+    .card li { font-size:12px; line-height:1.7; color:#333333; padding-left:14px; position:relative; margin-bottom:5px; }
+    .card li::before { content:""; position:absolute; left:0; top:8px; width:5px; height:5px; background:#C6A45C; }
+    .tbl { width:100%; border-collapse:collapse; margin-top:14px; font-size:12.2px; }
+    .tbl th { background:#F5F1E8; color:#2F4B3C; text-align:left; padding:9px 12px; font-weight:700; width:150px; border-bottom:1px solid #EAE6DD; vertical-align:top; }
+    .tbl td { padding:9px 12px; border-bottom:1px solid #EAE6DD; color:#333333; line-height:1.7; }
+  </style>
+</helmet>
+
+<div class="page">
+
+  <div class="topbar">
+    <span>PLANTIA　事業計画書</span>
+    <span>02 / 04</span>
+  </div>
+
+  <div class="sec-head"><span class="num">1</span>エグゼクティブサマリー</div>
+  <p class="lead">
+    PLANTIAは、庭・ベランダを「もっと快適に、もっと自分らしく」したいご家庭が、何から揃えればよいか迷いやすいという課題に応えるため、
+    ガーデニング・エクステリア用品に特化したオンラインセレクトショップを運営する。商品点数を絞り込み、設置スペース・用途別の絞り込み、
+    DIY施工ガイドやシーン別特集により、検索コストを下げた購買体験を提供する。滋賀を拠点に全国へ配送し、初期は人工芝・ジョイントタイルなど
+    施工系カテゴリを中心に開始し、カテゴリを段階的に拡張する。
+  </p>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-top:18px;">
+    <div class="card">
+      <span class="card-label">解決する課題</span>
+      <ul>
+        <li>商品が多すぎて何を選べばいいか分からない</li>
+        <li>設置スペース・用途の判断が難しい</li>
+        <li>DIY施工・メンテナンス情報が散在</li>
+        <li>ホームセンターは重い・持ち帰りが大変</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="card-label" style="background:#2F4B3C;">提供価値</span>
+      <ul>
+        <li>庭のステージ別4区分（はじめの一歩〜くつろぐ庭）</li>
+        <li>用途・設置スペースで絞り込めるガイド</li>
+        <li>厳選カタログ（全15カテゴリー）</li>
+        <li>¥11,000以上送料無料</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="card-label" style="background:#8A6D2F;">収益モデル</span>
+      <ul>
+        <li>商品販売マージン（主）</li>
+        <li>セット提案による客単価向上</li>
+        <li>季節特集・新規カテゴリ追加</li>
+        <li>将来：法人・造園業者向け卸、DIY教室等</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sec-head"><span class="num">2</span>会社・事業概要</div>
+  <table class="tbl">
+    <tr><th>商号</th><td>合同会社PLANTIA（ブランド名：PLANTIA）</td></tr>
+    <tr><th>事業内容</th><td>ガーデニング・エクステリア用品の企画、仕入および通信販売（ECサイト運営、決済・配送管理）</td></tr>
+    <tr><th>ミッション</th><td>「頑張りすぎない、上質な庭時間」を、誰でも迷わず実現できる環境をつくる</td></tr>
+    <tr><th>ビジョン（3年）</th><td>関西圏の庭づくり世帯に認知される「庭のステージで選べるガーデンショップ」として、年間取扱SKU 600・リピート率30%を目指す</td></tr>
+    <tr><th>差別化</th><td>総合ホームセンター型ではなくセレクト型。ナビゲーション（ステージ・用途・特集）を商品と同等に設計し、迷わない導線を強みとする</td></tr>
+  </table>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    a { color:#2F4B3C; } a:hover { color:#8A6D2F; }
+    .sheet {
+      width: 1122px; height: 794px; display:flex; position:relative; overflow:hidden;
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+      color:#333333; background:#ffffff;
+    }
+    .panel { width:374px; height:794px; position:relative; flex:none; }
+    .fold { position:absolute; top:0; bottom:0; width:0; border-left:1px dashed #D8D2C4; z-index:5; }
+    .pill { display:inline-flex; align-items:center; font-size:10.5px; font-weight:700; letter-spacing:.06em; padding:4px 10px; }
+    .h2 { font-size:19px; font-weight:700; color:#2F4B3C; line-height:1.4; margin:10px 0 2px; }
+    .sub { font-size:10.5px; color:#8A8A8A; letter-spacing:.03em; margin-bottom:12px; }
+    .step { display:flex; gap:10px; margin-bottom:11px; }
+    .step-n { width:19px; height:19px; flex:none; background:#2F4B3C; color:#fff; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+    .step b { display:block; font-size:12px; color:#222; margin-bottom:2px; }
+    .step span { font-size:10.8px; color:#666; line-height:1.55; }
+    .dash { border-top:1px dashed #D8D2C4; margin:14px 0; }
+    .kv { display:flex; gap:10px; font-size:10.8px; padding:4px 0; }
+    .kv .k { width:64px; flex:none; color:#8A8A8A; }
+    .kv .v { color:#333; }
+    .mini-h { font-size:11px; font-weight:700; color:#2F4B3C; margin-bottom:6px; }
+    .cat-list { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:4px 8px; }
+    .cat-list li { font-size:10.8px; color:#333; padding-left:12px; position:relative; }
+    .cat-list li::before { content:""; position:absolute; left:0; top:6px; width:5px; height:5px; }
+    .promise { display:flex; gap:10px; margin-bottom:12px; }
+    .promise-n { width:20px; height:20px; flex:none; border-radius:50%; color:#fff; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+    .promise b { display:block; font-size:11.5px; color:#222; }
+    .promise span { font-size:10.5px; color:#666; line-height:1.5; }
+    .arrival { display:flex; justify-content:space-between; align-items:baseline; padding:8px 0; border-bottom:1px solid #EAE6DD; }
+    .arrival b { font-size:11.5px; color:#222; font-weight:500; }
+    .arrival .price { font-size:12px; color:#2F4B3C; font-weight:700; }
+  </style>
+</helmet>
+
+<div class="sheet">
+
+  <!-- ===== PANEL 1: 内フラップ (ご利用ガイド) ===== -->
+  <div class="panel" style="background:#F5F1E8; padding:26px 24px;">
+    <span class="pill" style="background:#2F4B3C; color:#fff;">HOW TO ORDER</span>
+    <div class="h2">はじめてでも、<br>迷わない3ステップ。</div>
+    <div class="sub">ご利用ガイド</div>
+
+    <div class="step">
+      <div class="step-n">1</div>
+      <div><b>庭のステージでしぼる</b><span>「庭のステージから探す」から、いまのお庭に必要なアイテムだけを表示できます。</span></div>
+    </div>
+    <div class="step">
+      <div class="step-n">2</div>
+      <div><b>数量とサイズを選んでカートへ</b><span>在庫のあるサイズ・カラーだけが選べます。会員登録なしでもご購入いただけます。</span></div>
+    </div>
+    <div class="step">
+      <div class="step-n">3</div>
+      <div><b>お支払い方法を選んで注文完了</b><span>クレジットカード／コンビニ決済／銀行振込（KOMOJU）に対応しています。</span></div>
+    </div>
+
+    <div class="dash"></div>
+
+    <div class="mini-h">お届けについて</div>
+    <div class="kv"><div class="k">送料</div><div class="v">全国一律 ¥660（税込）</div></div>
+    <div class="kv"><div class="k">送料無料</div><div class="v">¥11,000（税込）以上のご購入で無料</div></div>
+    <div class="kv"><div class="k">発送</div><div class="v">ご注文確定後、通常3〜7営業日以内</div></div>
+
+    <div style="margin-top:10px;">
+      <div class="mini-h">返品・交換</div>
+      <p style="font-size:10.5px; color:#666; line-height:1.65; margin:0;">
+        商品到着後8日以内、未開封・未使用品に限り承ります。返送料はお客様負担、初期不良の場合は当社が負担いたします。
+      </p>
+    </div>
+
+    <div style="margin-top:10px;">
+      <div class="mini-h">こまったときは</div>
+      <div class="kv"><div class="k">メール</div><div class="v">support@plantia.example</div></div>
+      <div class="kv"><div class="k">電話</div><div class="v">090-9705-9609</div></div>
+      <div class="kv"><div class="k">受付</div><div class="v">平日10:00〜17:00（土日祝休業）</div></div>
+    </div>
+
+    <div class="dash"></div>
+
+    <span class="pill" style="background:#C6A45C; color:#2F4B3C;">NEW ARRIVALS</span>
+    <div style="margin-top:8px;">
+      <div class="arrival"><b>人工芝（立体感リアルロール）</b><span class="price">¥3,980〜</span></div>
+      <div class="arrival"><b>ジョイントタイル（天然木調）</b><span class="price">¥480〜/枚</span></div>
+      <div class="arrival" style="border-bottom:none;"><b>ソーラーガーデンライト 3個セット</b><span class="price">¥2,480</span></div>
+    </div>
+    <div style="font-size:9.5px; color:#999; margin-top:6px;">表示はすべて税込価格です。</div>
+  </div>
+
+  <div class="fold" style="left:374px;"></div>
+
+  <!-- ===== PANEL 2: 裏表紙 (OUR STORY) ===== -->
+  <div class="panel" style="background:#ffffff; padding:26px 24px; display:flex; flex-direction:column;">
+    <div>
+      <span class="pill" style="background:#2F4B3C; color:#fff;">OUR STORY</span>
+      <div class="h2">「頑張りすぎない」で、<br>上質な庭時間を。</div>
+      <div class="sub">PLANTIAについて</div>
+      <p style="font-size:10.8px; line-height:1.75; color:#444; margin:0 0 14px;">
+        PLANTIAは、ガーデニング・エクステリア用品だけをあつかう小さなセレクトショップです。
+        品数を増やすことよりも、庭のステージ・用途から「いま必要なもの」にすぐ出会えることを大切にしています。
+      </p>
+
+      <div class="mini-h" style="margin-bottom:10px;">PLANTIAの、3つの約束</div>
+      <div class="promise">
+        <div class="promise-n" style="background:#2F4B3C;">1</div>
+        <div><b>ステージから選べる</b><span>はじめの一歩・地面を整える・彩る・くつろぐの4ステージで、必要なものだけをご提案。</span></div>
+      </div>
+      <div class="promise">
+        <div class="promise-n" style="background:#C6A45C;">2</div>
+        <div><b>全15カテゴリー</b><span>迷いすぎない構成に絞り込み。¥880〜¥89,800（税込）で、日常使いから本格リフォームまで。</span></div>
+      </div>
+      <div class="promise">
+        <div class="promise-n" style="background:#8A6D2F;">3</div>
+        <div><b>条件はぜんぶ明記</b><span>送料・返品・お届け日数を隠さず表示。買う前の不安をなくします。</span></div>
+      </div>
+
+      <div class="mini-h" style="margin-top:6px;">とりあつかいカテゴリー</div>
+      <ul class="cat-list">
+        <li style="--d:1"><span style="position:absolute; left:0; top:6px; width:5px; height:5px; background:#2F4B3C;"></span>人工芝・タイル・石</li>
+        <li><span style="position:absolute; left:0; top:6px; width:5px; height:5px; background:#C6A45C;"></span>フェンス／ガーデンアーチ</li>
+        <li><span style="position:absolute; left:0; top:6px; width:5px; height:5px; background:#2F4B3C;"></span>ガーデンファニチャー</li>
+        <li><span style="position:absolute; left:0; top:6px; width:5px; height:5px; background:#C6A45C;"></span>ガーデンライト／オーナメント</li>
+        <li><span style="position:absolute; left:0; top:6px; width:5px; height:5px; background:#2F4B3C;"></span>プランター／フラワースタンド</li>
+        <li><span style="position:absolute; left:0; top:6px; width:5px; height:5px; background:#C6A45C;"></span>屋外収納／ホースリール 他</li>
+      </ul>
+    </div>
+
+    <div style="margin-top:auto;">
+      <div class="dash"></div>
+      <span class="pill" style="background:#8A6D2F; color:#fff;">SHOP INFORMATION</span>
+      <div style="margin-top:8px; font-size:11px; line-height:1.6; color:#333;">
+        <div style="font-weight:700; color:#222; margin-bottom:1px;">PLANTIA オンラインショップ</div>
+        <div style="color:#8A6D2F; font-weight:700; margin-bottom:6px;">plantia.example</div>
+        <div>合同会社PLANTIA／代表 提中 敏文</div>
+        <div>〒520-0006 滋賀県大津市滋賀里三丁目21番3号レイクキャピタル滋賀里105号</div>
+        <div>TEL 090-9705-9609／support@plantia.example</div>
+        <div>平日10:00〜17:00（土日祝休業）</div>
+      </div>
+      <div style="margin-top:12px; background:#2F4B3C; color:#fff; text-align:center; padding:9px; font-size:11.5px; font-weight:700;">
+        ¥11,000以上のご購入で送料無料
+      </div>
+    </div>
+  </div>
+
+  <div class="fold" style="left:748px;"></div>
+
+  <!-- ===== PANEL 3: 表紙 ===== -->
+  <div class="panel" style="background:#ffffff; display:flex; flex-direction:column;">
+    <div style="position:relative; height:352px; overflow:hidden;">
+      <img src="hero.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+      <div style="position:absolute; inset:0; background:rgba(23,38,29,.34);"></div>
+      <div style="position:absolute; top:18px; left:24px;">
+        <span class="pill" style="background:rgba(255,255,255,.92); color:#2F4B3C; letter-spacing:.1em;">GARDEN SELECT SHOP</span>
+      </div>
+      <div style="position:absolute; left:24px; right:24px; bottom:20px; color:#fff;">
+        <div style="font-size:15px; font-weight:700; line-height:1.5; text-shadow:0 1px 6px rgba(0,0,0,.35);">
+          庭に、いちばんの<br>居場所を。
+        </div>
+      </div>
+    </div>
+
+    <div style="flex:1; padding:22px 24px; display:flex; flex-direction:column;">
+      <div style="font-size:34px; font-weight:900; color:#2F4B3C; letter-spacing:.01em; line-height:1;">PLANTIA</div>
+      <div style="font-size:11.5px; font-weight:700; color:#8A6D2F; margin-top:8px;">頑張りすぎない、上質な庭時間を。</div>
+
+      <div style="display:flex; margin-top:16px; border-top:1px solid #EAE6DD; border-bottom:1px solid #EAE6DD; padding:12px 0;">
+        <div style="flex:1; text-align:center; border-right:1px solid #EAE6DD;">
+          <div style="font-size:20px; font-weight:900; color:#2F4B3C;">15</div>
+          <div style="font-size:9px; color:#8A8A8A;">カテゴリー</div>
+        </div>
+        <div style="flex:1; text-align:center; border-right:1px solid #EAE6DD;">
+          <div style="font-size:20px; font-weight:900; color:#2F4B3C;">4</div>
+          <div style="font-size:9px; color:#8A8A8A;">庭のステージ</div>
+        </div>
+        <div style="flex:1; text-align:center;">
+          <div style="font-size:17px; font-weight:900; color:#2F4B3C;">¥11,000</div>
+          <div style="font-size:9px; color:#8A8A8A;">送料無料ライン</div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <div style="display:flex; gap:3px;">
+          <div style="flex:1; height:5px; background:#2F4B3C;"></div>
+          <div style="flex:1; height:5px; background:#4C6B57;"></div>
+          <div style="flex:1; height:5px; background:#8CA894;"></div>
+          <div style="flex:1; height:5px; background:#C6A45C;"></div>
+        </div>
+        <div style="display:flex; margin-top:5px;">
+          <div style="flex:1; text-align:center; font-size:8.5px; color:#666;">はじめの一歩</div>
+          <div style="flex:1; text-align:center; font-size:8.5px; color:#666;">地面を整える</div>
+          <div style="flex:1; text-align:center; font-size:8.5px; color:#666;">彩る</div>
+          <div style="flex:1; text-align:center; font-size:8.5px; color:#666;">くつろぐ</div>
+        </div>
+      </div>
+
+      <div style="margin-top:auto;">
+        <div style="display:inline-block; background:#F5F1E8; color:#2F4B3C; font-size:10.5px; font-weight:700; padding:6px 12px; margin-bottom:10px;">
+          ひらくと、庭のステージ別えらび方ガイド
+        </div>
+        <div style="font-size:15px; font-weight:700; color:#2F4B3C;">plantia.example</div>
+        <div style="font-size:9.5px; color:#8A8A8A; margin-top:4px; line-height:1.5;">
+          全国配送／人工芝・ジョイントタイル・ファニチャーほか全15カテゴリー
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
