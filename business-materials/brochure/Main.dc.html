@@ -19,25 +19,25 @@
     .panel { width:374px; height:794px; position:relative; flex:none; }
     .fold { position:absolute; top:0; bottom:0; width:0; border-left:1px dashed #D8D2C4; z-index:5; }
     .pill { display:inline-flex; align-items:center; font-size:10.5px; font-weight:700; letter-spacing:.06em; padding:4px 10px; }
-    .h2 { font-size:19px; font-weight:700; color:#2F4B3C; line-height:1.4; margin:10px 0 2px; }
-    .sub { font-size:10.5px; color:#8A8A8A; letter-spacing:.03em; margin-bottom:12px; }
-    .step { display:flex; gap:10px; margin-bottom:11px; }
+    .h2 { font-size:19px; font-weight:700; color:#2F4B3C; line-height:1.35; margin:8px 0 2px; }
+    .sub { font-size:10.5px; color:#8A8A8A; letter-spacing:.03em; margin-bottom:10px; }
+    .step { display:flex; gap:10px; margin-bottom:7px; }
     .step-n { width:19px; height:19px; flex:none; background:#2F4B3C; color:#fff; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; }
-    .step b { display:block; font-size:12px; color:#222; margin-bottom:2px; }
-    .step span { font-size:10.8px; color:#666; line-height:1.55; }
-    .dash { border-top:1px dashed #D8D2C4; margin:14px 0; }
-    .kv { display:flex; gap:10px; font-size:10.8px; padding:4px 0; }
+    .step b { display:block; font-size:12px; color:#222; margin-bottom:1px; }
+    .step span { font-size:10.5px; color:#666; line-height:1.5; }
+    .dash { border-top:1px dashed #D8D2C4; margin:10px 0; }
+    .kv { display:flex; gap:10px; font-size:10.6px; padding:3px 0; }
     .kv .k { width:64px; flex:none; color:#8A8A8A; }
     .kv .v { color:#333; }
-    .mini-h { font-size:11px; font-weight:700; color:#2F4B3C; margin-bottom:6px; }
+    .mini-h { font-size:11px; font-weight:700; color:#2F4B3C; margin-bottom:5px; }
     .cat-list { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:4px 8px; }
     .cat-list li { font-size:10.8px; color:#333; padding-left:12px; position:relative; }
     .cat-list li::before { content:""; position:absolute; left:0; top:6px; width:5px; height:5px; }
     .promise { display:flex; gap:10px; margin-bottom:12px; }
-    .promise-n { width:20px; height:20px; flex:none; border-radius:50%; color:#fff; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+    .promise-n { width:20px; height:20px; flex:none; background:#2F4B3C; color:#fff; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; }
     .promise b { display:block; font-size:11.5px; color:#222; }
     .promise span { font-size:10.5px; color:#666; line-height:1.5; }
-    .arrival { display:flex; justify-content:space-between; align-items:baseline; padding:8px 0; border-bottom:1px solid #EAE6DD; }
+    .arrival { display:flex; justify-content:space-between; align-items:baseline; padding:6px 0; border-bottom:1px solid #EAE6DD; }
     .arrival b { font-size:11.5px; color:#222; font-weight:500; }
     .arrival .price { font-size:12px; color:#2F4B3C; font-weight:700; }
   </style>
@@ -46,39 +46,39 @@
 <div class="sheet">
 
   <!-- ===== PANEL 1: 内フラップ (ご利用ガイド) ===== -->
-  <div class="panel" style="background:#F5F1E8; padding:26px 24px;">
+  <div class="panel" style="background:#F5F1E8; padding:22px 24px;">
     <span class="pill" style="background:#2F4B3C; color:#fff;">HOW TO ORDER</span>
     <div class="h2">はじめてでも、<br>迷わない3ステップ。</div>
     <div class="sub">ご利用ガイド</div>
 
     <div class="step">
       <div class="step-n">1</div>
-      <div><b>庭のステージでしぼる</b><span>「庭のステージから探す」から、いまのお庭に必要なアイテムだけを表示できます。</span></div>
+      <div><b>庭のステージでしぼる</b><span>必要なものだけを表示できます。</span></div>
     </div>
     <div class="step">
       <div class="step-n">2</div>
-      <div><b>数量とサイズを選んでカートへ</b><span>在庫のあるサイズ・カラーだけが選べます。会員登録なしでもご購入いただけます。</span></div>
+      <div><b>数量・サイズを選んでカートへ</b><span>会員登録なしでもご購入いただけます。</span></div>
     </div>
     <div class="step">
       <div class="step-n">3</div>
-      <div><b>お支払い方法を選んで注文完了</b><span>クレジットカード／コンビニ決済／銀行振込（KOMOJU）に対応しています。</span></div>
+      <div><b>お支払い方法を選んで注文完了</b><span>カード／コンビニ／銀行振込に対応。</span></div>
     </div>
 
     <div class="dash"></div>
 
     <div class="mini-h">お届けについて</div>
     <div class="kv"><div class="k">送料</div><div class="v">全国一律 ¥660（税込）</div></div>
-    <div class="kv"><div class="k">送料無料</div><div class="v">¥11,000（税込）以上のご購入で無料</div></div>
-    <div class="kv"><div class="k">発送</div><div class="v">ご注文確定後、通常3〜7営業日以内</div></div>
+    <div class="kv"><div class="k">送料無料</div><div class="v">¥11,000（税込）以上で無料</div></div>
+    <div class="kv"><div class="k">発送</div><div class="v">通常3〜7営業日以内</div></div>
 
-    <div style="margin-top:10px;">
+    <div style="margin-top:8px;">
       <div class="mini-h">返品・交換</div>
-      <p style="font-size:10.5px; color:#666; line-height:1.65; margin:0;">
-        商品到着後8日以内、未開封・未使用品に限り承ります。返送料はお客様負担、初期不良の場合は当社が負担いたします。
+      <p style="font-size:10.3px; color:#666; line-height:1.6; margin:0;">
+        到着後8日以内、未開封・未使用品のみ返品可（送料は客様負担、初期不良は当社負担）。
       </p>
     </div>
 
-    <div style="margin-top:10px;">
+    <div style="margin-top:8px;">
       <div class="mini-h">こまったときは</div>
       <div class="kv"><div class="k">メール</div><div class="v">support@plantia.example</div></div>
       <div class="kv"><div class="k">電話</div><div class="v">090-9705-9609</div></div>
