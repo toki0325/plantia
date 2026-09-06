@@ -5,7 +5,9 @@ import { SectionHeading } from "@/components/home/FeatureBanner";
 import { MainCategoryCards } from "@/components/home/CategoryNav";
 import { ProductCarousel } from "@/components/home/ProductCard";
 import { TopHero } from "@/components/home/TopHero";
+import { HomeNews } from "@/components/home/HomeNews";
 import { browseCategories, popularProducts, relatedFeatures } from "@/lib/data/home";
+import { getLatestNews } from "@/lib/data/news";
 
 export const metadata: Metadata = {
   title: "庭に、いちばんの居場所を。",
@@ -37,21 +39,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-8 md:py-12">
-        <div className="content-width">
-          <div className="flex flex-wrap gap-3 justify-center">
-            <Link href="/condition" className="text-sm px-4 py-2 border rounded-[2px] hover:bg-[var(--color-ivory,#F5F1E8)]">
-              育てやすさ・条件から探す
-            </Link>
-            <Link href="/newarrival" className="text-sm px-4 py-2 border rounded-[2px] hover:bg-[var(--color-ivory,#F5F1E8)]">
-              新着商品
-            </Link>
-            <Link href="/news" className="text-sm px-4 py-2 border rounded-[2px] hover:bg-[var(--color-ivory,#F5F1E8)]">
-              お知らせ
-            </Link>
-          </div>
-        </div>
-      </section>
+      <HomeNews items={getLatestNews()} />
 
       <RelatedFeatures features={relatedFeatures} />
     </main>

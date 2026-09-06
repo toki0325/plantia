@@ -94,17 +94,6 @@
       ]
     },
     {
-      "id": "garden-light-05",
-      "name": "ムーミンシリーズ ソーラーライト大 スナフキン",
-      "price": 22000,
-      "images": [
-        "garden-light-05_01.jpg",
-        "garden-light-05_02.jpg",
-        "garden-light-05_03.jpg",
-        "garden-light-05_04.jpg"
-      ]
-    },
-    {
       "id": "garden-light-06",
       "name": "乾電池式センサーライト",
       "price": 4980,
@@ -131,30 +120,6 @@
       ]
     },
     {
-      "id": "garden-light-08",
-      "name": "ムーミンシリーズ ソーラーライト大 ミイ",
-      "price": 22000,
-      "images": [
-        "garden-light-08_01.jpg",
-        "garden-light-08_02.jpg",
-        "garden-light-08_03.jpg",
-        "garden-light-08_04.jpg"
-      ]
-    },
-    {
-      "id": "garden-light-09",
-      "name": "ムーミンシリーズ ソーラーライト小 スナフキン",
-      "price": 13200,
-      "images": [
-        "garden-light-09_01.jpg",
-        "garden-light-09_02.jpg",
-        "garden-light-09_03.jpg",
-        "garden-light-09_04.jpg",
-        "garden-light-09_05.jpg",
-        "garden-light-09_06.jpg"
-      ]
-    },
-    {
       "id": "garden-light-10",
       "name": "ソーラーウォールライト 門柱",
       "price": 5480,
@@ -178,30 +143,6 @@
         "garden-light-11_04.jpg",
         "garden-light-11_05.jpg",
         "garden-light-11_06.jpg"
-      ]
-    },
-    {
-      "id": "garden-light-12",
-      "name": "ムーミンシリーズ ソーラーライト大 ムーミン",
-      "price": 22000,
-      "images": [
-        "garden-light-12_01.jpg",
-        "garden-light-12_02.jpg",
-        "garden-light-12_03.jpg",
-        "garden-light-12_04.jpg"
-      ]
-    },
-    {
-      "id": "garden-light-13",
-      "name": "ムーミンシリーズ ソーラーライト小 ミイ",
-      "price": 13200,
-      "images": [
-        "garden-light-13_01.jpg",
-        "garden-light-13_02.jpg",
-        "garden-light-13_03.jpg",
-        "garden-light-13_04.jpg",
-        "garden-light-13_05.jpg",
-        "garden-light-13_06.jpg"
       ]
     },
     {

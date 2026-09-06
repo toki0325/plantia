@@ -81,30 +81,6 @@
       ]
     },
     {
-      "id": "garden-ornament-04",
-      "name": "ムーミンシリーズ ソーラーライト大 スナフキン",
-      "price": 22000,
-      "images": [
-        "garden-ornament-04_01.jpg",
-        "garden-ornament-04_02.jpg",
-        "garden-ornament-04_03.jpg",
-        "garden-ornament-04_04.jpg"
-      ]
-    },
-    {
-      "id": "garden-ornament-05",
-      "name": "ムーミンシリーズ 陶器の置物",
-      "price": 6600,
-      "images": [
-        "garden-ornament-05_01.jpg",
-        "garden-ornament-05_02.jpg",
-        "garden-ornament-05_03.jpg",
-        "garden-ornament-05_04.jpg",
-        "garden-ornament-05_05.jpg",
-        "garden-ornament-05_06.jpg"
-      ]
-    },
-    {
       "id": "garden-ornament-06",
       "name": "白柴犬のオーナメント 親",
       "price": 22900,
@@ -130,47 +106,12 @@
       ]
     },
     {
-      "id": "garden-ornament-08",
-      "name": "ムーミンシリーズ ソーラーライト大 ミイ",
-      "price": 22000,
-      "images": [
-        "garden-ornament-08_01.jpg",
-        "garden-ornament-08_02.jpg",
-        "garden-ornament-08_03.jpg",
-        "garden-ornament-08_04.jpg"
-      ]
-    },
-    {
       "id": "garden-ornament-09",
       "name": "デザイン支柱 ショート5本組",
       "price": 4980,
       "images": [
         "garden-ornament-09_01.jpg",
         "garden-ornament-09_02.jpg"
-      ]
-    },
-    {
-      "id": "garden-ornament-10",
-      "name": "ムーミンシリーズ ソーラーライト大 ムーミン",
-      "price": 22000,
-      "images": [
-        "garden-ornament-10_01.jpg",
-        "garden-ornament-10_02.jpg",
-        "garden-ornament-10_03.jpg",
-        "garden-ornament-10_04.jpg"
-      ]
-    },
-    {
-      "id": "garden-ornament-11",
-      "name": "ムーミンシリーズ ソーラーライト小 ミイ",
-      "price": 13200,
-      "images": [
-        "garden-ornament-11_01.jpg",
-        "garden-ornament-11_02.jpg",
-        "garden-ornament-11_03.jpg",
-        "garden-ornament-11_04.jpg",
-        "garden-ornament-11_05.jpg",
-        "garden-ornament-11_06.jpg"
       ]
     },
     {
@@ -209,19 +150,6 @@
         "garden-ornament-14_04.jpg",
         "garden-ornament-14_05.jpg",
         "garden-ornament-14_06.jpg"
-      ]
-    },
-    {
-      "id": "garden-ornament-15",
-      "name": "ムーミンシリーズ 陶器の置物",
-      "price": 6600,
-      "images": [
-        "garden-ornament-15_01.jpg",
-        "garden-ornament-15_02.jpg",
-        "garden-ornament-15_03.jpg",
-        "garden-ornament-15_04.jpg",
-        "garden-ornament-15_05.jpg",
-        "garden-ornament-15_06.jpg"
       ]
     },
     {

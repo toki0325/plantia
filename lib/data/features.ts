@@ -26,7 +26,7 @@ export const features: FeatureArticle[] = [
     slug: "joint-tile",
     title: "ジョイントタイルで庭・ベランダを手軽におしゃれ空間に",
     description: "敷くだけ・置くだけで、理想のDIYが簡単に実現できます。",
-    image: "/images/features/feature_02_v1.jpg",
+    image: "/images/features/feature_joint-tile_v2.jpg",
     publishedAt: "2026-05-15",
     relatedCategorySlug: "joint-tile",
     body: [
@@ -60,7 +60,7 @@ export const features: FeatureArticle[] = [
     slug: "garden-light",
     title: "ガーデンライトで夜のお庭も楽しもう",
     description: "ソーラーライトやLEDライトで、ナイトガーデンを演出。",
-    image: "/images/features/feature_05_v1.jpg",
+    image: "/images/features/feature_garden-light_v2.jpg",
     publishedAt: "2026-02-28",
     relatedCategorySlug: "garden-light",
     body: [
@@ -105,7 +105,7 @@ export const features: FeatureArticle[] = [
     slug: "garden-furniture",
     title: "お庭でくつろぐガーデンファニチャー",
     description: "カフェのような空間を、私のお庭に。",
-    image: "/images/features/feature_04_v1.jpg",
+    image: "/images/features/feature_garden-furniture_v2.jpg",
     publishedAt: "2025-10-05",
     relatedCategorySlug: "garden-furniture",
     body: [
