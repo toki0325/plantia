@@ -1,4 +1,5 @@
-import type { ProductDetail, ProductSummary } from "@/lib/types";
+import type { ProductDetail, ProductOption, ProductSummary } from "@/lib/types";
+import outdoorStorageHandoff from "@/data/handoff/outdoor-storage.json";
 
 type RawProduct = {
   id: string;
@@ -10,9 +11,62 @@ type RawProduct = {
   freeShipping?: boolean;
   isNew?: boolean;
   conditionTags?: string[];
+  imageFiles?: string[];
+  colors?: string[];
 };
 
 const GARDENING_TAGS = ["初心者向け", "水やり少なめ", "通年"];
+
+function poolImagePath(categorySlug: string, file: string): string {
+  return `/images/products/${categorySlug}/${file}`;
+}
+
+function fromCategoryHandoff(
+  handoff: {
+    categorySlug: string;
+    products: {
+      id: string;
+      name: string;
+      price: number;
+      images: string[];
+      colors?: string[];
+    }[];
+  },
+  parentCategorySlug: string,
+  freeShipping = false,
+): RawProduct[] {
+  return handoff.products.map((product) => ({
+    id: product.id,
+    folder: handoff.categorySlug,
+    name: product.name,
+    price: product.price,
+    categorySlug: handoff.categorySlug,
+    parentCategorySlug,
+    imageFiles: product.images,
+    colors: product.colors,
+    freeShipping,
+  }));
+}
+
+function buildBatch(
+  folder: string,
+  parentCategorySlug: string,
+  names: string[],
+  prices: number[],
+  freeShipping = false,
+  conditionTags?: string[],
+): RawProduct[] {
+  return names.map((name, i) => ({
+    id: `${folder}-${String(i + 1).padStart(2, "0")}`,
+    folder,
+    name,
+    price: prices[i] ?? 1000,
+    categorySlug: folder,
+    parentCategorySlug,
+    freeShipping,
+    conditionTags,
+  }));
+}
 
 const rawProducts: RawProduct[] = [
   { id: "weed-sand-01", folder: "weed-sand", name: "撒くだけで防草できる人工砂 約15kg", price: 698, categorySlug: "weed-sand", parentCategorySlug: "weeding", isNew: true },
@@ -35,41 +89,38 @@ const rawProducts: RawProduct[] = [
   ...buildBatch("herbicide", "weeding", ["そのまま使える除草剤 4L 液体 家庭用", "お酢を使ったそのまま使える除草液 4L", "エコパシャワー除草剤 3.5L", "撒きやすいクサアタック 除草剤 粒状 3kg", "撒きやすいクサアタック除草剤 5kg", "根まで枯らす草消滅 ジョウロタイプ 4L"], [1080, 1680, 698, 2980, 4780, 2980], true),
   ...buildBatch("weed-sheet", "weeding", ["高密度防草シート 黒 幅1×長さ5m", "高密度防草シート 黒 幅1×長さ10m", "高密度防草シート 黒 幅1m×長さ50m", "高密度防草シート 黒 幅2m×長さ25m", "12年綾織 超高密度防草シート 幅1m 長さ50m"], [980, 1980, 6980, 7480, 17800], true),
   ...buildBatch("weed-sand", "weeding", ["撒くだけで防草できる人工砂 約15kg", "水で固まるマジカルサンド ブラウン 15kg", "水で固まるマジカルサンド グレー 15kg", "水で固まるマジカルサンド ベージュ 15kg"], [698, 698, 698, 698]),
+  ...fromCategoryHandoff(outdoorStorageHandoff, "furniture", true),
 ];
-
-function buildBatch(
-  folder: string,
-  parentCategorySlug: string,
-  names: string[],
-  prices: number[],
-  freeShipping = false,
-  conditionTags?: string[],
-): RawProduct[] {
-  return names.map((name, i) => ({
-    id: `${folder}-${String(i + 1).padStart(2, "0")}`,
-    folder,
-    name,
-    price: prices[i] ?? 1000,
-    categorySlug: folder,
-    parentCategorySlug,
-    freeShipping,
-    conditionTags,
-  }));
-}
 
 export function productImagePath(raw: Pick<RawProduct, "folder" | "id">): string {
   return `/images/products/${raw.folder}/${raw.id}_v1.jpg`;
 }
 
+function toProductImages(raw: RawProduct): string[] {
+  if (raw.imageFiles?.length) {
+    return raw.imageFiles.map((file) => poolImagePath(raw.folder, file));
+  }
+  return [productImagePath(raw)];
+}
+
+function toColorOptions(colors?: string[]): ProductOption[] | undefined {
+  if (!colors?.length) return undefined;
+  return colors.map((label) => ({
+    label,
+    value: label.toLowerCase().replace(/\s+/g, "-"),
+  }));
+}
+
 function toDetail(raw: RawProduct, index: number): ProductDetail {
-  const image = productImagePath(raw);
+  const images = toProductImages(raw);
+  const image = images[0];
 
   return {
     id: raw.id,
     name: raw.name,
     price: raw.price,
     image,
-    images: [image],
+    images,
     categorySlug: raw.categorySlug,
     subCategorySlug: raw.categorySlug,
     parentCategorySlug: raw.parentCategorySlug,
@@ -90,12 +141,13 @@ function toDetail(raw: RawProduct, index: number): ProductDetail {
           ]
         : undefined,
     colors:
-      raw.folder === "joint-tile" || raw.folder === "storage-bench"
+      toColorOptions(raw.colors) ??
+      (raw.folder === "joint-tile" || raw.folder === "storage-bench"
         ? [
             { label: "ブラウン", value: "brown" },
             { label: "グレー", value: "gray" },
           ]
-        : undefined,
+        : undefined),
     createdAt: `2026-0${(index % 6) + 1}-15`,
     reviews: [
       {

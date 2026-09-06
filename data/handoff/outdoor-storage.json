@@ -1,0 +1,272 @@
+{
+  "categorySlug": "outdoor-storage",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005014/1a2/",
+  "imageSlots": [
+    { "file": "{productId}_01.jpg", "role": "thumbnail", "width": 1000, "height": 1000 },
+    { "file": "{productId}_02.jpg", "role": "detail", "width": 1000, "height": 1000 },
+    { "file": "{productId}_03.jpg", "role": "detail", "width": 1000, "height": 1000 },
+    { "file": "{productId}_04.jpg", "role": "detail", "width": 1000, "height": 1000 },
+    { "file": "{productId}_05.jpg", "role": "detail", "width": 1000, "height": 1000 },
+    { "file": "{productId}_06.jpg", "role": "detail", "width": 1000, "height": 1000 }
+  ],
+  "products": [
+    {
+      "id": "outdoor-storage-01",
+      "name": "オールネイビー引き戸物置 薄型ロータイプ",
+      "price": 15569,
+      "images": [
+        "outdoor-storage-01_01.jpg",
+        "outdoor-storage-01_02.jpg",
+        "outdoor-storage-01_03.jpg",
+        "outdoor-storage-01_04.jpg",
+        "outdoor-storage-01_05.jpg",
+        "outdoor-storage-01_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-02",
+      "name": "薄型ベランダ収納ベンチ 幅60cm",
+      "price": 24900,
+      "images": [
+        "outdoor-storage-02_01.jpg",
+        "outdoor-storage-02_02.jpg",
+        "outdoor-storage-02_03.jpg",
+        "outdoor-storage-02_04.jpg",
+        "outdoor-storage-02_05.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-03",
+      "name": "ルーバーストッカー 深型ベンチタイプ 幅114cm",
+      "price": 39800,
+      "images": [
+        "outdoor-storage-03_01.jpg",
+        "outdoor-storage-03_02.jpg",
+        "outdoor-storage-03_03.jpg",
+        "outdoor-storage-03_04.jpg",
+        "outdoor-storage-03_05.jpg",
+        "outdoor-storage-03_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-04",
+      "name": "ウィンドウ付作業台＆収納庫",
+      "price": 39900,
+      "images": [
+        "outdoor-storage-04_01.jpg",
+        "outdoor-storage-04_02.jpg",
+        "outdoor-storage-04_03.jpg",
+        "outdoor-storage-04_04.jpg",
+        "outdoor-storage-04_05.jpg",
+        "outdoor-storage-04_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-05",
+      "name": "欧風スリム収納庫〈セージグリーン〉高さ168cm",
+      "price": 49800,
+      "images": [
+        "outdoor-storage-05_01.jpg",
+        "outdoor-storage-05_02.jpg",
+        "outdoor-storage-05_03.jpg",
+        "outdoor-storage-05_04.jpg",
+        "outdoor-storage-05_05.jpg",
+        "outdoor-storage-05_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-06",
+      "name": "吉谷さんデザイン ガーデングリーンの収納庫 小サイズ（幅52cm）",
+      "price": 35800,
+      "images": [
+        "outdoor-storage-06_01.jpg",
+        "outdoor-storage-06_02.jpg",
+        "outdoor-storage-06_03.jpg",
+        "outdoor-storage-06_04.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-07",
+      "name": "伸縮式タイヤラック カバー付き",
+      "price": 10139,
+      "images": [
+        "outdoor-storage-07_01.jpg",
+        "outdoor-storage-07_02.jpg",
+        "outdoor-storage-07_03.jpg",
+        "outdoor-storage-07_04.jpg",
+        "outdoor-storage-07_05.jpg",
+        "outdoor-storage-07_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-08",
+      "name": "薄型ベランダ収納踏み台ストッカー 幅90高さ32cm",
+      "price": 28900,
+      "images": [
+        "outdoor-storage-08_01.jpg",
+        "outdoor-storage-08_02.jpg",
+        "outdoor-storage-08_03.jpg",
+        "outdoor-storage-08_04.jpg",
+        "outdoor-storage-08_05.jpg",
+        "outdoor-storage-08_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-09",
+      "name": "イギリス製大容量収納ベンチ （ブラック）",
+      "price": 19800,
+      "images": [
+        "outdoor-storage-09_01.jpg",
+        "outdoor-storage-09_02.jpg",
+        "outdoor-storage-09_03.jpg",
+        "outdoor-storage-09_04.jpg",
+        "outdoor-storage-09_05.jpg",
+        "outdoor-storage-09_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-10",
+      "name": "欧風スリム収納庫〈セージグリーン〉高さ95cm",
+      "price": 35800,
+      "images": [
+        "outdoor-storage-10_01.jpg",
+        "outdoor-storage-10_02.jpg",
+        "outdoor-storage-10_03.jpg",
+        "outdoor-storage-10_04.jpg",
+        "outdoor-storage-10_05.jpg",
+        "outdoor-storage-10_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-11",
+      "name": "ムーミンやしき 木製収納庫",
+      "price": 98780,
+      "images": [
+        "outdoor-storage-11_01.jpg",
+        "outdoor-storage-11_02.jpg",
+        "outdoor-storage-11_03.jpg",
+        "outdoor-storage-11_04.jpg",
+        "outdoor-storage-11_05.jpg",
+        "outdoor-storage-11_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-12",
+      "name": "ガルバ製物置 レギュラータイプ 幅91.5高さ168cm",
+      "price": 69800,
+      "images": [
+        "outdoor-storage-12_01.jpg",
+        "outdoor-storage-12_02.jpg",
+        "outdoor-storage-12_03.jpg",
+        "outdoor-storage-12_04.jpg",
+        "outdoor-storage-12_05.jpg",
+        "outdoor-storage-12_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-13",
+      "name": "ˆّ‚«Œث•¨’u ‹g’J‚³‚ٌƒRƒ‰ƒ{ƒJƒ‰پ[پEƒOƒŒپ[ƒWƒ… ƒŒƒMƒ…ƒ‰پ[ƒچپ[",
+      "price": 29340,
+      "images": [
+        "outdoor-storage-13_01.jpg",
+        "outdoor-storage-13_02.jpg",
+        "outdoor-storage-13_03.jpg",
+        "outdoor-storage-13_04.jpg",
+        "outdoor-storage-13_05.jpg",
+        "outdoor-storage-13_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-14",
+      "name": "薄型ベランダ収納ベンチ 幅90cm",
+      "price": 27900,
+      "images": [
+        "outdoor-storage-14_01.jpg",
+        "outdoor-storage-14_02.jpg",
+        "outdoor-storage-14_03.jpg",
+        "outdoor-storage-14_04.jpg",
+        "outdoor-storage-14_05.jpg",
+        "outdoor-storage-14_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-15",
+      "name": "薄型ベランダ収納踏み台ストッカー 幅120高さ32cm",
+      "price": 37900,
+      "images": [
+        "outdoor-storage-15_01.jpg",
+        "outdoor-storage-15_02.jpg",
+        "outdoor-storage-15_03.jpg",
+        "outdoor-storage-15_04.jpg",
+        "outdoor-storage-15_05.jpg",
+        "outdoor-storage-15_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-16",
+      "name": "ルーバーストッカー 浅型踏み台タイプ 幅84cm",
+      "price": 27900,
+      "images": [
+        "outdoor-storage-16_01.jpg",
+        "outdoor-storage-16_02.jpg",
+        "outdoor-storage-16_03.jpg",
+        "outdoor-storage-16_04.jpg",
+        "outdoor-storage-16_05.jpg",
+        "outdoor-storage-16_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-17",
+      "name": "伸縮式タイヤラック ラックのみ",
+      "price": 9729,
+      "images": [
+        "outdoor-storage-17_01.jpg",
+        "outdoor-storage-17_02.jpg",
+        "outdoor-storage-17_03.jpg",
+        "outdoor-storage-17_04.jpg",
+        "outdoor-storage-17_05.jpg",
+        "outdoor-storage-17_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-18",
+      "name": "引き戸物置 吉谷さんコラボカラー・グレージュ 大型",
+      "price": 61140,
+      "images": [
+        "outdoor-storage-18_01.jpg",
+        "outdoor-storage-18_02.jpg",
+        "outdoor-storage-18_03.jpg",
+        "outdoor-storage-18_04.jpg",
+        "outdoor-storage-18_05.jpg",
+        "outdoor-storage-18_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-19",
+      "name": "踏み台＆ベンチルーバーストッカー 深型タイプ幅114cm",
+      "price": 45800,
+      "images": [
+        "outdoor-storage-19_01.jpg",
+        "outdoor-storage-19_02.jpg",
+        "outdoor-storage-19_03.jpg",
+        "outdoor-storage-19_04.jpg",
+        "outdoor-storage-19_05.jpg",
+        "outdoor-storage-19_06.jpg"
+      ]
+    },
+    {
+      "id": "outdoor-storage-20",
+      "name": "アンティーク風シェルフ",
+      "price": 49800,
+      "images": [
+        "outdoor-storage-20_01.jpg",
+        "outdoor-storage-20_02.jpg",
+        "outdoor-storage-20_03.jpg",
+        "outdoor-storage-20_04.jpg",
+        "outdoor-storage-20_05.jpg",
+        "outdoor-storage-20_06.jpg"
+      ]
+    }
+  ]
+}

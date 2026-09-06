@@ -44,6 +44,33 @@ export type HomeSection = {
 
 export const GARDEN_DIY_PATH = "/contents/garden-diy";
 
+export type BrowseCategory = {
+  id: string;
+  name: string;
+  href: string;
+  image?: string;
+};
+
+/** トップ「カテゴリから探す」用。画像は後から差し替え。 */
+export const browseCategories: BrowseCategory[] = [
+  { id: "outdoor-storage", name: "屋外収納庫・物置", href: "/category/outdoor-storage" },
+  { id: "garden-furniture", name: "ガーデンファニチャー", href: "/category/garden-furniture" },
+  { id: "shade-parasol", name: "日除けシェード・ガーデンパラソル", href: "/category/shade-parasol" },
+  { id: "garden-ornament", name: "ガーデンオーナメント・置物", href: "/category/garden-ornament" },
+  { id: "grass-tile-stone", name: "敷石・防草シート・芝", href: "/category/grass-tile-stone" },
+  { id: "planter", name: "プランター・植木鉢・鉢カバー", href: "/category/planter" },
+  { id: "flower-stand", name: "フラワースタンド・プランタースタンド・花台", href: "/category/flower-stand" },
+  { id: "fence", name: "フェンス・ラティス・トレリス", href: "/category/fence" },
+  { id: "ac-cover", name: "エアコン室外機カバー", href: "/category/ac-cover" },
+  { id: "outdoor-trash", name: "屋外ゴミ箱/保管庫", href: "/category/outdoor-trash" },
+  { id: "greenhouse", name: "温室・ビニール温室", href: "/category/greenhouse" },
+  { id: "garden-arch", name: "ガーデンアーチ・パーゴラ", href: "/category/garden-arch" },
+  { id: "joint-tile", name: "ウッドデッキ・ジョイントタイルパネル", href: "/category/joint-tile" },
+  { id: "garden-light", name: "ガーデン/ソーラーライト・庭用照明", href: "/category/garden-light" },
+  { id: "soil", name: "園芸土/肥料", href: "/category/soil" },
+  { id: "hose-reel", name: "ホース・ホースリール", href: "/category/hose-reel" },
+];
+
 export const mainCategories = [
   {
     id: "grass-tile-stone",

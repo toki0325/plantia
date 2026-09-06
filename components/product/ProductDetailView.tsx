@@ -33,12 +33,12 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
       <div>
-        <div className="relative aspect-[4/3] overflow-hidden rounded-[2px] border border-[var(--color-border,#EAE6DD)] mb-3">
+        <div className="relative aspect-square overflow-hidden rounded-[2px] border border-[var(--color-border,#EAE6DD)] mb-3 bg-[var(--color-ivory,#F5F1E8)]">
           <Image
             src={mainImage}
             alt={product.name}
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width: 1024px) 100vw, 50vw"
             priority
           />
@@ -51,7 +51,7 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
               onClick={() => setMainImage(img)}
               className={`relative w-16 h-16 rounded-[2px] overflow-hidden border-2 ${mainImage === img ? "border-[var(--color-primary,#2F4B3C)]" : "border-transparent"}`}
             >
-              <Image src={img} alt="" fill className="object-cover" sizes="64px" />
+              <Image src={img} alt="" fill className="object-contain bg-[var(--color-ivory,#F5F1E8)]" sizes="64px" />
             </button>
           ))}
         </div>

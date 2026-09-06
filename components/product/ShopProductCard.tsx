@@ -15,12 +15,12 @@ export function ShopProductCard({ product }: ShopProductCardProps) {
       href={`/products/${product.id}`}
       className="group block bg-white border border-[var(--color-border,#EAE6DD)] rounded-[2px] overflow-hidden hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-shadow"
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-[var(--color-ivory,#F5F1E8)]">
+      <div className="relative aspect-square overflow-hidden bg-[var(--color-ivory,#F5F1E8)]">
         <Image
           src={product.image}
           alt={product.name}
           fill
-          className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+          className="object-contain transition-transform duration-300 group-hover:scale-[1.03]"
           sizes="(max-width: 640px) 50vw, 25vw"
         />
         {product.freeShipping && (

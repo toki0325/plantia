@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/home/FeatureBanner";
 import { MainCategoryCards } from "@/components/home/CategoryNav";
 import { ProductCarousel } from "@/components/home/ProductCard";
 import { TopHero } from "@/components/home/TopHero";
-import { GARDEN_DIY_PATH, mainCategories, popularProducts, relatedFeatures } from "@/lib/data/home";
+import { browseCategories, GARDEN_DIY_PATH, popularProducts, relatedFeatures } from "@/lib/data/home";
 
 export const metadata: Metadata = {
   title: "庭に、いちばんの居場所を。",
@@ -21,7 +21,7 @@ export default function Home() {
       <section className="py-8 md:py-12 lg:py-16">
         <div className="content-width">
           <SectionHeading title="カテゴリから探す" />
-          <MainCategoryCards categories={mainCategories} />
+          <MainCategoryCards categories={browseCategories} />
           <p className="mt-4 text-center">
             <Link
               href={GARDEN_DIY_PATH}

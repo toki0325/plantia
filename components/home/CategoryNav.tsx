@@ -79,34 +79,37 @@ type MainCategoryCardsProps = {
   categories: {
     id: string;
     name: string;
-    image: string;
     href: string;
+    image?: string;
   }[];
 };
 
 export function MainCategoryCards({ categories }: MainCategoryCardsProps) {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+    <ul className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 gap-x-2 gap-y-6 sm:gap-x-3 sm:gap-y-8 list-none p-0 m-0">
       {categories.map((category) => (
-        <Link
-          key={category.id}
-          href={category.href}
-          className="group relative aspect-[4/3] overflow-hidden rounded-[4px] border border-[var(--border-default)]"
-        >
-          <Image
-            src={category.image}
-            alt={category.name}
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
-            sizes="(max-width: 1024px) 50vw, 25vw"
-          />
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-            <span className="text-white text-xs md:text-sm font-medium leading-snug">
+        <li key={category.id}>
+          <Link
+            href={category.href}
+            className="group flex flex-col items-center text-center"
+          >
+            <span className="relative block w-full aspect-square bg-[#f4f4f4] overflow-hidden">
+              {category.image ? (
+                <Image
+                  src={category.image}
+                  alt=""
+                  fill
+                  className="object-contain p-1"
+                  sizes="(max-width: 640px) 25vw, (max-width: 1024px) 16vw, 12vw"
+                />
+              ) : null}
+            </span>
+            <span className="mt-2 text-[11px] sm:text-xs leading-snug text-[var(--text-default)] group-hover:text-[var(--text-primary)] group-hover:underline">
               {category.name}
             </span>
-          </div>
-        </Link>
+          </Link>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

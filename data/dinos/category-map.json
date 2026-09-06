@@ -1,0 +1,137 @@
+[
+  {
+    "slug": "outdoor-storage",
+    "name": "屋外収納庫・物置",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005014/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "done",
+    "note": "2026-03-06 取得済み"
+  },
+  {
+    "slug": "garden-furniture",
+    "name": "ガーデンファニチャー",
+    "dinosUrl": "https://www.dinos.co.jp/c4/002005015003/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending",
+    "note": "Dinos上は「ガーデンファニチャーセット」。ユーザー指定URL"
+  },
+  {
+    "slug": "shade-parasol",
+    "name": "日除けシェード・ガーデンパラソル",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005016/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending"
+  },
+  {
+    "slug": "garden-ornament",
+    "name": "ガーデンオーナメント・置物",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005017/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending"
+  },
+  {
+    "slug": "grass-tile-stone",
+    "name": "敷石・防草シート・芝",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005018/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending",
+    "note": "Dinos全12件。limitは在庫数に合わせて調整可"
+  },
+  {
+    "slug": "planter",
+    "name": "プランター・植木鉢・鉢カバー",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005019/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending"
+  },
+  {
+    "slug": "flower-stand",
+    "name": "フラワースタンド・プランタースタンド・花台",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005020/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending"
+  },
+  {
+    "slug": "fence",
+    "name": "フェンス・ラティス・トレリス",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005021/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending"
+  },
+  {
+    "slug": "ac-cover",
+    "name": "エアコン室外機カバー",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005022/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending"
+  },
+  {
+    "slug": "outdoor-trash",
+    "name": "屋外ゴミ箱/保管庫",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005023/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending"
+  },
+  {
+    "slug": "greenhouse",
+    "name": "温室・ビニール温室",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005024/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending",
+    "note": "Dinos全2件のみ"
+  },
+  {
+    "slug": "garden-arch",
+    "name": "ガーデンアーチ・パーゴラ",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005025/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending",
+    "note": "Dinos全12件"
+  },
+  {
+    "slug": "joint-tile",
+    "name": "ウッドデッキ・ジョイントタイルパネル",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005026/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending",
+    "note": "Dinos全16件"
+  },
+  {
+    "slug": "garden-light",
+    "name": "ガーデン/ソーラーライト・庭用照明",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005027/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending"
+  },
+  {
+    "slug": "soil",
+    "name": "園芸土/肥料",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005028/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending"
+  },
+  {
+    "slug": "hose-reel",
+    "name": "ホース・ホースリール",
+    "dinosUrl": "https://www.dinos.co.jp/c3/002005029/1a2/",
+    "limit": 20,
+    "maxImages": 6,
+    "status": "pending",
+    "note": "Dinos全10件"
+  }
+]
