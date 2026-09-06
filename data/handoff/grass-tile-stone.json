@@ -1,0 +1,214 @@
+{
+  "categorySlug": "grass-tile-stone",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005018/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "grass-tile-stone-01",
+      "name": "防草シート付大理石敷石マット 同色4枚組",
+      "price": 7280,
+      "images": [
+        "grass-tile-stone-01_01.jpg",
+        "grass-tile-stone-01_02.jpg",
+        "grass-tile-stone-01_03.jpg",
+        "grass-tile-stone-01_04.jpg",
+        "grass-tile-stone-01_05.jpg",
+        "grass-tile-stone-01_06.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-02",
+      "name": "天然石マット 防草シート付き",
+      "price": 12800,
+      "images": [
+        "grass-tile-stone-02_01.jpg",
+        "grass-tile-stone-02_02.jpg",
+        "grass-tile-stone-02_03.jpg",
+        "grass-tile-stone-02_04.jpg",
+        "grass-tile-stone-02_05.jpg",
+        "grass-tile-stone-02_06.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-03",
+      "name": "天然石マット 防草シート付き",
+      "price": 24400,
+      "images": [
+        "grass-tile-stone-03_01.jpg",
+        "grass-tile-stone-03_02.jpg",
+        "grass-tile-stone-03_03.jpg",
+        "grass-tile-stone-03_04.jpg",
+        "grass-tile-stone-03_05.jpg",
+        "grass-tile-stone-03_06.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-04",
+      "name": "色にこだわった防草シート1×5m 4枚組",
+      "price": 4980,
+      "images": [
+        "grass-tile-stone-04_01.jpg",
+        "grass-tile-stone-04_02.jpg",
+        "grass-tile-stone-04_03.jpg",
+        "grass-tile-stone-04_04.jpg",
+        "grass-tile-stone-04_05.jpg",
+        "grass-tile-stone-04_06.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-05",
+      "name": "ジョイント式マット 人工芝 10枚組",
+      "price": 7590,
+      "images": [
+        "grass-tile-stone-05_01.jpg",
+        "grass-tile-stone-05_02.jpg",
+        "grass-tile-stone-05_03.jpg",
+        "grass-tile-stone-05_04.jpg",
+        "grass-tile-stone-05_05.jpg",
+        "grass-tile-stone-05_06.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-06",
+      "name": "防草シート付大理石敷石マット すきまにぴったりフィットタイプ",
+      "price": 38700,
+      "images": [
+        "grass-tile-stone-06_01.jpg",
+        "grass-tile-stone-06_02.jpg",
+        "grass-tile-stone-06_03.jpg",
+        "grass-tile-stone-06_04.jpg",
+        "grass-tile-stone-06_05.jpg",
+        "grass-tile-stone-06_06.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-07",
+      "name": "防草シート付大理石敷石マット すきまにぴったりフィットタイプ",
+      "price": 14000,
+      "images": [
+        "grass-tile-stone-07_01.jpg",
+        "grass-tile-stone-07_02.jpg",
+        "grass-tile-stone-07_03.jpg",
+        "grass-tile-stone-07_04.jpg",
+        "grass-tile-stone-07_05.jpg",
+        "grass-tile-stone-07_06.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-08",
+      "name": "雑草が生えない！防草シート付きロール芝",
+      "price": 5478,
+      "images": [
+        "grass-tile-stone-08_01.jpg",
+        "grass-tile-stone-08_02.jpg",
+        "grass-tile-stone-08_03.jpg",
+        "grass-tile-stone-08_04.jpg",
+        "grass-tile-stone-08_05.jpg",
+        "grass-tile-stone-08_06.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-09",
+      "name": "温度抑制！防草シート付き人工芝",
+      "price": 7400,
+      "images": [
+        "grass-tile-stone-09_01.jpg",
+        "grass-tile-stone-09_02.jpg",
+        "grass-tile-stone-09_03.jpg",
+        "grass-tile-stone-09_04.jpg",
+        "grass-tile-stone-09_05.jpg",
+        "grass-tile-stone-09_06.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-10",
+      "name": "人工芝 固定用ピン レギュラー10本",
+      "price": 600,
+      "images": [
+        "grass-tile-stone-10_01.jpg",
+        "grass-tile-stone-10_02.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-11",
+      "name": "人工芝 固定用ピン ロング10本",
+      "price": 800,
+      "images": [
+        "grass-tile-stone-11_01.jpg",
+        "grass-tile-stone-11_02.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-12",
+      "name": "人工芝 固定用ピン ワイド10本",
+      "price": 800,
+      "images": [
+        "grass-tile-stone-12_01.jpg",
+        "grass-tile-stone-12_02.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-13",
+      "name": "防草シート1×10m 2枚組",
+      "price": 4980,
+      "images": [
+        "grass-tile-stone-13_01.jpg",
+        "grass-tile-stone-13_02.jpg",
+        "grass-tile-stone-13_03.jpg",
+        "grass-tile-stone-13_04.jpg",
+        "grass-tile-stone-13_05.jpg"
+      ]
+    },
+    {
+      "id": "grass-tile-stone-14",
+      "name": "人工芝＋床下2.2cm！ベースアップデッキ 人工芝 9枚＋金具",
+      "price": 9590,
+      "images": [
+        "grass-tile-stone-14_01.jpg",
+        "grass-tile-stone-14_02.jpg",
+        "grass-tile-stone-14_03.jpg",
+        "grass-tile-stone-14_04.jpg",
+        "grass-tile-stone-14_05.jpg",
+        "grass-tile-stone-14_06.jpg"
+      ]
+    }
+  ]
+}

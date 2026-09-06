@@ -1,0 +1,283 @@
+{
+  "categorySlug": "garden-ornament",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005017/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "garden-ornament-01",
+      "name": "おさぼりウサギ２種",
+      "price": 2300,
+      "images": [
+        "garden-ornament-01_01.jpg",
+        "garden-ornament-01_02.jpg",
+        "garden-ornament-01_03.jpg",
+        "garden-ornament-01_04.jpg",
+        "garden-ornament-01_05.jpg",
+        "garden-ornament-01_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-02",
+      "name": "WOOBIA ライト付きオーナメント",
+      "price": 7678,
+      "images": [
+        "garden-ornament-02_01.jpg",
+        "garden-ornament-02_02.jpg",
+        "garden-ornament-02_03.jpg",
+        "garden-ornament-02_04.jpg",
+        "garden-ornament-02_05.jpg",
+        "garden-ornament-02_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-03",
+      "name": "暑すぎだにゃん",
+      "price": 3300,
+      "images": [
+        "garden-ornament-03_01.jpg",
+        "garden-ornament-03_02.jpg",
+        "garden-ornament-03_03.jpg",
+        "garden-ornament-03_04.jpg",
+        "garden-ornament-03_05.jpg",
+        "garden-ornament-03_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-04",
+      "name": "ムーミンシリーズ ソーラーライト大 スナフキン",
+      "price": 22000,
+      "images": [
+        "garden-ornament-04_01.jpg",
+        "garden-ornament-04_02.jpg",
+        "garden-ornament-04_03.jpg",
+        "garden-ornament-04_04.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-05",
+      "name": "ムーミンシリーズ 陶器の置物",
+      "price": 6600,
+      "images": [
+        "garden-ornament-05_01.jpg",
+        "garden-ornament-05_02.jpg",
+        "garden-ornament-05_03.jpg",
+        "garden-ornament-05_04.jpg",
+        "garden-ornament-05_05.jpg",
+        "garden-ornament-05_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-06",
+      "name": "白柴犬のオーナメント 親",
+      "price": 22900,
+      "images": [
+        "garden-ornament-06_01.jpg",
+        "garden-ornament-06_02.jpg",
+        "garden-ornament-06_03.jpg",
+        "garden-ornament-06_04.jpg",
+        "garden-ornament-06_05.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-07",
+      "name": "花だん用アイアンシリーズ アイアン車輪 小",
+      "price": 4980,
+      "images": [
+        "garden-ornament-07_01.jpg",
+        "garden-ornament-07_02.jpg",
+        "garden-ornament-07_03.jpg",
+        "garden-ornament-07_04.jpg",
+        "garden-ornament-07_05.jpg",
+        "garden-ornament-07_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-08",
+      "name": "ムーミンシリーズ ソーラーライト大 ミイ",
+      "price": 22000,
+      "images": [
+        "garden-ornament-08_01.jpg",
+        "garden-ornament-08_02.jpg",
+        "garden-ornament-08_03.jpg",
+        "garden-ornament-08_04.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-09",
+      "name": "デザイン支柱 ショート5本組",
+      "price": 4980,
+      "images": [
+        "garden-ornament-09_01.jpg",
+        "garden-ornament-09_02.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-10",
+      "name": "ムーミンシリーズ ソーラーライト大 ムーミン",
+      "price": 22000,
+      "images": [
+        "garden-ornament-10_01.jpg",
+        "garden-ornament-10_02.jpg",
+        "garden-ornament-10_03.jpg",
+        "garden-ornament-10_04.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-11",
+      "name": "ムーミンシリーズ ソーラーライト小 ミイ",
+      "price": 13200,
+      "images": [
+        "garden-ornament-11_01.jpg",
+        "garden-ornament-11_02.jpg",
+        "garden-ornament-11_03.jpg",
+        "garden-ornament-11_04.jpg",
+        "garden-ornament-11_05.jpg",
+        "garden-ornament-11_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-12",
+      "name": "リス2種セット",
+      "price": 3980,
+      "images": [
+        "garden-ornament-12_01.jpg",
+        "garden-ornament-12_02.jpg",
+        "garden-ornament-12_03.jpg",
+        "garden-ornament-12_04.jpg",
+        "garden-ornament-12_05.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-13",
+      "name": "おうちの蚊やり",
+      "price": 4980,
+      "images": [
+        "garden-ornament-13_01.jpg",
+        "garden-ornament-13_02.jpg",
+        "garden-ornament-13_03.jpg",
+        "garden-ornament-13_04.jpg",
+        "garden-ornament-13_05.jpg",
+        "garden-ornament-13_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-14",
+      "name": "切り株のプランター",
+      "price": 9500,
+      "images": [
+        "garden-ornament-14_01.jpg",
+        "garden-ornament-14_02.jpg",
+        "garden-ornament-14_03.jpg",
+        "garden-ornament-14_04.jpg",
+        "garden-ornament-14_05.jpg",
+        "garden-ornament-14_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-15",
+      "name": "ムーミンシリーズ 陶器の置物",
+      "price": 6600,
+      "images": [
+        "garden-ornament-15_01.jpg",
+        "garden-ornament-15_02.jpg",
+        "garden-ornament-15_03.jpg",
+        "garden-ornament-15_04.jpg",
+        "garden-ornament-15_05.jpg",
+        "garden-ornament-15_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-16",
+      "name": "シャビーうさぎ",
+      "price": 6200,
+      "images": [
+        "garden-ornament-16_01.jpg",
+        "garden-ornament-16_02.jpg",
+        "garden-ornament-16_03.jpg",
+        "garden-ornament-16_04.jpg",
+        "garden-ornament-16_05.jpg",
+        "garden-ornament-16_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-17",
+      "name": "段差に置ける！助け合いうさぎ",
+      "price": 4980,
+      "images": [
+        "garden-ornament-17_01.jpg",
+        "garden-ornament-17_02.jpg",
+        "garden-ornament-17_03.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-18",
+      "name": "ブタさんお助け隊！",
+      "price": 4980,
+      "images": [
+        "garden-ornament-18_01.jpg",
+        "garden-ornament-18_02.jpg",
+        "garden-ornament-18_03.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-19",
+      "name": "リアル立ちうさぎ",
+      "price": 4980,
+      "images": [
+        "garden-ornament-19_01.jpg",
+        "garden-ornament-19_02.jpg"
+      ]
+    },
+    {
+      "id": "garden-ornament-20",
+      "name": "リアルふせうさぎ",
+      "price": 4800,
+      "images": [
+        "garden-ornament-20_01.jpg",
+        "garden-ornament-20_02.jpg",
+        "garden-ornament-20_03.jpg",
+        "garden-ornament-20_04.jpg",
+        "garden-ornament-20_05.jpg",
+        "garden-ornament-20_06.jpg"
+      ]
+    }
+  ]
+}

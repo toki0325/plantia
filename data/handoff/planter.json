@@ -1,0 +1,292 @@
+{
+  "categorySlug": "planter",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005019/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "planter-01",
+      "name": "プランターシリーズ 横長スリム プランター 1個",
+      "price": 8900,
+      "images": [
+        "planter-01_01.jpg",
+        "planter-01_02.jpg",
+        "planter-01_03.jpg",
+        "planter-01_04.jpg",
+        "planter-01_05.jpg",
+        "planter-01_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-02",
+      "name": "スクエアポット",
+      "price": 3500,
+      "images": [
+        "planter-02_01.jpg",
+        "planter-02_02.jpg",
+        "planter-02_03.jpg",
+        "planter-02_04.jpg"
+      ]
+    },
+    {
+      "id": "planter-03",
+      "name": "ラウンドプランター",
+      "price": 4400,
+      "images": [
+        "planter-03_01.jpg",
+        "planter-03_02.jpg",
+        "planter-03_03.jpg",
+        "planter-03_04.jpg",
+        "planter-03_05.jpg",
+        "planter-03_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-04",
+      "name": "無垢材のキャスター付き プランターベース ホワイトオーク 径24cm",
+      "price": 8500,
+      "images": [
+        "planter-04_01.jpg",
+        "planter-04_02.jpg",
+        "planter-04_03.jpg",
+        "planter-04_04.jpg",
+        "planter-04_05.jpg",
+        "planter-04_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-05",
+      "name": "プランター付コンテナボックス シングル",
+      "price": 2800,
+      "images": [
+        "planter-05_01.jpg",
+        "planter-05_02.jpg",
+        "planter-05_03.jpg",
+        "planter-05_04.jpg",
+        "planter-05_05.jpg",
+        "planter-05_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-06",
+      "name": "栗の木花台",
+      "price": 4980,
+      "images": [
+        "planter-06_01.jpg",
+        "planter-06_02.jpg"
+      ]
+    },
+    {
+      "id": "planter-07",
+      "name": "欧風トレリス付きプランターボックス〈セージグリーン〉高さ102cm",
+      "price": 29000,
+      "images": [
+        "planter-07_01.jpg",
+        "planter-07_02.jpg",
+        "planter-07_03.jpg",
+        "planter-07_04.jpg",
+        "planter-07_05.jpg",
+        "planter-07_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-08",
+      "name": "コーナーデザインプランター",
+      "price": 3980,
+      "images": [
+        "planter-08_01.jpg",
+        "planter-08_02.jpg",
+        "planter-08_03.jpg",
+        "planter-08_04.jpg"
+      ]
+    },
+    {
+      "id": "planter-09",
+      "name": "PPバッグ（大小２個組）",
+      "price": 4200,
+      "images": [
+        "planter-09_01.jpg",
+        "planter-09_02.jpg",
+        "planter-09_03.jpg",
+        "planter-09_04.jpg",
+        "planter-09_05.jpg"
+      ]
+    },
+    {
+      "id": "planter-10",
+      "name": "頑丈アイアンキャスター付き鉢台 径35cm お得な2個組",
+      "price": 26700,
+      "images": [
+        "planter-10_01.jpg",
+        "planter-10_02.jpg",
+        "planter-10_03.jpg",
+        "planter-10_04.jpg",
+        "planter-10_05.jpg",
+        "planter-10_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-11",
+      "name": "ハーブ用菜園プランター ベジトラグ 薄型（4コマ）",
+      "price": 21899,
+      "images": [
+        "planter-11_01.jpg",
+        "planter-11_02.jpg",
+        "planter-11_03.jpg",
+        "planter-11_04.jpg",
+        "planter-11_05.jpg",
+        "planter-11_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-12",
+      "name": "キャスター付きプランターベース ホワイトオーク 角40cm",
+      "price": 13999,
+      "images": [
+        "planter-12_01.jpg",
+        "planter-12_02.jpg",
+        "planter-12_03.jpg",
+        "planter-12_04.jpg",
+        "planter-12_05.jpg",
+        "planter-12_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-13",
+      "name": "頑丈アイアンキャスター付き鉢台 径30cm 1個",
+      "price": 11990,
+      "images": [
+        "planter-13_01.jpg",
+        "planter-13_02.jpg",
+        "planter-13_03.jpg",
+        "planter-13_04.jpg",
+        "planter-13_05.jpg",
+        "planter-13_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-14",
+      "name": "無垢材のキャスター付き プランターベース ウォルナット 径29cm",
+      "price": 11000,
+      "images": [
+        "planter-14_01.jpg",
+        "planter-14_02.jpg",
+        "planter-14_03.jpg",
+        "planter-14_04.jpg",
+        "planter-14_05.jpg",
+        "planter-14_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-15",
+      "name": "切り株のプランター",
+      "price": 9500,
+      "images": [
+        "planter-15_01.jpg",
+        "planter-15_02.jpg",
+        "planter-15_03.jpg",
+        "planter-15_04.jpg",
+        "planter-15_05.jpg",
+        "planter-15_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-16",
+      "name": "無垢材のキャスター付き プランターベース ホワイトオーク 径29cm",
+      "price": 9000,
+      "images": [
+        "planter-16_01.jpg",
+        "planter-16_02.jpg",
+        "planter-16_03.jpg",
+        "planter-16_04.jpg",
+        "planter-16_05.jpg",
+        "planter-16_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-17",
+      "name": "ガーデンブロック 同色12個組",
+      "price": 4400,
+      "images": [
+        "planter-17_01.jpg",
+        "planter-17_02.jpg",
+        "planter-17_03.jpg",
+        "planter-17_04.jpg",
+        "planter-17_05.jpg"
+      ]
+    },
+    {
+      "id": "planter-18",
+      "name": "扇形花台2個組",
+      "price": 3980,
+      "images": [
+        "planter-18_01.jpg",
+        "planter-18_02.jpg",
+        "planter-18_03.jpg"
+      ]
+    },
+    {
+      "id": "planter-19",
+      "name": "シャビーうさぎ",
+      "price": 6200,
+      "images": [
+        "planter-19_01.jpg",
+        "planter-19_02.jpg",
+        "planter-19_03.jpg",
+        "planter-19_04.jpg",
+        "planter-19_05.jpg",
+        "planter-19_06.jpg"
+      ]
+    },
+    {
+      "id": "planter-20",
+      "name": "ラタン調ハンギングバスケットＳ",
+      "price": 2640,
+      "images": [
+        "planter-20_01.jpg",
+        "planter-20_02.jpg",
+        "planter-20_03.jpg",
+        "planter-20_04.jpg",
+        "planter-20_05.jpg",
+        "planter-20_06.jpg"
+      ]
+    }
+  ]
+}

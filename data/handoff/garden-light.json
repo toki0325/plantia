@@ -1,0 +1,296 @@
+{
+  "categorySlug": "garden-light",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005027/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "garden-light-01",
+      "name": "3WAYソーラーガーデンライト2個組",
+      "price": 4400,
+      "images": [
+        "garden-light-01_01.jpg",
+        "garden-light-01_02.jpg",
+        "garden-light-01_03.jpg",
+        "garden-light-01_04.jpg",
+        "garden-light-01_05.jpg",
+        "garden-light-01_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-02",
+      "name": "ソーラーランタン",
+      "price": 4400,
+      "images": [
+        "garden-light-02_01.jpg",
+        "garden-light-02_02.jpg",
+        "garden-light-02_03.jpg",
+        "garden-light-02_04.jpg",
+        "garden-light-02_05.jpg",
+        "garden-light-02_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-03",
+      "name": "LEDソーラーストーンライト 1個",
+      "price": 3850,
+      "images": [
+        "garden-light-03_01.jpg",
+        "garden-light-03_02.jpg",
+        "garden-light-03_03.jpg",
+        "garden-light-03_04.jpg",
+        "garden-light-03_05.jpg",
+        "garden-light-03_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-04",
+      "name": "WOOBIA ライト付きオーナメント",
+      "price": 7678,
+      "images": [
+        "garden-light-04_01.jpg",
+        "garden-light-04_02.jpg",
+        "garden-light-04_03.jpg",
+        "garden-light-04_04.jpg",
+        "garden-light-04_05.jpg",
+        "garden-light-04_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-05",
+      "name": "ムーミンシリーズ ソーラーライト大 スナフキン",
+      "price": 22000,
+      "images": [
+        "garden-light-05_01.jpg",
+        "garden-light-05_02.jpg",
+        "garden-light-05_03.jpg",
+        "garden-light-05_04.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-06",
+      "name": "乾電池式センサーライト",
+      "price": 4980,
+      "images": [
+        "garden-light-06_01.jpg",
+        "garden-light-06_02.jpg",
+        "garden-light-06_03.jpg",
+        "garden-light-06_04.jpg",
+        "garden-light-06_05.jpg",
+        "garden-light-06_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-07",
+      "name": "ハイパワー！電池式LEDセンサーライトワイド",
+      "price": 4980,
+      "images": [
+        "garden-light-07_01.jpg",
+        "garden-light-07_02.jpg",
+        "garden-light-07_03.jpg",
+        "garden-light-07_04.jpg",
+        "garden-light-07_05.jpg",
+        "garden-light-07_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-08",
+      "name": "ムーミンシリーズ ソーラーライト大 ミイ",
+      "price": 22000,
+      "images": [
+        "garden-light-08_01.jpg",
+        "garden-light-08_02.jpg",
+        "garden-light-08_03.jpg",
+        "garden-light-08_04.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-09",
+      "name": "ムーミンシリーズ ソーラーライト小 スナフキン",
+      "price": 13200,
+      "images": [
+        "garden-light-09_01.jpg",
+        "garden-light-09_02.jpg",
+        "garden-light-09_03.jpg",
+        "garden-light-09_04.jpg",
+        "garden-light-09_05.jpg",
+        "garden-light-09_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-10",
+      "name": "ソーラーウォールライト 門柱",
+      "price": 5480,
+      "images": [
+        "garden-light-10_01.jpg",
+        "garden-light-10_02.jpg",
+        "garden-light-10_03.jpg",
+        "garden-light-10_04.jpg",
+        "garden-light-10_05.jpg",
+        "garden-light-10_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-11",
+      "name": "コンセント式クラシックパーティーライト",
+      "price": 12989,
+      "images": [
+        "garden-light-11_01.jpg",
+        "garden-light-11_02.jpg",
+        "garden-light-11_03.jpg",
+        "garden-light-11_04.jpg",
+        "garden-light-11_05.jpg",
+        "garden-light-11_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-12",
+      "name": "ムーミンシリーズ ソーラーライト大 ムーミン",
+      "price": 22000,
+      "images": [
+        "garden-light-12_01.jpg",
+        "garden-light-12_02.jpg",
+        "garden-light-12_03.jpg",
+        "garden-light-12_04.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-13",
+      "name": "ムーミンシリーズ ソーラーライト小 ミイ",
+      "price": 13200,
+      "images": [
+        "garden-light-13_01.jpg",
+        "garden-light-13_02.jpg",
+        "garden-light-13_03.jpg",
+        "garden-light-13_04.jpg",
+        "garden-light-13_05.jpg",
+        "garden-light-13_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-14",
+      "name": "どこにでも常夜灯！ ソーラーライト",
+      "price": 11000,
+      "images": [
+        "garden-light-14_01.jpg",
+        "garden-light-14_02.jpg",
+        "garden-light-14_03.jpg",
+        "garden-light-14_04.jpg",
+        "garden-light-14_05.jpg",
+        "garden-light-14_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-15",
+      "name": "LEDガーデンソーラーライト",
+      "price": 4980,
+      "images": [
+        "garden-light-15_01.jpg",
+        "garden-light-15_02.jpg",
+        "garden-light-15_03.jpg",
+        "garden-light-15_04.jpg",
+        "garden-light-15_05.jpg",
+        "garden-light-15_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-16",
+      "name": "風で揺れるたんぽぽライト２本組",
+      "price": 3980,
+      "images": [
+        "garden-light-16_01.jpg",
+        "garden-light-16_02.jpg",
+        "garden-light-16_03.jpg",
+        "garden-light-16_04.jpg",
+        "garden-light-16_05.jpg",
+        "garden-light-16_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-17",
+      "name": "電気代ゼロ！角度自在のソーラーライト",
+      "price": 4990,
+      "images": [
+        "garden-light-17_01.jpg",
+        "garden-light-17_02.jpg",
+        "garden-light-17_03.jpg",
+        "garden-light-17_04.jpg",
+        "garden-light-17_05.jpg",
+        "garden-light-17_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-18",
+      "name": "お花のソーラーライト2本組",
+      "price": 4980,
+      "images": [
+        "garden-light-18_01.jpg",
+        "garden-light-18_02.jpg",
+        "garden-light-18_03.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-19",
+      "name": "フェアリーソーラーライト120球 2個組",
+      "price": 4980,
+      "images": [
+        "garden-light-19_01.jpg",
+        "garden-light-19_02.jpg",
+        "garden-light-19_03.jpg",
+        "garden-light-19_04.jpg",
+        "garden-light-19_05.jpg",
+        "garden-light-19_06.jpg"
+      ]
+    },
+    {
+      "id": "garden-light-20",
+      "name": "アリス シルエットシリーズ ランタン ソーラーライト",
+      "price": 4690,
+      "images": [
+        "garden-light-20_01.jpg",
+        "garden-light-20_02.jpg",
+        "garden-light-20_03.jpg",
+        "garden-light-20_04.jpg",
+        "garden-light-20_05.jpg",
+        "garden-light-20_06.jpg"
+      ]
+    }
+  ]
+}

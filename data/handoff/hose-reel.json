@@ -1,0 +1,157 @@
+{
+  "categorySlug": "hose-reel",
+  "pattern": "per-product",
+  "source": "https://www.dinos.co.jp/c3/002005029/1a2/",
+  "imageSlots": [
+    {
+      "file": "{productId}_01.jpg",
+      "role": "thumbnail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_02.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_03.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_04.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_05.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "file": "{productId}_06.jpg",
+      "role": "detail",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "products": [
+    {
+      "id": "hose-reel-01",
+      "name": "コイルホース",
+      "price": 4980,
+      "images": [
+        "hose-reel-01_01.jpg",
+        "hose-reel-01_02.jpg",
+        "hose-reel-01_03.jpg",
+        "hose-reel-01_04.jpg",
+        "hose-reel-01_05.jpg",
+        "hose-reel-01_06.jpg"
+      ]
+    },
+    {
+      "id": "hose-reel-02",
+      "name": "ラウンドホースハンガー",
+      "price": 4980,
+      "images": [
+        "hose-reel-02_01.jpg",
+        "hose-reel-02_02.jpg"
+      ]
+    },
+    {
+      "id": "hose-reel-03",
+      "name": "ガイド付きが便利！ホースリール20m",
+      "price": 7252,
+      "images": [
+        "hose-reel-03_01.jpg",
+        "hose-reel-03_02.jpg",
+        "hose-reel-03_03.jpg",
+        "hose-reel-03_04.jpg",
+        "hose-reel-03_05.jpg"
+      ]
+    },
+    {
+      "id": "hose-reel-04",
+      "name": "アイアンホースガード3本組",
+      "price": 4980,
+      "images": [
+        "hose-reel-04_01.jpg",
+        "hose-reel-04_02.jpg",
+        "hose-reel-04_03.jpg",
+        "hose-reel-04_04.jpg"
+      ]
+    },
+    {
+      "id": "hose-reel-05",
+      "name": "コトリのホースガード ロング3本組",
+      "price": 7599,
+      "images": [
+        "hose-reel-05_01.jpg",
+        "hose-reel-05_02.jpg",
+        "hose-reel-05_03.jpg",
+        "hose-reel-05_04.jpg",
+        "hose-reel-05_05.jpg",
+        "hose-reel-05_06.jpg"
+      ]
+    },
+    {
+      "id": "hose-reel-06",
+      "name": "植栽になじむ 鋳物風ホースリール 25m",
+      "price": 21000,
+      "images": [
+        "hose-reel-06_01.jpg",
+        "hose-reel-06_02.jpg",
+        "hose-reel-06_03.jpg",
+        "hose-reel-06_04.jpg",
+        "hose-reel-06_05.jpg",
+        "hose-reel-06_06.jpg"
+      ]
+    },
+    {
+      "id": "hose-reel-07",
+      "name": "ホースキープ",
+      "price": 2000,
+      "images": [
+        "hose-reel-07_01.jpg",
+        "hose-reel-07_02.jpg"
+      ]
+    },
+    {
+      "id": "hose-reel-08",
+      "name": "壁掛けホースリール 15m",
+      "price": 4980,
+      "images": [
+        "hose-reel-08_01.jpg",
+        "hose-reel-08_02.jpg",
+        "hose-reel-08_03.jpg",
+        "hose-reel-08_04.jpg"
+      ]
+    },
+    {
+      "id": "hose-reel-09",
+      "name": "ドイツ GARDENA スプリンクラー L 350m&amp;sup2;対応",
+      "price": 9980,
+      "images": [
+        "hose-reel-09_01.jpg",
+        "hose-reel-09_02.jpg",
+        "hose-reel-09_03.jpg",
+        "hose-reel-09_04.jpg",
+        "hose-reel-09_05.jpg"
+      ]
+    },
+    {
+      "id": "hose-reel-10",
+      "name": "ホースハンガー",
+      "price": 4980,
+      "images": [
+        "hose-reel-10_01.jpg",
+        "hose-reel-10_02.jpg"
+      ]
+    }
+  ]
+}
