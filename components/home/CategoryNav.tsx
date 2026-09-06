@@ -93,13 +93,13 @@ export function MainCategoryCards({ categories }: MainCategoryCardsProps) {
             href={category.href}
             className="group flex flex-col items-center text-center"
           >
-            <span className="relative block w-full aspect-square bg-[#f4f4f4] overflow-hidden">
+            <span className="relative block w-full aspect-square bg-[#f4f4f4] overflow-hidden rounded-[4px]">
               {category.image ? (
                 <Image
                   src={category.image}
-                  alt=""
+                  alt={category.name}
                   fill
-                  className="object-contain p-1"
+                  className="object-cover transition-transform duration-200 group-hover:scale-105"
                   sizes="(max-width: 640px) 25vw, (max-width: 1024px) 16vw, 12vw"
                 />
               ) : null}
