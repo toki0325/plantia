@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { getSessionUser } from "@/app/actions/auth";
 import { PageHeader, PageSection } from "@/components/layout/PageHeader";
 import { CheckoutForm } from "@/components/checkout/CheckoutForm";
 
 export const metadata: Metadata = { title: "ご購入手続き" };
 
-export default function CheckoutPage() {
+export default async function CheckoutPage() {
+  const user = await getSessionUser();
+
   return (
     <>
       <PageHeader
@@ -16,7 +20,9 @@ export default function CheckoutPage() {
         ]}
       />
       <PageSection>
-        <CheckoutForm />
+        <Suspense>
+          <CheckoutForm user={user} />
+        </Suspense>
       </PageSection>
     </>
   );

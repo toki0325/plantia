@@ -38,7 +38,7 @@ function SearchForm({ className = "" }: { className?: string }) {
   );
 }
 
-export function SiteHeader() {
+export function SiteHeader({ user }: { user: { name: string } | null }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -59,9 +59,15 @@ export function SiteHeader() {
           <SearchForm className="hidden md:flex flex-1 max-w-xl mx-auto" />
 
           <div className="hidden md:flex items-center gap-4 shrink-0 text-sm ml-auto">
-            <Link href="/login" className="hover:underline whitespace-nowrap text-white/90">
-              ログイン・新規会員登録
-            </Link>
+            {user ? (
+              <Link href="/mypage" className="hover:underline whitespace-nowrap text-white/90">
+                {user.name}さん
+              </Link>
+            ) : (
+              <Link href="/login" className="hover:underline whitespace-nowrap text-white/90">
+                ログイン・新規会員登録
+              </Link>
+            )}
             <Link href="/cart" className="flex items-center gap-1 hover:underline whitespace-nowrap text-white/90">
               <CartIcon />
               カート
@@ -161,13 +167,23 @@ export function SiteHeader() {
               </div>
 
               <div className="flex flex-col gap-2 pt-2 border-t border-[var(--color-border,#EAE6DD)]">
-                <Link
-                  href="/login"
-                  className="inline-flex items-center justify-center h-11 px-4 text-sm bg-[var(--color-primary,#2F4B3C)] text-white rounded-[2px]"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  ログイン・新規会員登録
-                </Link>
+                {user ? (
+                  <Link
+                    href="/mypage"
+                    className="inline-flex items-center justify-center h-11 px-4 text-sm bg-[var(--color-primary,#2F4B3C)] text-white rounded-[2px]"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    マイページ（{user.name}さん）
+                  </Link>
+                ) : (
+                  <Link
+                    href="/login"
+                    className="inline-flex items-center justify-center h-11 px-4 text-sm bg-[var(--color-primary,#2F4B3C)] text-white rounded-[2px]"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    ログイン・新規会員登録
+                  </Link>
+                )}
                 <Link
                   href="/cart"
                   className="inline-flex items-center justify-center h-11 px-4 text-sm border border-[var(--color-primary,#2F4B3C)] text-[var(--color-primary,#2F4B3C)] rounded-[2px]"

@@ -4,16 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/components/providers/CartProvider";
 import { Button } from "@/components/ui/Button";
-import {
-  FREE_SHIPPING_THRESHOLD,
-  SHIPPING_FEE,
-  TAX_INCLUDED_LABEL,
-} from "@/lib/constants";
-import { formatPrice } from "@/lib/pricing";
+import { FREE_SHIPPING_THRESHOLD, TAX_INCLUDED_LABEL } from "@/lib/constants";
+import { formatPrice, shippingFeeForCart } from "@/lib/pricing";
 
 export function CartView() {
   const { items, subtotal, updateQuantity, removeItem } = useCart();
-  const shipping = subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE;
+  const shipping = shippingFeeForCart(
+    subtotal,
+    items.map((line) => line.product),
+  );
   const total = subtotal + shipping;
 
   if (items.length === 0) {
@@ -58,6 +57,9 @@ export function CartView() {
                 <p className="text-sm font-bold text-[var(--color-primary,#2F4B3C)] mt-1">
                   {formatPrice(line.product.price)}円{TAX_INCLUDED_LABEL}
                 </p>
+                {line.product.freeShipping && (
+                  <p className="text-xs text-[var(--color-accent,#C6A45C)] mt-1">送料無料</p>
+                )}
                 <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-3">
                   <label className="text-xs">数量</label>
                   <input
@@ -105,7 +107,7 @@ export function CartView() {
             </dd>
           </div>
         </dl>
-        {subtotal < FREE_SHIPPING_THRESHOLD && (
+        {shipping > 0 && subtotal < FREE_SHIPPING_THRESHOLD && (
           <p className="text-xs text-[var(--color-text-muted,#666666)] mt-3">
             あと{formatPrice(FREE_SHIPPING_THRESHOLD - subtotal)}円で送料無料
           </p>

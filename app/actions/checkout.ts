@@ -2,12 +2,29 @@
 
 import { cookies } from "next/headers";
 import { getProductById } from "@/lib/data/products";
+import {
+  createKomojuSession,
+  getKomojuSecretKey,
+  getKomojuSession,
+  describePaymentOutcome,
+  type KomojuSession,
+} from "@/lib/komoju";
 import { calculateOrderPricing } from "@/lib/pricing";
+import { getPublicAssetBaseUrl, getRequestBaseUrl } from "@/lib/site-url";
 import type { CheckoutFormData } from "@/lib/types";
+import { saveCheckoutProfile, refreshSessionCookies } from "@/app/actions/auth";
 
 export type CheckoutResult =
-  | { success: true; orderId: string; total: number }
+  | { success: true; checkoutUrl: string; orderId: string }
   | { success: false; error: string };
+
+export type CheckoutSessionView = {
+  kind: "paid" | "awaiting" | "cancelled" | "failed" | "missing";
+  orderId: string | null;
+  paymentType: string | null;
+  amount: number | null;
+  email: string | null;
+};
 
 function validateCheckoutForm(data: CheckoutFormData): string | null {
   if (!data.name.trim() || data.name.length > 100) return "お名前を正しく入力してください";
@@ -21,7 +38,10 @@ function validateCheckoutForm(data: CheckoutFormData): string | null {
   return null;
 }
 
-/** MVP: KOMOJU連携前のサーバーサイド注文確定（金額は商品マスタから再計算） */
+function createOrderId(): string {
+  return `PLT-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+}
+
 export async function submitCheckout(
   cartItems: { productId: string; quantity: number }[],
   formData: CheckoutFormData,
@@ -31,23 +51,94 @@ export async function submitCheckout(
     return { success: false, error: validationError };
   }
 
+  const secretKey = getKomojuSecretKey();
+  if (!secretKey) {
+    return {
+      success: false,
+      error:
+        "KOMOJU_SECRET_KEY が未設定です。ローカルは .env.local、本番は Netlify の環境変数（Functions スコープ）を入れて再デプロイしてください。",
+    };
+  }
+
   const pricing = calculateOrderPricing(cartItems, getProductById);
   if (!pricing) {
     return { success: false, error: "カート内容が無効です。再度お試しください。" };
   }
 
-  // MVP: 実際のKOMOJU API呼び出しは環境変数設定後に実装
-  const orderId = `NG-${Date.now()}`;
+  const orderId = createOrderId();
+  const returnUrl = `${await getRequestBaseUrl()}/checkout/complete`;
+
+  const session = await createKomojuSession({
+    secretKey,
+    returnUrl,
+    imageBaseUrl: await getPublicAssetBaseUrl(),
+    orderId,
+    pricing,
+    form: formData,
+  });
+
+  if (!session.data?.session_url) {
+    return {
+      success: false,
+      error: session.error ?? "決済セッションを作成できませんでした。",
+    };
+  }
 
   const cookieStore = await cookies();
   cookieStore.set("plantia-last-order", orderId, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
-    maxAge: 60 * 30,
+    path: "/",
+    maxAge: 60 * 60 * 24 * 30,
   });
+  await saveCheckoutProfile({
+    name: formData.name,
+    phone: formData.phone,
+    postalCode: formData.postalCode,
+    address: formData.address,
+  });
+  await refreshSessionCookies();
 
-  return { success: true, orderId, total: pricing.total };
+  return { success: true, checkoutUrl: session.data.session_url, orderId };
+}
+
+export async function resolveCheckoutSession(
+  sessionId: string | undefined,
+): Promise<CheckoutSessionView> {
+  const secretKey = getKomojuSecretKey();
+
+  if (!sessionId || !secretKey) {
+    return {
+      kind: "missing",
+      orderId: null,
+      paymentType: null,
+      amount: null,
+      email: null,
+    };
+  }
+
+  const result = await getKomojuSession(secretKey, sessionId);
+  if (!result.data) {
+    return {
+      kind: "missing",
+      orderId: null,
+      paymentType: null,
+      amount: null,
+      email: null,
+    };
+  }
+
+  const session: KomojuSession = result.data;
+  const outcome = describePaymentOutcome(session);
+
+  return {
+    kind: outcome.kind,
+    orderId: outcome.orderId,
+    paymentType: session.payment?.payment_details?.type ?? session.metadata?.payment_method ?? null,
+    amount: session.amount ?? null,
+    email: session.email ?? session.metadata?.email ?? null,
+  };
 }
 
 export async function getCheckoutPricing(

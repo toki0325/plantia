@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Noto_Sans_JP } from "next/font/google";
+import { getSessionUser } from "@/app/actions/auth";
 import { CartProvider } from "@/components/providers/CartProvider";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
@@ -25,12 +27,18 @@ export const viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  const user = await getSessionUser();
+
   return (
     <html lang="ja" className={`${notoSansJP.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
         <CartProvider>
-          <SiteHeader />
+          <SiteHeader user={user ? { name: user.name } : null} />
           <div className="flex-1">{children}</div>
           <SiteFooter />
         </CartProvider>

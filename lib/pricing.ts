@@ -7,6 +7,8 @@ export type PricedLineItem = {
   unitPrice: number;
   quantity: number;
   lineTotal: number;
+  freeShipping?: boolean;
+  image?: string;
 };
 
 export type OrderPricing = {
@@ -15,6 +17,17 @@ export type OrderPricing = {
   shipping: number;
   total: number;
 };
+
+/** 送料無料対象商品のみ、または合計が閾値以上なら送料0 */
+export function shippingFeeForCart(
+  subtotal: number,
+  items: { freeShipping?: boolean }[],
+): number {
+  if (items.length === 0) return 0;
+  if (subtotal >= FREE_SHIPPING_THRESHOLD) return 0;
+  if (items.every((item) => item.freeShipping)) return 0;
+  return SHIPPING_FEE;
+}
 
 /** サーバーサイド専用: 商品マスタから金額を再計算する */
 export function calculateOrderPricing(
@@ -34,6 +47,8 @@ export function calculateOrderPricing(
       unitPrice: product.price,
       quantity: line.quantity,
       lineTotal: product.price * line.quantity,
+      freeShipping: Boolean(product.freeShipping),
+      image: product.image,
     });
   }
 
@@ -42,7 +57,7 @@ export function calculateOrderPricing(
   }
 
   const subtotal = items.reduce((sum, item) => sum + item.lineTotal, 0);
-  const shipping = subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE;
+  const shipping = shippingFeeForCart(subtotal, items);
   const total = subtotal + shipping;
 
   return { items, subtotal, shipping, total };

@@ -1,26 +1,28 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { submitCheckout } from "@/app/actions/checkout";
+import type { SessionUser } from "@/app/actions/auth";
 import { useCart } from "@/components/providers/CartProvider";
 import { Button } from "@/components/ui/Button";
 import { Input, Select } from "@/components/ui/FormFields";
-import {
-  FREE_SHIPPING_THRESHOLD,
-  SHIPPING_FEE,
-  TAX_INCLUDED_LABEL,
-} from "@/lib/constants";
-import { formatPrice } from "@/lib/pricing";
+import { TAX_INCLUDED_LABEL } from "@/lib/constants";
+import { upsertStoredOrder } from "@/lib/order-history";
+import { formatPrice, shippingFeeForCart } from "@/lib/pricing";
 import type { CheckoutFormData } from "@/lib/types";
 
-export function CheckoutForm() {
-  const router = useRouter();
-  const { items, subtotal, clearCart } = useCart();
-  const [error, setError] = useState("");
+export function CheckoutForm({ user }: { user: SessionUser | null }) {
+  const searchParams = useSearchParams();
+  const { items, subtotal } = useCart();
+  const [error, setError] = useState(searchParams.get("error") ?? "");
   const [loading, setLoading] = useState(false);
 
-  const shipping = subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE;
+  const shipping = shippingFeeForCart(
+    subtotal,
+    items.map((line) => line.product),
+  );
   const total = subtotal + shipping;
 
   if (items.length === 0) {
@@ -51,24 +53,71 @@ export function CheckoutForm() {
       data,
     );
 
-    setLoading(false);
-
     if (result.success) {
-      clearCart();
-      router.push(`/checkout/complete?order=${result.orderId}`);
-    } else {
-      setError(result.error);
+      upsertStoredOrder({
+        id: result.orderId,
+        email: data.email,
+        date: new Date().toISOString().slice(0, 10),
+        total,
+        status: "入金待ち",
+        items: items.map((line) => ({
+          name: line.product.name,
+          quantity: line.quantity,
+          lineTotal: line.lineTotal,
+        })),
+      });
+      window.location.assign(result.checkoutUrl);
+      return;
     }
+
+    setLoading(false);
+    setError(result.error);
   }
 
   return (
     <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-3 gap-8">
       <div className="lg:col-span-2 space-y-4">
-        <Input name="name" label="お名前" required />
-        <Input name="email" type="email" label="メールアドレス" required />
-        <Input name="phone" type="tel" label="電話番号" placeholder="090-1234-5678" required />
-        <Input name="postalCode" label="郵便番号" placeholder="123-4567" required />
-        <Input name="address" label="住所" required />
+        {user ? null : (
+          <p className="text-sm text-[var(--color-text-muted,#666666)]">
+            <Link href="/login?next=/checkout" className="underline text-[var(--color-primary,#2F4B3C)]">
+              ログイン
+            </Link>
+            {" / "}
+            <Link href="/register?next=/checkout" className="underline text-[var(--color-primary,#2F4B3C)]">
+              新規会員登録
+            </Link>
+          </p>
+        )}
+
+        <Input name="name" label="お名前" defaultValue={user?.name ?? ""} required />
+        <Input
+          name="email"
+          type="email"
+          label="メールアドレス"
+          defaultValue={user?.email ?? ""}
+          required
+        />
+        <Input
+          name="phone"
+          type="tel"
+          label="電話番号"
+          placeholder="090-1234-5678"
+          defaultValue={user?.phone ?? ""}
+          required
+        />
+        <Input
+          name="postalCode"
+          label="郵便番号"
+          placeholder="123-4567"
+          defaultValue={user?.postalCode ?? ""}
+          required
+        />
+        <Input
+          name="address"
+          label="住所"
+          defaultValue={user?.address ?? ""}
+          required
+        />
         <Select
           name="paymentMethod"
           label="お支払い方法"
@@ -83,9 +132,6 @@ export function CheckoutForm() {
         <Button type="submit" disabled={loading} className="w-full sm:w-auto">
           {loading ? "処理中..." : "注文を確定する"}
         </Button>
-        <p className="text-xs text-[var(--color-text-muted,#666666)]">
-          ※ MVPではKOMOJU連携前のデモ決済です。金額はサーバー側で再計算されます。
-        </p>
       </div>
 
       <div className="border border-[var(--color-border,#EAE6DD)] rounded-[2px] p-6 h-fit">
