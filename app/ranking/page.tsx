@@ -1,7 +1,6 @@
 import {
   PageHeader,
   PageSection,
-  SectionTitle,
 } from "@/components/layout/PageHeader";
 import { ShopProductGrid } from "@/components/product/ShopProductCard";
 import { getRanking } from "@/lib/data/products";
