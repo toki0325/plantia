@@ -4,14 +4,14 @@ import {
   createContext,
   useCallback,
   useContext,
-  useEffect,
   useMemo,
-  useState,
+  useSyncExternalStore,
 } from "react";
 import { getProductById } from "@/lib/data/products";
 import type { CartItem, ProductSummary } from "@/lib/types";
 
 const STORAGE_KEY = "plantia-cart";
+const EMPTY_ITEMS: CartItem[] = [];
 
 export type CartLine = CartItem & {
   product: ProductSummary;
@@ -34,34 +34,55 @@ type CartContextValue = {
 
 const CartContext = createContext<CartContextValue | null>(null);
 
-function loadItems(): CartItem[] {
-  if (typeof window === "undefined") return [];
+const listeners = new Set<() => void>();
+let cachedRaw: string | null | undefined;
+let cachedItems: CartItem[] = EMPTY_ITEMS;
+
+function emit() {
+  listeners.forEach((listener) => listener());
+}
+
+function subscribe(listener: () => void) {
+  listeners.add(listener);
+  window.addEventListener("storage", listener);
+  return () => {
+    listeners.delete(listener);
+    window.removeEventListener("storage", listener);
+  };
+}
+
+function readItems(): CartItem[] {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return [];
+    if (raw === cachedRaw) return cachedItems;
+    cachedRaw = raw;
+    if (!raw) {
+      cachedItems = EMPTY_ITEMS;
+      return cachedItems;
+    }
     const parsed = JSON.parse(raw) as CartItem[];
-    return Array.isArray(parsed) ? parsed : [];
+    cachedItems = Array.isArray(parsed) ? parsed : EMPTY_ITEMS;
+    return cachedItems;
   } catch {
-    return [];
+    cachedItems = EMPTY_ITEMS;
+    cachedRaw = null;
+    return cachedItems;
   }
 }
 
-function saveItems(items: CartItem[]) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+function writeItems(next: CartItem[]) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+  cachedRaw = JSON.stringify(next);
+  cachedItems = next.length === 0 ? EMPTY_ITEMS : next;
+  emit();
+}
+
+function getServerSnapshot() {
+  return EMPTY_ITEMS;
 }
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
-  const [items, setItems] = useState<CartItem[]>([]);
-  const [hydrated, setHydrated] = useState(false);
-
-  useEffect(() => {
-    setItems(loadItems());
-    setHydrated(true);
-  }, []);
-
-  useEffect(() => {
-    if (hydrated) saveItems(items);
-  }, [items, hydrated]);
+  const items = useSyncExternalStore(subscribe, readItems, getServerSnapshot);
 
   const addItem = useCallback(
     (
@@ -69,46 +90,50 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       quantity = 1,
       options?: { selectedSize?: string; selectedColor?: string },
     ) => {
-      setItems((prev) => {
-        const existing = prev.find((i) => i.productId === productId);
-        if (existing) {
-          return prev.map((i) =>
+      const prev = readItems();
+      const existing = prev.find((i) => i.productId === productId);
+      if (existing) {
+        writeItems(
+          prev.map((i) =>
             i.productId === productId
               ? { ...i, quantity: Math.min(99, i.quantity + quantity) }
               : i,
-          );
-        }
-        return [
-          ...prev,
-          {
-            productId,
-            quantity: Math.min(99, Math.max(1, quantity)),
-            ...options,
-          },
-        ];
-      });
+          ),
+        );
+        return;
+      }
+      writeItems([
+        ...prev,
+        {
+          productId,
+          quantity: Math.min(99, Math.max(1, quantity)),
+          ...options,
+        },
+      ]);
     },
     [],
   );
 
   const updateQuantity = useCallback((productId: string, quantity: number) => {
-    setItems((prev) => {
-      if (quantity < 1) {
-        return prev.filter((i) => i.productId !== productId);
-      }
-      return prev.map((i) =>
+    const prev = readItems();
+    if (quantity < 1) {
+      writeItems(prev.filter((i) => i.productId !== productId));
+      return;
+    }
+    writeItems(
+      prev.map((i) =>
         i.productId === productId
           ? { ...i, quantity: Math.min(99, quantity) }
           : i,
-      );
-    });
+      ),
+    );
   }, []);
 
   const removeItem = useCallback((productId: string) => {
-    setItems((prev) => prev.filter((i) => i.productId !== productId));
+    writeItems(readItems().filter((i) => i.productId !== productId));
   }, []);
 
-  const clearCart = useCallback(() => setItems([]), []);
+  const clearCart = useCallback(() => writeItems([]), []);
 
   const lines = useMemo(() => {
     return items
