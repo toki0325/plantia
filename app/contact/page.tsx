@@ -33,7 +33,7 @@ export default function ContactPage() {
             <h2 className="font-bold mb-4">お問い合わせ先</h2>
             <dl className="text-sm space-y-2 text-[var(--color-text-muted,#666666)]">
               <div><dt className="inline font-medium text-[var(--color-text,#333333)]">メール: </dt><dd className="inline">{companyInfo.email}</dd></div>
-              <div><dt className="inline font-medium text-[var(--color-text,#333333)]">電話: </dt><dd className="inline">{companyInfo.phone}</dd></div>
+              {/* <div><dt className="inline font-medium text-[var(--color-text,#333333)]">電話: </dt><dd className="inline">{companyInfo.phone}</dd></div> */}
               <div><dt className="inline font-medium text-[var(--color-text,#333333)]">営業時間: </dt><dd className="inline">{companyInfo.hours}</dd></div>
             </dl>
           </div>

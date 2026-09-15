@@ -5,7 +5,7 @@ export const TAX_INCLUDED_LABEL = "（税込）";
 export const SITE = {
   name: "PLANTIA",
   catchCopy: "庭に、いちばんの居場所を。",
-  email: "support@plantia.example",
+  email: "dainaka@plantia-garden.com",
   phone: "00-0000-0000",
   hours: "平日10:00〜17:00（土日祝休）",
 } as const;

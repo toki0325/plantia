@@ -33,10 +33,10 @@ export default function CompanyPage() {
                 <dt className="text-[var(--color-text-muted,#666666)]">所在地</dt>
                 <dd>{companyInfo.address}</dd>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-1 sm:gap-2">
+              {/* <div className="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-1 sm:gap-2">
                 <dt className="text-[var(--color-text-muted,#666666)]">電話番号</dt>
                 <dd>{companyInfo.phone}</dd>
-              </div>
+              </div> */}
               <div className="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-1 sm:gap-2">
                 <dt className="text-[var(--color-text-muted,#666666)]">資本金</dt>
                 <dd>{companyInfo.capital}</dd>

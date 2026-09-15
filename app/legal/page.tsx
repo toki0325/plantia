@@ -16,7 +16,7 @@ export default function LegalPage() {
             ["販売業者", legalInfo.seller],
             ["代表者", legalInfo.representative],
             ["所在地", legalInfo.address],
-            ["電話番号", legalInfo.phone],
+            // ["電話番号", legalInfo.phone],
             ["メールアドレス", legalInfo.email],
             ["販売価格", legalInfo.priceNote],
             ["送料", legalInfo.shipping],
