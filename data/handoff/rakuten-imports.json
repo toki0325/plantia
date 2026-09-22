@@ -1,0 +1,844 @@
+{
+  "source": "rakuten",
+  "generatedAt": "2026-09-22T00:53:00.307Z",
+  "manifestPath": "data/rakuten/imports.json",
+  "products": [
+    {
+      "id": "cb-233040ns",
+      "name": "コーヒー樽 大小2個 天然木 木製 コーヒーバレル インテリア ガーデンオブジェ プランター",
+      "price": 9800,
+      "categorySlug": "planter",
+      "parentCategorySlug": "gardening",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/cb-233040ns/01.jpg",
+        "/images/products/rakuten-imports/cb-233040ns/02.jpg",
+        "/images/products/rakuten-imports/cb-233040ns/03.jpg",
+        "/images/products/rakuten-imports/cb-233040ns/04.jpg",
+        "/images/products/rakuten-imports/cb-233040ns/05.jpg",
+        "/images/products/rakuten-imports/cb-233040ns/06.jpg",
+        "/images/products/rakuten-imports/cb-233040ns/07.jpg",
+        "/images/products/rakuten-imports/cb-233040ns/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/cb-233040ns/",
+      "itemCode": "sumai-style:10015022",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:34.144Z"
+    },
+    {
+      "id": "dep-2lb45",
+      "name": "天然木製プランター2個組 デッキ縁台プランター",
+      "price": 7800,
+      "categorySlug": "joint-tile",
+      "parentCategorySlug": "grass-tile-stone",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/dep-2lb45/01.jpg",
+        "/images/products/rakuten-imports/dep-2lb45/02.jpg",
+        "/images/products/rakuten-imports/dep-2lb45/03.jpg",
+        "/images/products/rakuten-imports/dep-2lb45/04.jpg",
+        "/images/products/rakuten-imports/dep-2lb45/05.jpg",
+        "/images/products/rakuten-imports/dep-2lb45/06.jpg",
+        "/images/products/rakuten-imports/dep-2lb45/07.jpg",
+        "/images/products/rakuten-imports/dep-2lb45/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/dep-2lb45/",
+      "itemCode": "sumai-style:10015055",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:36.008Z"
+    },
+    {
+      "id": "cb-2330n-wht",
+      "name": "コーヒーバレル 小（単品販売） CB-2330N-WHT 木製 コーヒー coffee バレル",
+      "price": 4300,
+      "categorySlug": "planter",
+      "parentCategorySlug": "gardening",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/cb-2330n-wht/01.jpg",
+        "/images/products/rakuten-imports/cb-2330n-wht/02.jpg",
+        "/images/products/rakuten-imports/cb-2330n-wht/03.jpg",
+        "/images/products/rakuten-imports/cb-2330n-wht/04.jpg",
+        "/images/products/rakuten-imports/cb-2330n-wht/05.jpg",
+        "/images/products/rakuten-imports/cb-2330n-wht/06.jpg",
+        "/images/products/rakuten-imports/cb-2330n-wht/07.jpg",
+        "/images/products/rakuten-imports/cb-2330n-wht/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/cb-2330n-wht/",
+      "itemCode": "sumai-style:10019128",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:37.812Z"
+    },
+    {
+      "id": "dep-36",
+      "name": "天然木製プランター 幅35 ひより ウッドプランター",
+      "price": 5600,
+      "categorySlug": "garden-light",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/dep-36/01.jpg",
+        "/images/products/rakuten-imports/dep-36/02.jpg",
+        "/images/products/rakuten-imports/dep-36/03.jpg",
+        "/images/products/rakuten-imports/dep-36/04.jpg",
+        "/images/products/rakuten-imports/dep-36/05.jpg",
+        "/images/products/rakuten-imports/dep-36/06.jpg",
+        "/images/products/rakuten-imports/dep-36/07.jpg",
+        "/images/products/rakuten-imports/dep-36/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/dep-36/",
+      "itemCode": "sumai-style:10015051",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:39.648Z"
+    },
+    {
+      "id": "cb-3040n-wht",
+      "name": "コーヒーバレル 大（単品販売） CB-3040N-WHT 木製 コーヒー coffee バレル",
+      "price": 6300,
+      "categorySlug": "planter",
+      "parentCategorySlug": "gardening",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/cb-3040n-wht/01.jpg",
+        "/images/products/rakuten-imports/cb-3040n-wht/02.jpg",
+        "/images/products/rakuten-imports/cb-3040n-wht/03.jpg",
+        "/images/products/rakuten-imports/cb-3040n-wht/04.jpg",
+        "/images/products/rakuten-imports/cb-3040n-wht/05.jpg",
+        "/images/products/rakuten-imports/cb-3040n-wht/06.jpg",
+        "/images/products/rakuten-imports/cb-3040n-wht/07.jpg",
+        "/images/products/rakuten-imports/cb-3040n-wht/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/cb-3040n-wht/",
+      "itemCode": "sumai-style:10019129",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:40.922Z"
+    },
+    {
+      "id": "cb-2330n",
+      "name": "コーヒーバレル CB-2330N 天然木 木製 コーヒー樽",
+      "price": 4300,
+      "categorySlug": "planter",
+      "parentCategorySlug": "gardening",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/cb-2330n/01.jpg",
+        "/images/products/rakuten-imports/cb-2330n/02.jpg",
+        "/images/products/rakuten-imports/cb-2330n/03.jpg",
+        "/images/products/rakuten-imports/cb-2330n/04.jpg",
+        "/images/products/rakuten-imports/cb-2330n/05.jpg",
+        "/images/products/rakuten-imports/cb-2330n/06.jpg",
+        "/images/products/rakuten-imports/cb-2330n/07.jpg",
+        "/images/products/rakuten-imports/cb-2330n/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/cb-2330n/",
+      "itemCode": "sumai-style:10015258",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:42.705Z"
+    },
+    {
+      "id": "cb-233040ns-wht",
+      "name": "コーヒーバレル 大小2個組 CB-233040NS-WHT 木製 コーヒー coffee バレル",
+      "price": 9800,
+      "categorySlug": "planter",
+      "parentCategorySlug": "gardening",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/cb-233040ns-wht/01.jpg",
+        "/images/products/rakuten-imports/cb-233040ns-wht/02.jpg",
+        "/images/products/rakuten-imports/cb-233040ns-wht/03.jpg",
+        "/images/products/rakuten-imports/cb-233040ns-wht/04.jpg",
+        "/images/products/rakuten-imports/cb-233040ns-wht/05.jpg",
+        "/images/products/rakuten-imports/cb-233040ns-wht/06.jpg",
+        "/images/products/rakuten-imports/cb-233040ns-wht/07.jpg",
+        "/images/products/rakuten-imports/cb-233040ns-wht/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/cb-233040ns-wht/",
+      "itemCode": "sumai-style:10019131",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:44.518Z"
+    },
+    {
+      "id": "dep-36-2p",
+      "name": "天然木プランター 幅35 2個 ひより 木製プランター",
+      "price": 9500,
+      "categorySlug": "planter",
+      "parentCategorySlug": "gardening",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/dep-36-2p/01.jpg",
+        "/images/products/rakuten-imports/dep-36-2p/02.jpg",
+        "/images/products/rakuten-imports/dep-36-2p/03.jpg",
+        "/images/products/rakuten-imports/dep-36-2p/04.jpg",
+        "/images/products/rakuten-imports/dep-36-2p/05.jpg",
+        "/images/products/rakuten-imports/dep-36-2p/06.jpg",
+        "/images/products/rakuten-imports/dep-36-2p/07.jpg",
+        "/images/products/rakuten-imports/dep-36-2p/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/dep-36-2p/",
+      "itemCode": "sumai-style:10015101",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:46.333Z"
+    },
+    {
+      "id": "cb-3040n",
+      "name": "ウッドプランター コーヒーバレル 直径30 高さ40 天然木製 コーヒー樽",
+      "price": 6300,
+      "categorySlug": "planter",
+      "parentCategorySlug": "gardening",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/cb-3040n/01.jpg",
+        "/images/products/rakuten-imports/cb-3040n/02.jpg",
+        "/images/products/rakuten-imports/cb-3040n/03.jpg",
+        "/images/products/rakuten-imports/cb-3040n/04.jpg",
+        "/images/products/rakuten-imports/cb-3040n/05.jpg",
+        "/images/products/rakuten-imports/cb-3040n/06.jpg",
+        "/images/products/rakuten-imports/cb-3040n/07.jpg",
+        "/images/products/rakuten-imports/cb-3040n/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/cb-3040n/",
+      "itemCode": "sumai-style:10015257",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:48.085Z"
+    },
+    {
+      "id": "spl-6627-2p",
+      "name": "ブランティーク ホワイトアイアンチェア",
+      "price": 16900,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/spl-6627-2p/01.jpg",
+        "/images/products/rakuten-imports/spl-6627-2p/02.jpg",
+        "/images/products/rakuten-imports/spl-6627-2p/03.jpg",
+        "/images/products/rakuten-imports/spl-6627-2p/04.jpg",
+        "/images/products/rakuten-imports/spl-6627-2p/05.jpg",
+        "/images/products/rakuten-imports/spl-6627-2p/06.jpg",
+        "/images/products/rakuten-imports/spl-6627-2p/07.jpg",
+        "/images/products/rakuten-imports/spl-6627-2p/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/spl-6627-2p/",
+      "itemCode": "sumai-style:10015136",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:51.138Z"
+    },
+    {
+      "id": "pls-ch-2p",
+      "name": "錆びないガーデンチェア 2脚セット 屋外で雨ざらしOK ラタン調 アルミフレーム",
+      "price": 44000,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/pls-ch-2p/01.jpg",
+        "/images/products/rakuten-imports/pls-ch-2p/02.jpg",
+        "/images/products/rakuten-imports/pls-ch-2p/03.jpg",
+        "/images/products/rakuten-imports/pls-ch-2p/04.jpg",
+        "/images/products/rakuten-imports/pls-ch-2p/05.jpg",
+        "/images/products/rakuten-imports/pls-ch-2p/06.jpg",
+        "/images/products/rakuten-imports/pls-ch-2p/07.jpg",
+        "/images/products/rakuten-imports/pls-ch-2p/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/pls-ch-2p/",
+      "itemCode": "sumai-style:10015088",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:52.930Z"
+    },
+    {
+      "id": "bks-c5289-2p",
+      "name": "アルミ製アームチェア 2脚セット 「トルペ」 BKS-C5289-2P パティオ チェア",
+      "price": 29800,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/bks-c5289-2p/01.jpg",
+        "/images/products/rakuten-imports/bks-c5289-2p/02.jpg",
+        "/images/products/rakuten-imports/bks-c5289-2p/03.jpg",
+        "/images/products/rakuten-imports/bks-c5289-2p/04.jpg",
+        "/images/products/rakuten-imports/bks-c5289-2p/05.jpg",
+        "/images/products/rakuten-imports/bks-c5289-2p/06.jpg",
+        "/images/products/rakuten-imports/bks-c5289-2p/07.jpg",
+        "/images/products/rakuten-imports/bks-c5289-2p/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/bks-c5289-2p/",
+      "itemCode": "sumai-style:10019022",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:38:56.020Z"
+    },
+    {
+      "id": "spl-9001-2p",
+      "name": "アイアン製ガーデンチェア2脚セット",
+      "price": 8800,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/spl-9001-2p/01.jpg",
+        "/images/products/rakuten-imports/spl-9001-2p/02.jpg",
+        "/images/products/rakuten-imports/spl-9001-2p/03.jpg",
+        "/images/products/rakuten-imports/spl-9001-2p/04.jpg",
+        "/images/products/rakuten-imports/spl-9001-2p/05.jpg",
+        "/images/products/rakuten-imports/spl-9001-2p/06.jpg",
+        "/images/products/rakuten-imports/spl-9001-2p/07.jpg",
+        "/images/products/rakuten-imports/spl-9001-2p/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/spl-9001-2p/",
+      "itemCode": "sumai-style:spl-9001-2p",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:40:16.592Z"
+    },
+    {
+      "id": "stf-chb",
+      "name": "ハイバックチェア ガーデン キャンプ アウトドア 折りたたみ 椅子 コンパクト 軽量",
+      "price": 11000,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/stf-chb/01.jpg",
+        "/images/products/rakuten-imports/stf-chb/02.jpg",
+        "/images/products/rakuten-imports/stf-chb/03.jpg",
+        "/images/products/rakuten-imports/stf-chb/04.jpg",
+        "/images/products/rakuten-imports/stf-chb/05.jpg",
+        "/images/products/rakuten-imports/stf-chb/06.jpg",
+        "/images/products/rakuten-imports/stf-chb/07.jpg",
+        "/images/products/rakuten-imports/stf-chb/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/stf-chb/",
+      "itemCode": "sumai-style:10019947",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:39:03.341Z"
+    },
+    {
+      "id": "stf-chb-2p",
+      "name": "ハイバックチェア 2脚 ガーデン キャンプ アウトドア 折りたたみ 椅子 コンパクト 軽量",
+      "price": 21000,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/stf-chb-2p/01.jpg",
+        "/images/products/rakuten-imports/stf-chb-2p/02.jpg",
+        "/images/products/rakuten-imports/stf-chb-2p/03.jpg",
+        "/images/products/rakuten-imports/stf-chb-2p/04.jpg",
+        "/images/products/rakuten-imports/stf-chb-2p/05.jpg",
+        "/images/products/rakuten-imports/stf-chb-2p/06.jpg",
+        "/images/products/rakuten-imports/stf-chb-2p/07.jpg",
+        "/images/products/rakuten-imports/stf-chb-2p/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/stf-chb-2p/",
+      "itemCode": "sumai-style:10019948",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:39:05.157Z"
+    },
+    {
+      "id": "stf-chb-4p",
+      "name": "ハイバックチェア ４脚 ガーデン キャンプ アウトドア 折りたたみ 椅子 コンパクト 軽量",
+      "price": 40800,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/stf-chb-4p/01.jpg",
+        "/images/products/rakuten-imports/stf-chb-4p/02.jpg",
+        "/images/products/rakuten-imports/stf-chb-4p/03.jpg",
+        "/images/products/rakuten-imports/stf-chb-4p/04.jpg",
+        "/images/products/rakuten-imports/stf-chb-4p/05.jpg",
+        "/images/products/rakuten-imports/stf-chb-4p/06.jpg",
+        "/images/products/rakuten-imports/stf-chb-4p/07.jpg",
+        "/images/products/rakuten-imports/stf-chb-4p/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/stf-chb-4p/",
+      "itemCode": "sumai-style:stf-chb-4p",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:40:14.568Z"
+    },
+    {
+      "id": "stf-cmd",
+      "name": "ミドルディレクターチェア ガーデン キャンプ アウトドア 折りたたみ アルミフレーム コンパクト",
+      "price": 7800,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/stf-cmd/01.jpg",
+        "/images/products/rakuten-imports/stf-cmd/02.jpg",
+        "/images/products/rakuten-imports/stf-cmd/03.jpg",
+        "/images/products/rakuten-imports/stf-cmd/04.jpg",
+        "/images/products/rakuten-imports/stf-cmd/05.jpg",
+        "/images/products/rakuten-imports/stf-cmd/06.jpg",
+        "/images/products/rakuten-imports/stf-cmd/07.jpg",
+        "/images/products/rakuten-imports/stf-cmd/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/stf-cmd/",
+      "itemCode": "sumai-style:10019941",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:39:09.267Z"
+    },
+    {
+      "id": "stf-cmd-2p",
+      "name": "ミドルディレクターチェア 2脚 ガーデン キャンプ アウトドア 折りたたみ アルミフレーム",
+      "price": 14800,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/stf-cmd-2p/01.jpg",
+        "/images/products/rakuten-imports/stf-cmd-2p/02.jpg",
+        "/images/products/rakuten-imports/stf-cmd-2p/03.jpg",
+        "/images/products/rakuten-imports/stf-cmd-2p/04.jpg",
+        "/images/products/rakuten-imports/stf-cmd-2p/05.jpg",
+        "/images/products/rakuten-imports/stf-cmd-2p/06.jpg",
+        "/images/products/rakuten-imports/stf-cmd-2p/07.jpg",
+        "/images/products/rakuten-imports/stf-cmd-2p/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/stf-cmd-2p/",
+      "itemCode": "sumai-style:10019942",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:39:11.102Z"
+    },
+    {
+      "id": "stf-cmd-4p",
+      "name": "ミドルディレクターチェア 4脚 ガーデン キャンプ アウトドア 折りたたみ アルミフレーム",
+      "price": 28600,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/stf-cmd-4p/01.jpg",
+        "/images/products/rakuten-imports/stf-cmd-4p/02.jpg",
+        "/images/products/rakuten-imports/stf-cmd-4p/03.jpg",
+        "/images/products/rakuten-imports/stf-cmd-4p/04.jpg",
+        "/images/products/rakuten-imports/stf-cmd-4p/05.jpg",
+        "/images/products/rakuten-imports/stf-cmd-4p/06.jpg",
+        "/images/products/rakuten-imports/stf-cmd-4p/07.jpg",
+        "/images/products/rakuten-imports/stf-cmd-4p/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/stf-cmd-4p/",
+      "itemCode": "sumai-style:10019943",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:39:12.839Z"
+    },
+    {
+      "id": "stf-cxs",
+      "name": "Xスツール ガーデン キャンプ アウトドア 折りたたみ椅子 チェア",
+      "price": 4600,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/stf-cxs/01.jpg",
+        "/images/products/rakuten-imports/stf-cxs/02.jpg",
+        "/images/products/rakuten-imports/stf-cxs/03.jpg",
+        "/images/products/rakuten-imports/stf-cxs/04.jpg",
+        "/images/products/rakuten-imports/stf-cxs/05.jpg",
+        "/images/products/rakuten-imports/stf-cxs/06.jpg",
+        "/images/products/rakuten-imports/stf-cxs/07.jpg",
+        "/images/products/rakuten-imports/stf-cxs/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/stf-cxs/",
+      "itemCode": "sumai-style:10019944",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:39:14.082Z"
+    },
+    {
+      "id": "stf-cxs-2p",
+      "name": "Xスツール 2脚 ガーデン キャンプ アウトドア 折りたたみ椅子 チェア",
+      "price": 7800,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/stf-cxs-2p/01.jpg",
+        "/images/products/rakuten-imports/stf-cxs-2p/02.jpg",
+        "/images/products/rakuten-imports/stf-cxs-2p/03.jpg",
+        "/images/products/rakuten-imports/stf-cxs-2p/04.jpg",
+        "/images/products/rakuten-imports/stf-cxs-2p/05.jpg",
+        "/images/products/rakuten-imports/stf-cxs-2p/06.jpg",
+        "/images/products/rakuten-imports/stf-cxs-2p/07.jpg",
+        "/images/products/rakuten-imports/stf-cxs-2p/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/stf-cxs-2p/",
+      "itemCode": "sumai-style:10019945",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:39:15.873Z"
+    },
+    {
+      "id": "stf-cxs-4p",
+      "name": "Xスツール 4脚 ガーデン キャンプ アウトドア 折りたたみ椅子 チェア",
+      "price": 13800,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/stf-cxs-4p/01.jpg",
+        "/images/products/rakuten-imports/stf-cxs-4p/02.jpg",
+        "/images/products/rakuten-imports/stf-cxs-4p/03.jpg",
+        "/images/products/rakuten-imports/stf-cxs-4p/04.jpg",
+        "/images/products/rakuten-imports/stf-cxs-4p/05.jpg",
+        "/images/products/rakuten-imports/stf-cxs-4p/06.jpg",
+        "/images/products/rakuten-imports/stf-cxs-4p/07.jpg",
+        "/images/products/rakuten-imports/stf-cxs-4p/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/stf-cxs-4p/",
+      "itemCode": "sumai-style:10019946",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:39:17.752Z"
+    },
+    {
+      "id": "szo-sh-01-vtlb",
+      "name": "シックなヴィンテージスタイル！レトロな車輪付きボード 完成品・幅120 シンプル かわいい",
+      "price": 33950,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/szo-sh-01-vtlb/01.jpg",
+        "/images/products/rakuten-imports/szo-sh-01-vtlb/02.jpg",
+        "/images/products/rakuten-imports/szo-sh-01-vtlb/03.jpg",
+        "/images/products/rakuten-imports/szo-sh-01-vtlb/04.jpg",
+        "/images/products/rakuten-imports/szo-sh-01-vtlb/05.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/szo-sh-01-vtlb/",
+      "itemCode": "sumai-style:szo-sh-01-vtlb",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:40:12.673Z"
+    },
+    {
+      "id": "szo-sh-01-yel-gr",
+      "name": "人気の折りたたみガーデンチェア肘付き（2脚セット）アカシア材を使用 シンプル かわいい おしゃれ",
+      "price": 20380,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/szo-sh-01-yel-gr/01.jpg",
+        "/images/products/rakuten-imports/szo-sh-01-yel-gr/02.jpg",
+        "/images/products/rakuten-imports/szo-sh-01-yel-gr/03.jpg",
+        "/images/products/rakuten-imports/szo-sh-01-yel-gr/04.jpg",
+        "/images/products/rakuten-imports/szo-sh-01-yel-gr/05.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/szo-sh-01-yel-gr/",
+      "itemCode": "sumai-style:szo-sh-01-yel-gr",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:40:26.558Z"
+    },
+    {
+      "id": "szo-sh-05-11232",
+      "name": "ガーデンチェア 2脚セット （ガーデン カフェ） シンプル かわいい おしゃれ",
+      "price": 15760,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/szo-sh-05-11232/01.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-11232/02.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-11232/03.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-11232/04.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-11232/05.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-11232/06.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-11232/07.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/szo-sh-05-11232/",
+      "itemCode": "sumai-style:10014885",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:40:11.269Z"
+    },
+    {
+      "id": "szo-sh-05-11234",
+      "name": "ガーデン肘付チェア 2脚セット （ガーデン カフェ） シンプル かわいい おしゃれ",
+      "price": 18620,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/szo-sh-05-11234/01.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-11234/02.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-11234/03.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-11234/04.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/szo-sh-05-11234/",
+      "itemCode": "sumai-style:szo-sh-05-11234",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:40:27.778Z"
+    },
+    {
+      "id": "szo-sh-05-12270",
+      "name": "ガーデンデザインチェア4脚セット （ガーデン イス 4脚） シンプル かわいい おしゃれ",
+      "price": 14810,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/szo-sh-05-12270/01.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-12270/02.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-12270/03.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-12270/04.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/szo-sh-05-12270/",
+      "itemCode": "sumai-style:szo-sh-05-12270",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:40:57.537Z"
+    },
+    {
+      "id": "szo-sh-05-79497",
+      "name": "天然木とグリーン布製の定番のディレクターチェア",
+      "price": 16570,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/szo-sh-05-79497/01.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-79497/02.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-79497/03.jpg",
+        "/images/products/rakuten-imports/szo-sh-05-79497/04.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/szo-sh-05-79497/",
+      "itemCode": "sumai-style:szo-sh-05-79497",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:40:58.880Z"
+    },
+    {
+      "id": "bks-rg124",
+      "name": "アルミ製レクタングルテーブル 単品 「トルペ」 BKS-RG124 ガーデンテーブル",
+      "price": 44800,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/bks-rg124/01.jpg",
+        "/images/products/rakuten-imports/bks-rg124/02.jpg",
+        "/images/products/rakuten-imports/bks-rg124/03.jpg",
+        "/images/products/rakuten-imports/bks-rg124/04.jpg",
+        "/images/products/rakuten-imports/bks-rg124/05.jpg",
+        "/images/products/rakuten-imports/bks-rg124/06.jpg",
+        "/images/products/rakuten-imports/bks-rg124/07.jpg",
+        "/images/products/rakuten-imports/bks-rg124/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/bks-rg124/",
+      "itemCode": "sumai-style:10019024",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:51:02.038Z"
+    },
+    {
+      "id": "bks-rt900",
+      "name": "アルミ製ラウンドテーブル 90cm 単品 「トルペ」 BKS-RT900 ガーデンテーブル",
+      "price": 38800,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/bks-rt900/01.jpg",
+        "/images/products/rakuten-imports/bks-rt900/02.jpg",
+        "/images/products/rakuten-imports/bks-rt900/03.jpg",
+        "/images/products/rakuten-imports/bks-rt900/04.jpg",
+        "/images/products/rakuten-imports/bks-rt900/05.jpg",
+        "/images/products/rakuten-imports/bks-rt900/06.jpg",
+        "/images/products/rakuten-imports/bks-rt900/07.jpg",
+        "/images/products/rakuten-imports/bks-rt900/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/bks-rt900/",
+      "itemCode": "sumai-style:10019023",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:51:04.257Z"
+    },
+    {
+      "id": "spl-9003",
+      "name": "アイアン製ローテーブル単品販売 「Sunny Leaf（サニーリーフ）」 ガーデンテーブル",
+      "price": 6800,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/spl-9003/01.jpg",
+        "/images/products/rakuten-imports/spl-9003/02.jpg",
+        "/images/products/rakuten-imports/spl-9003/03.jpg",
+        "/images/products/rakuten-imports/spl-9003/04.jpg",
+        "/images/products/rakuten-imports/spl-9003/05.jpg",
+        "/images/products/rakuten-imports/spl-9003/06.jpg",
+        "/images/products/rakuten-imports/spl-9003/07.jpg",
+        "/images/products/rakuten-imports/spl-9003/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/spl-9003/",
+      "itemCode": "sumai-style:10014790",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:51:07.642Z"
+    },
+    {
+      "id": "sh-01-als-gr-2z",
+      "name": "人気の折りたたみガーデンチェア（2脚セット）アカシア材を使用",
+      "price": 18060,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/sh-01-als-gr-2z/01.jpg",
+        "/images/products/rakuten-imports/sh-01-als-gr-2z/02.jpg",
+        "/images/products/rakuten-imports/sh-01-als-gr-2z/03.jpg",
+        "/images/products/rakuten-imports/sh-01-als-gr-2z/04.jpg",
+        "/images/products/rakuten-imports/sh-01-als-gr-2z/05.jpg",
+        "/images/products/rakuten-imports/sh-01-als-gr-2z/07.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/sh-01-als-gr-2z/",
+      "itemCode": "sumai-style:sh-01-als-gr-2z",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:52:46.448Z"
+    },
+    {
+      "id": "olsk-643",
+      "name": "アルミ製 ラウンドテーブル 直径90cm ダークブラウン テーブル",
+      "price": 19900,
+      "categorySlug": "garden-furniture",
+      "parentCategorySlug": "furniture",
+      "imageWebPaths": [
+        "/images/products/rakuten-imports/olsk-643/01.jpg",
+        "/images/products/rakuten-imports/olsk-643/02.jpg",
+        "/images/products/rakuten-imports/olsk-643/03.jpg",
+        "/images/products/rakuten-imports/olsk-643/04.jpg",
+        "/images/products/rakuten-imports/olsk-643/05.jpg",
+        "/images/products/rakuten-imports/olsk-643/06.jpg",
+        "/images/products/rakuten-imports/olsk-643/07.jpg",
+        "/images/products/rakuten-imports/olsk-643/08.jpg"
+      ],
+      "itemUrl": "https://item.rakuten.co.jp/sumai-style/olsk-643/",
+      "itemCode": "sumai-style:olsk-643",
+      "shopCode": "sumai-style",
+      "freeShipping": false,
+      "isNew": true,
+      "conditionTags": [
+        "rakuten-import"
+      ],
+      "importedAt": "2026-09-22T00:52:48.336Z"
+    }
+  ]
+}

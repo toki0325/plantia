@@ -7,12 +7,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "postinstall": "node scripts/ensure-lightningcss-native.mjs"
+    "postinstall": "node scripts/ensure-lightningcss-native.mjs",
+    "rakuten:item": "node scripts/rakuten-fetch-item.mjs",
+    "rakuten:sync": "node scripts/rakuten-sync-catalog.mjs",
+    "rakuten:search": "node scripts/rakuten-fetch-search.mjs",
+    "rakuten:category": "node scripts/rakuten-fetch-category.mjs",
+    "rakuten:refresh": "node scripts/rakuten-refresh-imports.mjs"
   },
   "optionalDependencies": {
     "lightningcss-linux-x64-gnu": "1.32.0"
   },
   "dependencies": {
+    "iconv-lite": "^0.7.3",
     "next": "16.3.1",
     "react": "19.2.8",
     "react-dom": "19.2.8"

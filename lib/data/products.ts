@@ -15,6 +15,7 @@ import jointTileHandoff from "@/data/handoff/joint-tile.json";
 import gardenLightHandoff from "@/data/handoff/garden-light.json";
 import soilHandoff from "@/data/handoff/soil.json";
 import hoseReelHandoff from "@/data/handoff/hose-reel.json";
+import rakutenImportsHandoff from "@/data/handoff/rakuten-imports.json";
 
 type RawProduct = {
   id: string;
@@ -27,11 +28,42 @@ type RawProduct = {
   isNew?: boolean;
   conditionTags?: string[];
   imageFiles?: string[];
+  imageWebPaths?: string[];
   colors?: string[];
+  sourceItemUrl?: string;
 };
 
 function poolImagePath(categorySlug: string, file: string): string {
   return `/images/products/${categorySlug}/${file}`;
+}
+
+function fromRakutenImports(handoff: {
+  products: {
+    id: string;
+    name: string;
+    price: number;
+    categorySlug: string;
+    parentCategorySlug?: string;
+    imageWebPaths?: string[];
+    itemUrl?: string;
+    freeShipping?: boolean;
+    isNew?: boolean;
+    conditionTags?: string[];
+  }[];
+}): RawProduct[] {
+  return handoff.products.map((product) => ({
+    id: product.id,
+    folder: "rakuten-imports",
+    name: product.name,
+    price: product.price,
+    categorySlug: product.categorySlug,
+    parentCategorySlug: product.parentCategorySlug,
+    imageWebPaths: product.imageWebPaths,
+    sourceItemUrl: product.itemUrl,
+    freeShipping: product.freeShipping,
+    isNew: product.isNew,
+    conditionTags: product.conditionTags,
+  }));
 }
 
 function fromCategoryHandoff(
@@ -78,6 +110,7 @@ const rawProducts: RawProduct[] = [
   ...fromCategoryHandoff(gardenLightHandoff, "furniture", true),
   ...fromCategoryHandoff(soilHandoff, "gardening", true),
   ...fromCategoryHandoff(hoseReelHandoff, "gardening", true),
+  ...fromRakutenImports(rakutenImportsHandoff),
 ];
 
 export function productImagePath(raw: Pick<RawProduct, "folder" | "id">): string {
@@ -85,6 +118,9 @@ export function productImagePath(raw: Pick<RawProduct, "folder" | "id">): string
 }
 
 function toProductImages(raw: RawProduct): string[] {
+  if (raw.imageWebPaths?.length) {
+    return raw.imageWebPaths;
+  }
   if (raw.imageFiles?.length) {
     return raw.imageFiles.map((file) => poolImagePath(raw.folder, file));
   }
@@ -115,7 +151,9 @@ function toDetail(raw: RawProduct, index: number): ProductDetail {
     freeShipping: raw.freeShipping,
     isNew: raw.isNew ?? index < 3,
     conditionTags: raw.conditionTags,
-    description: `${raw.name}は、PLANTIAがセレクトしたガーデニング用品です。お庭やベランダの空間づくりに合わせて、上質な素材感と使いやすさを両立しました。`,
+    description: raw.sourceItemUrl
+      ? `${raw.name}は、PLANTIAがセレクトしたガーデニング用品です。天然木の質感と置きやすいサイズ感で、お庭・ベランダのポイントとして楽しめます。`
+      : `${raw.name}は、PLANTIAがセレクトしたガーデニング用品です。お庭やベランダの空間づくりに合わせて、上質な素材感と使いやすさを両立しました。`,
     features: [
       "PLANTIAセレクトの厳選アイテム",
       "お庭・ベランダのコーディネートに調和",
